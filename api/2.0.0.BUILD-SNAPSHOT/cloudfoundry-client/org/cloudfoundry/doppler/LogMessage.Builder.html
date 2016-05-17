@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -151,29 +151,35 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/LogMessage.Builder.html" title="class in org.cloudfoundry.doppler">LogMessage.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/LogMessage.Builder.html#from-org.cloudfoundry.doppler.LogMessage-">from</a></span>(<a href="../../../org/cloudfoundry/doppler/LogMessage.html" title="class in org.cloudfoundry.doppler">LogMessage</a>&nbsp;instance)</code>
+<div class="block">Fill a builder with attribute values from the provided <code>LogMessage</code> instance.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/LogMessage.Builder.html" title="class in org.cloudfoundry.doppler">LogMessage.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/LogMessage.Builder.html#message-java.lang.String-">message</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
 <div class="block">Initializes the value for the <code>message</code> attribute.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/LogMessage.Builder.html" title="class in org.cloudfoundry.doppler">LogMessage.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/LogMessage.Builder.html#messageType-org.cloudfoundry.doppler.MessageType-">messageType</a></span>(<a href="../../../org/cloudfoundry/doppler/MessageType.html" title="enum in org.cloudfoundry.doppler">MessageType</a>&nbsp;messageType)</code>
 <div class="block">Initializes the value for the <code>messageType</code> attribute.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/LogMessage.Builder.html" title="class in org.cloudfoundry.doppler">LogMessage.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/LogMessage.Builder.html#sourceInstance-java.lang.String-">sourceInstance</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sourceInstance)</code>
 <div class="block">Initializes the value for the <code>sourceInstance</code> attribute.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/LogMessage.Builder.html" title="class in org.cloudfoundry.doppler">LogMessage.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/LogMessage.Builder.html#sourceType-java.lang.String-">sourceType</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sourceType)</code>
 <div class="block">Initializes the value for the <code>sourceType</code> attribute.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/LogMessage.Builder.html" title="class in org.cloudfoundry.doppler">LogMessage.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/LogMessage.Builder.html#timestamp-java.lang.Long-">timestamp</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;timestamp)</code>
 <div class="block">Initializes the value for the <code>timestamp</code> attribute.</div>
@@ -201,6 +207,24 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="from-org.cloudfoundry.doppler.LogMessage-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>from</h4>
+<pre>public final&nbsp;<a href="../../../org/cloudfoundry/doppler/LogMessage.Builder.html" title="class in org.cloudfoundry.doppler">LogMessage.Builder</a>&nbsp;from(<a href="../../../org/cloudfoundry/doppler/LogMessage.html" title="class in org.cloudfoundry.doppler">LogMessage</a>&nbsp;instance)</pre>
+<div class="block">Fill a builder with attribute values from the provided <code>LogMessage</code> instance.
+ Regular attribute values will be replaced with those from the given instance.
+ Absent optional values will not replace present values.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - The instance from which to copy values</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for use in a chained invocation</dd>
+</dl>
+</li>
+</ul>
 <a name="applicationId-java.lang.String-">
 <!--   -->
 </a>
