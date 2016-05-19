@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceAdmin.html" title="interface in org.cloudfoundry.operations.spaceadmin"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.SpaceQuotaBuilder.html" title="class in org.cloudfoundry.operations.spaceadmin"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.Builder.html" title="class in org.cloudfoundry.operations.spaceadmin"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/cloudfoundry/operations/spaceadmin/SpaceQuota.html" target="_top">Frames</a></li>
@@ -108,9 +108,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public final class <span class="typeNameLabel">SpaceQuota</span>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>={"Immutables.generator","AbstractSpaceQuota"})
+public final class <span class="typeNameLabel">SpaceQuota</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
-<div class="block">A Cloud Foundry Space Quota</div>
+<div class="block">Immutable implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/operations.spaceadmin.AbstractSpaceQuota.html?is-external=true" title="class or interface in org.cloudfoundry"><code>AbstractSpaceQuota</code></a>.
+ <p>
+ Use the builder to create immutable instances:
+ <code>SpaceQuota.builder()</code>.</div>
 </li>
 </ul>
 </div>
@@ -131,7 +135,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.SpaceQuotaBuilder.html" title="class in org.cloudfoundry.operations.spaceadmin">SpaceQuota.SpaceQuotaBuilder</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.Builder.html" title="class in org.cloudfoundry.operations.spaceadmin">SpaceQuota.Builder</a></span></code>
+<div class="block">Builds instances of type <a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.html" title="class in org.cloudfoundry.operations.spaceadmin"><code>SpaceQuota</code></a>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -149,12 +155,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static <a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.SpaceQuotaBuilder.html" title="class in org.cloudfoundry.operations.spaceadmin">SpaceQuota.SpaceQuotaBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.html#builder--">builder</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.Builder.html" title="class in org.cloudfoundry.operations.spaceadmin">SpaceQuota.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.html#builder--">builder</a></span>()</code>
+<div class="block">Creates a builder for <a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.html" title="class in org.cloudfoundry.operations.spaceadmin"><code>SpaceQuota</code></a>.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</code>
+<div class="block">This instance is equal to all instances of <code>SpaceQuota</code> that have equal attribute values.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -206,11 +216,15 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.html#hashCode--">hashCode</a></span>()</code>
+<div class="block">Computes a hash code from attributes: <code>id</code>, <code>instanceMemoryLimit</code>, <code>name</code>, <code>organizationId</code>, <code>paidServicePlans</code>, <code>totalMemoryLimit</code>, <code>totalRoutes</code>, <code>totalServiceInstances</code>.</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.html#toString--">toString</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.html#toString--">toString</a></span>()</code>
+<div class="block">Prints the immutable value <code>SpaceQuota</code> with attribute values.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -234,29 +248,14 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="builder--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>builder</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public static&nbsp;<a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.SpaceQuotaBuilder.html" title="class in org.cloudfoundry.operations.spaceadmin">SpaceQuota.SpaceQuotaBuilder</a>&nbsp;builder()</pre>
-</li>
-</ul>
 <a name="getId--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getId</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getId()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getId()</pre>
 <div class="block">The id</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the id</dd>
-</dl>
 </li>
 </ul>
 <a name="getInstanceMemoryLimit--">
@@ -265,13 +264,8 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.h
 <ul class="blockList">
 <li class="blockList">
 <h4>getInstanceMemoryLimit</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getInstanceMemoryLimit()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getInstanceMemoryLimit()</pre>
 <div class="block">The instance memory limit</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the instance memory limit</dd>
-</dl>
 </li>
 </ul>
 <a name="getName--">
@@ -280,13 +274,8 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.
 <ul class="blockList">
 <li class="blockList">
 <h4>getName</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
 <div class="block">The name</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the name</dd>
-</dl>
 </li>
 </ul>
 <a name="getOrganizationId--">
@@ -295,13 +284,8 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.h
 <ul class="blockList">
 <li class="blockList">
 <h4>getOrganizationId</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getOrganizationId()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getOrganizationId()</pre>
 <div class="block">The organization id</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the organization id</dd>
-</dl>
 </li>
 </ul>
 <a name="getPaidServicePlans--">
@@ -310,13 +294,8 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.h
 <ul class="blockList">
 <li class="blockList">
 <h4>getPaidServicePlans</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;getPaidServicePlans()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;getPaidServicePlans()</pre>
 <div class="block">Whether paid service plans are allowed</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>whether paid service plans are allowed</dd>
-</dl>
 </li>
 </ul>
 <a name="getTotalMemoryLimit--">
@@ -325,13 +304,8 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.
 <ul class="blockList">
 <li class="blockList">
 <h4>getTotalMemoryLimit</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getTotalMemoryLimit()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getTotalMemoryLimit()</pre>
 <div class="block">The total memory limit</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the total memory limit</dd>
-</dl>
 </li>
 </ul>
 <a name="getTotalRoutes--">
@@ -340,13 +314,8 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.
 <ul class="blockList">
 <li class="blockList">
 <h4>getTotalRoutes</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getTotalRoutes()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getTotalRoutes()</pre>
 <div class="block">The total number of routes</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the total number of routes</dd>
-</dl>
 </li>
 </ul>
 <a name="getTotalServiceInstances--">
@@ -355,13 +324,8 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.
 <ul class="blockList">
 <li class="blockList">
 <h4>getTotalServiceInstances</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getTotalServiceInstances()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getTotalServiceInstances()</pre>
 <div class="block">The total number of service instances</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the total number of service instances</dd>
-</dl>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">
@@ -370,11 +334,13 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</pre>
+<div class="block">This instance is equal to all instances of <code>SpaceQuota</code> that have equal attribute values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if <code>this</code> is equal to <code>another</code> instance</dd>
 </dl>
 </li>
 </ul>
@@ -384,25 +350,43 @@ public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/ap
 <ul class="blockList">
 <li class="blockList">
 <h4>hashCode</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;int&nbsp;hashCode()</pre>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block">Computes a hash code from attributes: <code>id</code>, <code>instanceMemoryLimit</code>, <code>name</code>, <code>organizationId</code>, <code>paidServicePlans</code>, <code>totalMemoryLimit</code>, <code>totalRoutes</code>, <code>totalServiceInstances</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>hashCode value</dd>
 </dl>
 </li>
 </ul>
 <a name="toString--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">Prints the immutable value <code>SpaceQuota</code> with attribute values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A string representation of the value</dd>
+</dl>
+</li>
+</ul>
+<a name="builder--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>builder</h4>
+<pre>public static&nbsp;<a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.Builder.html" title="class in org.cloudfoundry.operations.spaceadmin">SpaceQuota.Builder</a>&nbsp;builder()</pre>
+<div class="block">Creates a builder for <a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.html" title="class in org.cloudfoundry.operations.spaceadmin"><code>SpaceQuota</code></a>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A new SpaceQuota builder</dd>
 </dl>
 </li>
 </ul>
@@ -435,7 +419,7 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.h
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceAdmin.html" title="interface in org.cloudfoundry.operations.spaceadmin"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.SpaceQuotaBuilder.html" title="class in org.cloudfoundry.operations.spaceadmin"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/cloudfoundry/operations/spaceadmin/SpaceQuota.Builder.html" title="class in org.cloudfoundry.operations.spaceadmin"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/cloudfoundry/operations/spaceadmin/SpaceQuota.html" target="_top">Frames</a></li>
