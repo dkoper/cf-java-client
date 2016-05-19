@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/cloudfoundry/operations/applications/ApplicationHealthCheck.html" title="enum in org.cloudfoundry.operations.applications"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.ApplicationManifestBuilder.html" title="class in org.cloudfoundry.operations.applications"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.Builder.html" title="class in org.cloudfoundry.operations.applications"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/cloudfoundry/operations/applications/ApplicationManifest.html" target="_top">Frames</a></li>
@@ -108,10 +108,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public final class <span class="typeNameLabel">ApplicationManifest</span>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>={"Immutables.generator","AbstractApplicationManifest"})
+public final class <span class="typeNameLabel">ApplicationManifest</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
-<div class="block">An application manifest which captures some of the details of how an application is deployed.  See <a href="https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html">the manifest
- definition</a> for more details.</div>
+<div class="block">Immutable implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/operations.applications.AbstractApplicationManifest.html?is-external=true" title="class or interface in org.cloudfoundry"><code>AbstractApplicationManifest</code></a>.
+ <p>
+ Use the builder to create immutable instances:
+ <code>ApplicationManifest.builder()</code>.</div>
 </li>
 </ul>
 </div>
@@ -132,7 +135,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.ApplicationManifestBuilder.html" title="class in org.cloudfoundry.operations.applications">ApplicationManifest.ApplicationManifestBuilder</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.Builder.html" title="class in org.cloudfoundry.operations.applications">ApplicationManifest.Builder</a></span></code>
+<div class="block">Builds instances of type <a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.html" title="class in org.cloudfoundry.operations.applications"><code>ApplicationManifest</code></a>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -150,12 +155,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static <a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.ApplicationManifestBuilder.html" title="class in org.cloudfoundry.operations.applications">ApplicationManifest.ApplicationManifestBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.html#builder--">builder</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.Builder.html" title="class in org.cloudfoundry.operations.applications">ApplicationManifest.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.html#builder--">builder</a></span>()</code>
+<div class="block">Creates a builder for <a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.html" title="class in org.cloudfoundry.operations.applications"><code>ApplicationManifest</code></a>.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</code>
+<div class="block">This instance is equal to all instances of <code>ApplicationManifest</code> that have equal attribute values.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -231,11 +240,15 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.html#hashCode--">hashCode</a></span>()</code>
+<div class="block">Computes a hash code from attributes: <code>buildpack</code>, <code>command</code>, <code>disk</code>, <code>domains</code>, <code>environmentVariables</code>, <code>hosts</code>, <code>instances</code>, <code>memory</code>, <code>name</code>, <code>services</code>, <code>stack</code>, <code>timeout</code>.</div>
+</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.html#toString--">toString</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.html#toString--">toString</a></span>()</code>
+<div class="block">Prints the immutable value <code>ApplicationManifest</code> with attribute values.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -259,14 +272,130 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="builder--">
+<a name="getBuildpack--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>builder</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public static&nbsp;<a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.ApplicationManifestBuilder.html" title="class in org.cloudfoundry.operations.applications">ApplicationManifest.ApplicationManifestBuilder</a>&nbsp;builder()</pre>
+<h4>getBuildpack</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getBuildpack()</pre>
+<div class="block">The buildpack used by the application</div>
+</li>
+</ul>
+<a name="getCommand--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCommand</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getCommand()</pre>
+<div class="block">The command used to execute the application</div>
+</li>
+</ul>
+<a name="getDisk--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDisk</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getDisk()</pre>
+<div class="block">The disk quota in megabytes</div>
+</li>
+</ul>
+<a name="getDomains--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDomains</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getDomains()</pre>
+<div class="block">The collection of domains bound to the application
+ <p>
+ This representation of an application manifest cannot preserve the correct relationship between domains and hosts. See <a href="https://github.com/cloudfoundry/cli/issues/765">this issue</a>
+ for more information.</div>
+</li>
+</ul>
+<a name="getEnvironmentVariables--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEnvironmentVariables</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;getEnvironmentVariables()</pre>
+<div class="block">The environment variables to set on the application</div>
+</li>
+</ul>
+<a name="getHosts--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHosts</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getHosts()</pre>
+<div class="block">The collection of hosts bound to the application
+ <p>
+ This representation of an application manifest cannot preserve the correct relationship between domains and hosts. See <a href="https://github.com/cloudfoundry/cli/issues/765">this issue</a>
+ for more information.</div>
+</li>
+</ul>
+<a name="getInstances--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInstances</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getInstances()</pre>
+<div class="block">The number of instances of the application</div>
+</li>
+</ul>
+<a name="getMemory--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMemory</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getMemory()</pre>
+<div class="block">The memory quota in megabytes</div>
+</li>
+</ul>
+<a name="getName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getName</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
+<div class="block">The name of the application</div>
+</li>
+</ul>
+<a name="getServices--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getServices</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getServices()</pre>
+<div class="block">The collection of service names bound to the application</div>
+</li>
+</ul>
+<a name="getStack--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStack</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getStack()</pre>
+<div class="block">The stack used to run the application</div>
+</li>
+</ul>
+<a name="getTimeout--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTimeout</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getTimeout()</pre>
+<div class="block">The number of seconds allowed for application start</div>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">
@@ -275,11 +404,13 @@ public static&nbsp;<a href="../../../../org/cloudfoundry/operations/applications
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</pre>
+<div class="block">This instance is equal to all instances of <code>ApplicationManifest</code> that have equal attribute values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if <code>this</code> is equal to <code>another</code> instance</dd>
 </dl>
 </li>
 </ul>
@@ -289,11 +420,13 @@ public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/ap
 <ul class="blockList">
 <li class="blockList">
 <h4>hashCode</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;int&nbsp;hashCode()</pre>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block">Computes a hash code from attributes: <code>buildpack</code>, <code>command</code>, <code>disk</code>, <code>domains</code>, <code>environmentVariables</code>, <code>hosts</code>, <code>instances</code>, <code>memory</code>, <code>name</code>, <code>services</code>, <code>stack</code>, <code>timeout</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>hashCode value</dd>
 </dl>
 </li>
 </ul>
@@ -303,197 +436,27 @@ public&nbsp;int&nbsp;hashCode()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">Prints the immutable value <code>ApplicationManifest</code> with attribute values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getBuildpack--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getBuildpack</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getBuildpack()</pre>
-<div class="block">The buildpack used by the application</div>
-<dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the buildpack used by the application</dd>
+<dd>A string representation of the value</dd>
 </dl>
 </li>
 </ul>
-<a name="getCommand--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getCommand</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getCommand()</pre>
-<div class="block">The command used to execute the application</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the command used to execute the application</dd>
-</dl>
-</li>
-</ul>
-<a name="getDisk--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDisk</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getDisk()</pre>
-<div class="block">The disk quota in megabytes</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the disk quota in megabytes</dd>
-</dl>
-</li>
-</ul>
-<a name="getDomains--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDomains</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getDomains()</pre>
-<div class="block">The collection of domains bound to the application
-
- <p> This representation of an application manifest cannot preserve the correct relationship between domains and hosts. See <a href="https://github.com/cloudfoundry/cli/issues/765">this
- issue</a> for more information.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the collection of domains bound to the application</dd>
-</dl>
-</li>
-</ul>
-<a name="getEnvironmentVariables--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getEnvironmentVariables</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;getEnvironmentVariables()</pre>
-<div class="block">The environment variables to set on the application</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the environment variables to set on the application</dd>
-</dl>
-</li>
-</ul>
-<a name="getHosts--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getHosts</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getHosts()</pre>
-<div class="block">The collection of hosts bound to the application
-
- <p> This representation of an application manifest cannot preserve the correct relationship between domains and hosts. See <a href="https://github.com/cloudfoundry/cli/issues/765">this
- issue</a> for more information.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the collection of hosts bound to the application</dd>
-</dl>
-</li>
-</ul>
-<a name="getInstances--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getInstances</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getInstances()</pre>
-<div class="block">The number of instances of the application</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the number of instances of the application</dd>
-</dl>
-</li>
-</ul>
-<a name="getMemory--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getMemory</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getMemory()</pre>
-<div class="block">The memory quota in megabytes</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the memory quota in megabytes</dd>
-</dl>
-</li>
-</ul>
-<a name="getName--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getName</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
-<div class="block">The name of the application</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the name of the application</dd>
-</dl>
-</li>
-</ul>
-<a name="getServices--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getServices</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getServices()</pre>
-<div class="block">The collection of service names bound to the application</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the collection of service names bound to the application</dd>
-</dl>
-</li>
-</ul>
-<a name="getStack--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getStack</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getStack()</pre>
-<div class="block">The stack used to run the application</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the stack used to run the application</dd>
-</dl>
-</li>
-</ul>
-<a name="getTimeout--">
+<a name="builder--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getTimeout</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getTimeout()</pre>
-<div class="block">The number of seconds allowed for application start</div>
+<h4>builder</h4>
+<pre>public static&nbsp;<a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.Builder.html" title="class in org.cloudfoundry.operations.applications">ApplicationManifest.Builder</a>&nbsp;builder()</pre>
+<div class="block">Creates a builder for <a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.html" title="class in org.cloudfoundry.operations.applications"><code>ApplicationManifest</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the number of seconds allowed for application start</dd>
+<dd>A new ApplicationManifest builder</dd>
 </dl>
 </li>
 </ul>
@@ -526,7 +489,7 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/cloudfoundry/operations/applications/ApplicationHealthCheck.html" title="enum in org.cloudfoundry.operations.applications"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.ApplicationManifestBuilder.html" title="class in org.cloudfoundry.operations.applications"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/cloudfoundry/operations/applications/ApplicationManifest.Builder.html" title="class in org.cloudfoundry.operations.applications"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/cloudfoundry/operations/applications/ApplicationManifest.html" target="_top">Frames</a></li>
