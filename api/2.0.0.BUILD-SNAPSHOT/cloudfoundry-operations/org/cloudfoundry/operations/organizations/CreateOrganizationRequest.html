@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.CreateOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html" target="_top">Frames</a></li>
@@ -106,16 +106,15 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/Validatable.html?is-external=true" title="class or interface in org.cloudfoundry">Validatable</a></dd>
-</dl>
 <hr>
 <br>
-<pre>public final class <span class="typeNameLabel">CreateOrganizationRequest</span>
-extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/Validatable.html?is-external=true" title="class or interface in org.cloudfoundry">Validatable</a></pre>
-<div class="block">The request options for the create org operation</div>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>={"Immutables.generator","AbstractCreateOrganizationRequest"})
+public final class <span class="typeNameLabel">CreateOrganizationRequest</span>
+extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block">Immutable implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/operations.organizations.AbstractCreateOrganizationRequest.html?is-external=true" title="class or interface in org.cloudfoundry"><code>AbstractCreateOrganizationRequest</code></a>.
+ <p>
+ Use the builder to create immutable instances:
+ <code>CreateOrganizationRequest.builder()</code>.</div>
 </li>
 </ul>
 </div>
@@ -136,7 +135,9 @@ implements <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.CreateOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest.CreateOrganizationRequestBuilder</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest.Builder</a></span></code>
+<div class="block">Builds instances of type <a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations"><code>CreateOrganizationRequest</code></a>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -154,12 +155,16 @@ implements <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static <a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.CreateOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest.CreateOrganizationRequestBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html#builder--">builder</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html#builder--">builder</a></span>()</code>
+<div class="block">Creates a builder for <a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations"><code>CreateOrganizationRequest</code></a>.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</code>
+<div class="block">This instance is equal to all instances of <code>CreateOrganizationRequest</code> that have equal attribute values.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -175,15 +180,15 @@ implements <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html#hashCode--">hashCode</a></span>()</code>
+<div class="block">Computes a hash code from attributes: <code>organizationName</code>, <code>quotaDefinitionName</code>.</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/ValidationResult.html?is-external=true" title="class or interface in org.cloudfoundry">ValidationResult</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html#isValid--">isValid</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html#toString--">toString</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html#toString--">toString</a></span>()</code>
+<div class="block">Prints the immutable value <code>CreateOrganizationRequest</code> with attribute values.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -207,42 +212,14 @@ implements <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="isValid--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>isValid</h4>
-<pre>public&nbsp;<a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/ValidationResult.html?is-external=true" title="class or interface in org.cloudfoundry">ValidationResult</a>&nbsp;isValid()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/Validatable.html?is-external=true#isValid--" title="class or interface in org.cloudfoundry">isValid</a></code>&nbsp;in interface&nbsp;<code><a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/Validatable.html?is-external=true" title="class or interface in org.cloudfoundry">Validatable</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="builder--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>builder</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public static&nbsp;<a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.CreateOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest.CreateOrganizationRequestBuilder</a>&nbsp;builder()</pre>
-</li>
-</ul>
 <a name="getOrganizationName--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getOrganizationName</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getOrganizationName()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getOrganizationName()</pre>
 <div class="block">The organization name</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the organization name</dd>
-</dl>
 </li>
 </ul>
 <a name="getQuotaDefinitionName--">
@@ -251,13 +228,8 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.h
 <ul class="blockList">
 <li class="blockList">
 <h4>getQuotaDefinitionName</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getQuotaDefinitionName()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getQuotaDefinitionName()</pre>
 <div class="block">The quota definition name</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the quota definition name</dd>
-</dl>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">
@@ -266,11 +238,13 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.h
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</pre>
+<div class="block">This instance is equal to all instances of <code>CreateOrganizationRequest</code> that have equal attribute values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if <code>this</code> is equal to <code>another</code> instance</dd>
 </dl>
 </li>
 </ul>
@@ -280,25 +254,43 @@ public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/ap
 <ul class="blockList">
 <li class="blockList">
 <h4>hashCode</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;int&nbsp;hashCode()</pre>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block">Computes a hash code from attributes: <code>organizationName</code>, <code>quotaDefinitionName</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>hashCode value</dd>
 </dl>
 </li>
 </ul>
 <a name="toString--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">Prints the immutable value <code>CreateOrganizationRequest</code> with attribute values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A string representation of the value</dd>
+</dl>
+</li>
+</ul>
+<a name="builder--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>builder</h4>
+<pre>public static&nbsp;<a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest.Builder</a>&nbsp;builder()</pre>
+<div class="block">Creates a builder for <a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations"><code>CreateOrganizationRequest</code></a>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A new CreateOrganizationRequest builder</dd>
 </dl>
 </li>
 </ul>
@@ -331,7 +323,7 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.h
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.CreateOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/cloudfoundry/operations/organizations/CreateOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html" target="_top">Frames</a></li>

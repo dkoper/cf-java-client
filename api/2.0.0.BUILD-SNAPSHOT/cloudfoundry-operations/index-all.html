@@ -87,6 +87,10 @@
 <dd>
 <div class="block">Adds elements to <code>applications</code> list.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html#addAllDomains-java.lang.Iterable-">addAllDomains(Iterable&lt;String&gt;)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.Builder</a></dt>
+<dd>
+<div class="block">Adds elements to <code>domains</code> list.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/spaces/SpaceDetail.Builder.html#addAllDomains-java.lang.Iterable-">addAllDomains(Iterable&lt;String&gt;)</a></span> - Method in class org.cloudfoundry.operations.spaces.<a href="org/cloudfoundry/operations/spaces/SpaceDetail.Builder.html" title="class in org.cloudfoundry.operations.spaces">SpaceDetail.Builder</a></dt>
 <dd>
 <div class="block">Adds elements to <code>domains</code> list.</div>
@@ -106,6 +110,14 @@
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/spaces/SpaceDetail.Builder.html#addAllServices-java.lang.Iterable-">addAllServices(Iterable&lt;String&gt;)</a></span> - Method in class org.cloudfoundry.operations.spaces.<a href="org/cloudfoundry/operations/spaces/SpaceDetail.Builder.html" title="class in org.cloudfoundry.operations.spaces">SpaceDetail.Builder</a></dt>
 <dd>
 <div class="block">Adds elements to <code>services</code> list.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html#addAllSpaceQuotas-java.lang.Iterable-">addAllSpaceQuotas(Iterable&lt;? extends SpaceQuota&gt;)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.Builder</a></dt>
+<dd>
+<div class="block">Adds elements to <code>spaceQuotas</code> list.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html#addAllSpaces-java.lang.Iterable-">addAllSpaces(Iterable&lt;String&gt;)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.Builder</a></dt>
+<dd>
+<div class="block">Adds elements to <code>spaces</code> list.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/CreateServiceInstanceRequest.Builder.html#addAllTags-java.lang.Iterable-">addAllTags(Iterable&lt;String&gt;)</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/CreateServiceInstanceRequest.Builder.html" title="class in org.cloudfoundry.operations.services">CreateServiceInstanceRequest.Builder</a></dt>
 <dd>
@@ -351,20 +363,34 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.UpdateQuotaRequestBuilder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.organizationadmin.<a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.UpdateQuotaRequestBuilder.html" title="class in org.cloudfoundry.operations.organizationadmin">UpdateQuotaRequest.UpdateQuotaRequestBuilder</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.CreateOrganizationRequestBuilder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.CreateOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest.CreateOrganizationRequestBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.DeleteOrganizationRequestBuilder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.DeleteOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations">DeleteOrganizationRequest.DeleteOrganizationRequestBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.OrganizationDetailBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.OrganizationInfoRequestBuilder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.OrganizationInfoRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationInfoRequest.OrganizationInfoRequestBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.OrganizationQuotaBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationSummary.OrganizationSummaryBuilder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationSummary.OrganizationSummaryBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationSummary.OrganizationSummaryBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.RenameOrganizationRequestBuilder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.RenameOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations">RenameOrganizationRequest.RenameOrganizationRequestBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.Builder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest.Builder</a></dt>
+<dd>
+<div class="block">Builds a new <a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations"><code>CreateOrganizationRequest</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.Builder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations">DeleteOrganizationRequest.Builder</a></dt>
+<dd>
+<div class="block">Builds a new <a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations"><code>DeleteOrganizationRequest</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.Builder</a></dt>
+<dd>
+<div class="block">Builds a new <a href="org/cloudfoundry/operations/organizations/OrganizationDetail.html" title="class in org.cloudfoundry.operations.organizations"><code>OrganizationDetail</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.Builder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationInfoRequest.Builder</a></dt>
+<dd>
+<div class="block">Builds a new <a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.html" title="class in org.cloudfoundry.operations.organizations"><code>OrganizationInfoRequest</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.Builder</a></dt>
+<dd>
+<div class="block">Builds a new <a href="org/cloudfoundry/operations/organizations/OrganizationQuota.html" title="class in org.cloudfoundry.operations.organizations"><code>OrganizationQuota</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationSummary.Builder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationSummary.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationSummary.Builder</a></dt>
+<dd>
+<div class="block">Builds a new <a href="org/cloudfoundry/operations/organizations/OrganizationSummary.html" title="class in org.cloudfoundry.operations.organizations"><code>OrganizationSummary</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.Builder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations">RenameOrganizationRequest.Builder</a></dt>
+<dd>
+<div class="block">Builds a new <a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations"><code>RenameOrganizationRequest</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/routes/CheckRouteRequest.Builder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.routes.<a href="org/cloudfoundry/operations/routes/CheckRouteRequest.Builder.html" title="class in org.cloudfoundry.operations.routes">CheckRouteRequest.Builder</a></dt>
 <dd>
 <div class="block">Builds a new <a href="org/cloudfoundry/operations/routes/CheckRouteRequest.html" title="class in org.cloudfoundry.operations.routes"><code>CheckRouteRequest</code></a>.</div>
@@ -608,19 +634,33 @@
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.operations.organizationadmin.<a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.html" title="class in org.cloudfoundry.operations.organizationadmin">UpdateQuotaRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a builder for <a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations"><code>CreateOrganizationRequest</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations">DeleteOrganizationRequest</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a builder for <a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations"><code>DeleteOrganizationRequest</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a builder for <a href="org/cloudfoundry/operations/organizations/OrganizationDetail.html" title="class in org.cloudfoundry.operations.organizations"><code>OrganizationDetail</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.html" title="class in org.cloudfoundry.operations.organizations">OrganizationInfoRequest</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a builder for <a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.html" title="class in org.cloudfoundry.operations.organizations"><code>OrganizationInfoRequest</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a builder for <a href="org/cloudfoundry/operations/organizations/OrganizationQuota.html" title="class in org.cloudfoundry.operations.organizations"><code>OrganizationQuota</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationSummary.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationSummary.html" title="class in org.cloudfoundry.operations.organizations">OrganizationSummary</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a builder for <a href="org/cloudfoundry/operations/organizations/OrganizationSummary.html" title="class in org.cloudfoundry.operations.organizations"><code>OrganizationSummary</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations">RenameOrganizationRequest</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a builder for <a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations"><code>RenameOrganizationRequest</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/routes/CheckRouteRequest.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.operations.routes.<a href="org/cloudfoundry/operations/routes/CheckRouteRequest.html" title="class in org.cloudfoundry.operations.routes">CheckRouteRequest</a></dt>
 <dd>
 <div class="block">Creates a builder for <a href="org/cloudfoundry/operations/routes/CheckRouteRequest.html" title="class in org.cloudfoundry.operations.routes"><code>CheckRouteRequest</code></a>.</div>
@@ -827,8 +867,6 @@
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/applications/ApplicationManifest.ApplicationManifestBuilder.html#clearDomains--">clearDomains()</a></span> - Method in class org.cloudfoundry.operations.applications.<a href="org/cloudfoundry/operations/applications/ApplicationManifest.ApplicationManifestBuilder.html" title="class in org.cloudfoundry.operations.applications">ApplicationManifest.ApplicationManifestBuilder</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html#clearDomains--">clearDomains()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.OrganizationDetailBuilder</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/applications/ApplicationManifest.ApplicationManifestBuilder.html#clearEnvironmentVariables--">clearEnvironmentVariables()</a></span> - Method in class org.cloudfoundry.operations.applications.<a href="org/cloudfoundry/operations/applications/ApplicationManifest.ApplicationManifestBuilder.html" title="class in org.cloudfoundry.operations.applications">ApplicationManifest.ApplicationManifestBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/applications/ApplicationManifest.ApplicationManifestBuilder.html#clearHosts--">clearHosts()</a></span> - Method in class org.cloudfoundry.operations.applications.<a href="org/cloudfoundry/operations/applications/ApplicationManifest.ApplicationManifestBuilder.html" title="class in org.cloudfoundry.operations.applications">ApplicationManifest.ApplicationManifestBuilder</a></dt>
@@ -836,10 +874,6 @@
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/applications/ApplicationDetail.ApplicationDetailBuilder.html#clearInstanceDetails--">clearInstanceDetails()</a></span> - Method in class org.cloudfoundry.operations.applications.<a href="org/cloudfoundry/operations/applications/ApplicationDetail.ApplicationDetailBuilder.html" title="class in org.cloudfoundry.operations.applications">ApplicationDetail.ApplicationDetailBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/applications/ApplicationManifest.ApplicationManifestBuilder.html#clearServices--">clearServices()</a></span> - Method in class org.cloudfoundry.operations.applications.<a href="org/cloudfoundry/operations/applications/ApplicationManifest.ApplicationManifestBuilder.html" title="class in org.cloudfoundry.operations.applications">ApplicationManifest.ApplicationManifestBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html#clearSpaceQuotas--">clearSpaceQuotas()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.OrganizationDetailBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html#clearSpaces--">clearSpaces()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.OrganizationDetailBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/applications/ApplicationDetail.ApplicationDetailBuilder.html#clearUrls--">clearUrls()</a></span> - Method in class org.cloudfoundry.operations.applications.<a href="org/cloudfoundry/operations/applications/ApplicationDetail.ApplicationDetailBuilder.html" title="class in org.cloudfoundry.operations.applications">ApplicationDetail.ApplicationDetailBuilder</a></dt>
 <dd>&nbsp;</dd>
@@ -913,10 +947,12 @@
 </dd>
 <dt><a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">CreateOrganizationRequest</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
 <dd>
-<div class="block">The request options for the create org operation</div>
+<div class="block">Immutable implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/operations.organizations.AbstractCreateOrganizationRequest.html?is-external=true" title="class or interface in org.cloudfoundry"><code>AbstractCreateOrganizationRequest</code></a>.</div>
 </dd>
-<dt><a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.CreateOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">CreateOrganizationRequest.CreateOrganizationRequestBuilder</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
-<dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">CreateOrganizationRequest.Builder</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
+<dd>
+<div class="block">Builds instances of type <a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations"><code>CreateOrganizationRequest</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizationadmin/OrganizationAdmin.html#createQuota-org.cloudfoundry.operations.organizationadmin.CreateQuotaRequest-">createQuota(CreateQuotaRequest)</a></span> - Method in interface org.cloudfoundry.operations.organizationadmin.<a href="org/cloudfoundry/operations/organizationadmin/OrganizationAdmin.html" title="interface in org.cloudfoundry.operations.organizationadmin">OrganizationAdmin</a></dt>
 <dd>
 <div class="block">Create an organization quota</div>
@@ -1047,10 +1083,12 @@
 </dd>
 <dt><a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">DeleteOrganizationRequest</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
 <dd>
-<div class="block">The request options for the Delete Organization Operation</div>
+<div class="block">Immutable implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/operations.organizations.AbstractDeleteOrganizationRequest.html?is-external=true" title="class or interface in org.cloudfoundry"><code>AbstractDeleteOrganizationRequest</code></a>.</div>
 </dd>
-<dt><a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.DeleteOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">DeleteOrganizationRequest.DeleteOrganizationRequestBuilder</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
-<dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">DeleteOrganizationRequest.Builder</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
+<dd>
+<div class="block">Builds instances of type <a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations"><code>DeleteOrganizationRequest</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/routes/Routes.html#deleteOrphanedRoutes--">deleteOrphanedRoutes()</a></span> - Method in interface org.cloudfoundry.operations.routes.<a href="org/cloudfoundry/operations/routes/Routes.html" title="interface in org.cloudfoundry.operations.routes">Routes</a></dt>
 <dd>
 <div class="block">Delete orphaned routes.</div>
@@ -1183,8 +1221,14 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/domains/UnshareDomainRequest.UnshareDomainRequestBuilder.html#domain-java.lang.String-">domain(String)</a></span> - Method in class org.cloudfoundry.operations.domains.<a href="org/cloudfoundry/operations/domains/UnshareDomainRequest.UnshareDomainRequestBuilder.html" title="class in org.cloudfoundry.operations.domains">UnshareDomainRequest.UnshareDomainRequestBuilder</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html#domain-java.lang.String-">domain(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.OrganizationDetailBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html#domain-java.lang.String-">domain(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.Builder</a></dt>
+<dd>
+<div class="block">Adds one element to <code>domains</code> list.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html#domain-java.lang.String...-">domain(String...)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.Builder</a></dt>
+<dd>
+<div class="block">Adds elements to <code>domains</code> list.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/routes/CheckRouteRequest.Builder.html#domain-java.lang.String-">domain(String)</a></span> - Method in class org.cloudfoundry.operations.routes.<a href="org/cloudfoundry/operations/routes/CheckRouteRequest.Builder.html" title="class in org.cloudfoundry.operations.routes">CheckRouteRequest.Builder</a></dt>
 <dd>
 <div class="block">Initializes the value for the <code>domain</code> attribute.</div>
@@ -1229,8 +1273,10 @@
 <dd>
 <div class="block">Main entry point to the Cloud Foundry Domains Operations API</div>
 </dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html#domains-java.util.Collection-">domains(Collection&lt;? extends String&gt;)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.OrganizationDetailBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html#domains-java.lang.Iterable-">domains(Iterable&lt;String&gt;)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.Builder</a></dt>
+<dd>
+<div class="block">Sets or replaces all elements for <code>domains</code> list.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/spaces/SpaceDetail.Builder.html#domains-java.lang.Iterable-">domains(Iterable&lt;String&gt;)</a></span> - Method in class org.cloudfoundry.operations.spaces.<a href="org/cloudfoundry/operations/spaces/SpaceDetail.Builder.html" title="class in org.cloudfoundry.operations.spaces">SpaceDetail.Builder</a></dt>
 <dd>
 <div class="block">Sets or replaces all elements for <code>domains</code> list.</div>
@@ -1346,19 +1392,33 @@
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class org.cloudfoundry.operations.organizationadmin.<a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.html" title="class in org.cloudfoundry.operations.organizationadmin">UpdateQuotaRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">This instance is equal to all instances of <code>CreateOrganizationRequest</code> that have equal attribute values.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations">DeleteOrganizationRequest</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">This instance is equal to all instances of <code>DeleteOrganizationRequest</code> that have equal attribute values.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">This instance is equal to all instances of <code>OrganizationDetail</code> that have equal attribute values.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.html" title="class in org.cloudfoundry.operations.organizations">OrganizationInfoRequest</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">This instance is equal to all instances of <code>OrganizationInfoRequest</code> that have equal attribute values.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">This instance is equal to all instances of <code>OrganizationQuota</code> that have equal attribute values.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationSummary.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationSummary.html" title="class in org.cloudfoundry.operations.organizations">OrganizationSummary</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">This instance is equal to all instances of <code>OrganizationSummary</code> that have equal attribute values.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations">RenameOrganizationRequest</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">This instance is equal to all instances of <code>RenameOrganizationRequest</code> that have equal attribute values.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/routes/CheckRouteRequest.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class org.cloudfoundry.operations.routes.<a href="org/cloudfoundry/operations/routes/CheckRouteRequest.html" title="class in org.cloudfoundry.operations.routes">CheckRouteRequest</a></dt>
 <dd>
 <div class="block">This instance is equal to all instances of <code>CheckRouteRequest</code> that have equal attribute values.</div>
@@ -1534,6 +1594,34 @@
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ServicePlan.Builder.html#free-java.lang.Boolean-">free(Boolean)</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ServicePlan.Builder.html" title="class in org.cloudfoundry.operations.services">ServicePlan.Builder</a></dt>
 <dd>
 <div class="block">Initializes the value for the <code>free</code> attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.Builder.html#from-org.cloudfoundry.operations.organizations.CreateOrganizationRequest-">from(CreateOrganizationRequest)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest.Builder</a></dt>
+<dd>
+<div class="block">Fill a builder with attribute values from the provided <code>CreateOrganizationRequest</code> instance.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.Builder.html#from-org.cloudfoundry.operations.organizations.DeleteOrganizationRequest-">from(DeleteOrganizationRequest)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations">DeleteOrganizationRequest.Builder</a></dt>
+<dd>
+<div class="block">Fill a builder with attribute values from the provided <code>DeleteOrganizationRequest</code> instance.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html#from-org.cloudfoundry.operations.organizations.OrganizationDetail-">from(OrganizationDetail)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.Builder</a></dt>
+<dd>
+<div class="block">Fill a builder with attribute values from the provided <code>OrganizationDetail</code> instance.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.Builder.html#from-org.cloudfoundry.operations.organizations.OrganizationInfoRequest-">from(OrganizationInfoRequest)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationInfoRequest.Builder</a></dt>
+<dd>
+<div class="block">Fill a builder with attribute values from the provided <code>OrganizationInfoRequest</code> instance.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html#from-org.cloudfoundry.operations.organizations.OrganizationQuota-">from(OrganizationQuota)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.Builder</a></dt>
+<dd>
+<div class="block">Fill a builder with attribute values from the provided <code>OrganizationQuota</code> instance.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationSummary.Builder.html#from-org.cloudfoundry.operations.organizations.OrganizationSummary-">from(OrganizationSummary)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationSummary.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationSummary.Builder</a></dt>
+<dd>
+<div class="block">Fill a builder with attribute values from the provided <code>OrganizationSummary</code> instance.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.Builder.html#from-org.cloudfoundry.operations.organizations.RenameOrganizationRequest-">from(RenameOrganizationRequest)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations">RenameOrganizationRequest.Builder</a></dt>
+<dd>
+<div class="block">Fill a builder with attribute values from the provided <code>RenameOrganizationRequest</code> instance.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/routes/CheckRouteRequest.Builder.html#from-org.cloudfoundry.operations.routes.CheckRouteRequest-">from(CheckRouteRequest)</a></span> - Method in class org.cloudfoundry.operations.routes.<a href="org/cloudfoundry/operations/routes/CheckRouteRequest.Builder.html" title="class in org.cloudfoundry.operations.routes">CheckRouteRequest.Builder</a></dt>
 <dd>
@@ -1945,7 +2033,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.html#getDomains--">getDomains()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail</a></dt>
 <dd>
-<div class="block">The domains bound to this organization.</div>
+<div class="block">The domains bound to this organization</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/spaces/SpaceDetail.html#getDomains--">getDomains()</a></span> - Method in class org.cloudfoundry.operations.spaces.<a href="org/cloudfoundry/operations/spaces/SpaceDetail.html" title="class in org.cloudfoundry.operations.spaces">SpaceDetail</a></dt>
 <dd>
@@ -2741,7 +2829,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.html#getSpaces--">getSpaces()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail</a></dt>
 <dd>
-<div class="block">The spaces in this organization.</div>
+<div class="block">The spaces in this organization</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/applications/ApplicationDetail.html#getStack--">getStack()</a></span> - Method in class org.cloudfoundry.operations.applications.<a href="org/cloudfoundry/operations/applications/ApplicationDetail.html" title="class in org.cloudfoundry.operations.applications">ApplicationDetail</a></dt>
 <dd>
@@ -3044,19 +3132,33 @@
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.operations.organizationadmin.<a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.html" title="class in org.cloudfoundry.operations.organizationadmin">UpdateQuotaRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Computes a hash code from attributes: <code>organizationName</code>, <code>quotaDefinitionName</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations">DeleteOrganizationRequest</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Computes a hash code from attributes: <code>name</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Computes a hash code from attributes: <code>domains</code>, <code>id</code>, <code>name</code>, <code>quota</code>, <code>spaceQuotas</code>, <code>spaces</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.html" title="class in org.cloudfoundry.operations.organizations">OrganizationInfoRequest</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Computes a hash code from attributes: <code>name</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Computes a hash code from attributes: <code>id</code>, <code>instanceMemoryLimit</code>, <code>name</code>, <code>organizationId</code>, <code>paidServicePlans</code>, <code>totalMemoryLimit</code>, <code>totalRoutes</code>, <code>totalServiceInstances</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationSummary.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationSummary.html" title="class in org.cloudfoundry.operations.organizations">OrganizationSummary</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Computes a hash code from attributes: <code>id</code>, <code>name</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations">RenameOrganizationRequest</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Computes a hash code from attributes: <code>name</code>, <code>newName</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/routes/CheckRouteRequest.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.operations.routes.<a href="org/cloudfoundry/operations/routes/CheckRouteRequest.html" title="class in org.cloudfoundry.operations.routes">CheckRouteRequest</a></dt>
 <dd>
 <div class="block">Computes a hash code from attributes: <code>domain</code>, <code>host</code>, <code>path</code>.</div>
@@ -3267,12 +3369,18 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizationadmin/OrganizationQuota.OrganizationQuotaBuilder.html#id-java.lang.String-">id(String)</a></span> - Method in class org.cloudfoundry.operations.organizationadmin.<a href="org/cloudfoundry/operations/organizationadmin/OrganizationQuota.OrganizationQuotaBuilder.html" title="class in org.cloudfoundry.operations.organizationadmin">OrganizationQuota.OrganizationQuotaBuilder</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html#id-java.lang.String-">id(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.OrganizationDetailBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html#id-java.lang.String-">id(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.OrganizationQuotaBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationSummary.OrganizationSummaryBuilder.html#id-java.lang.String-">id(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationSummary.OrganizationSummaryBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationSummary.OrganizationSummaryBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html#id-java.lang.String-">id(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>id</code> attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html#id-java.lang.String-">id(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>id</code> attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationSummary.Builder.html#id-java.lang.String-">id(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationSummary.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationSummary.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>id</code> attribute.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/routes/Route.Builder.html#id-java.lang.String-">id(String)</a></span> - Method in class org.cloudfoundry.operations.routes.<a href="org/cloudfoundry/operations/routes/Route.Builder.html" title="class in org.cloudfoundry.operations.routes">Route.Builder</a></dt>
 <dd>
 <div class="block">Initializes the value for the <code>id</code> attribute.</div>
@@ -3325,8 +3433,10 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.UpdateQuotaRequestBuilder.html#instanceMemoryLimit-java.lang.Integer-">instanceMemoryLimit(Integer)</a></span> - Method in class org.cloudfoundry.operations.organizationadmin.<a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.UpdateQuotaRequestBuilder.html" title="class in org.cloudfoundry.operations.organizationadmin">UpdateQuotaRequest.UpdateQuotaRequestBuilder</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html#instanceMemoryLimit-java.lang.Integer-">instanceMemoryLimit(Integer)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.OrganizationQuotaBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html#instanceMemoryLimit-java.lang.Integer-">instanceMemoryLimit(Integer)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>instanceMemoryLimit</code> attribute.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/spaceadmin/SpaceQuota.Builder.html#instanceMemoryLimit-java.lang.Integer-">instanceMemoryLimit(Integer)</a></span> - Method in class org.cloudfoundry.operations.spaceadmin.<a href="org/cloudfoundry/operations/spaceadmin/SpaceQuota.Builder.html" title="class in org.cloudfoundry.operations.spaceadmin">SpaceQuota.Builder</a></dt>
 <dd>
 <div class="block">Initializes the value for the <code>instanceMemoryLimit</code> attribute.</div>
@@ -3404,14 +3514,6 @@
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizationadmin/SetQuotaRequest.html#isValid--">isValid()</a></span> - Method in class org.cloudfoundry.operations.organizationadmin.<a href="org/cloudfoundry/operations/organizationadmin/SetQuotaRequest.html" title="class in org.cloudfoundry.operations.organizationadmin">SetQuotaRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.html#isValid--">isValid()</a></span> - Method in class org.cloudfoundry.operations.organizationadmin.<a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.html" title="class in org.cloudfoundry.operations.organizationadmin">UpdateQuotaRequest</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html#isValid--">isValid()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.html#isValid--">isValid()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations">DeleteOrganizationRequest</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.html#isValid--">isValid()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.html" title="class in org.cloudfoundry.operations.organizations">OrganizationInfoRequest</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.html#isValid--">isValid()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations">RenameOrganizationRequest</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a name="I:L">
@@ -3641,18 +3743,30 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.UpdateQuotaRequestBuilder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.organizationadmin.<a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.UpdateQuotaRequestBuilder.html" title="class in org.cloudfoundry.operations.organizationadmin">UpdateQuotaRequest.UpdateQuotaRequestBuilder</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.DeleteOrganizationRequestBuilder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.DeleteOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations">DeleteOrganizationRequest.DeleteOrganizationRequestBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.OrganizationDetailBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.OrganizationInfoRequestBuilder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.OrganizationInfoRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationInfoRequest.OrganizationInfoRequestBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.OrganizationQuotaBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationSummary.OrganizationSummaryBuilder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationSummary.OrganizationSummaryBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationSummary.OrganizationSummaryBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.RenameOrganizationRequestBuilder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.RenameOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations">RenameOrganizationRequest.RenameOrganizationRequestBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.Builder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations">DeleteOrganizationRequest.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>name</code> attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>name</code> attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.Builder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationInfoRequest.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>name</code> attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>name</code> attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationSummary.Builder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationSummary.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationSummary.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>name</code> attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.Builder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations">RenameOrganizationRequest.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>name</code> attribute.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/serviceadmin/ServiceBroker.Builder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.serviceadmin.<a href="org/cloudfoundry/operations/serviceadmin/ServiceBroker.Builder.html" title="class in org.cloudfoundry.operations.serviceadmin">ServiceBroker.Builder</a></dt>
 <dd>
 <div class="block">Initializes the value for the <code>name</code> attribute.</div>
@@ -3745,8 +3859,10 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.UpdateQuotaRequestBuilder.html#newName-java.lang.String-">newName(String)</a></span> - Method in class org.cloudfoundry.operations.organizationadmin.<a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.UpdateQuotaRequestBuilder.html" title="class in org.cloudfoundry.operations.organizationadmin">UpdateQuotaRequest.UpdateQuotaRequestBuilder</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.RenameOrganizationRequestBuilder.html#newName-java.lang.String-">newName(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.RenameOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations">RenameOrganizationRequest.RenameOrganizationRequestBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.Builder.html#newName-java.lang.String-">newName(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations">RenameOrganizationRequest.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>newName</code> attribute.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/RenameServiceInstanceRequest.Builder.html#newName-java.lang.String-">newName(String)</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/RenameServiceInstanceRequest.Builder.html" title="class in org.cloudfoundry.operations.services">RenameServiceInstanceRequest.Builder</a></dt>
 <dd>
 <div class="block">Initializes the value for the <code>newName</code> attribute.</div>
@@ -3815,37 +3931,47 @@
 </dd>
 <dt><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">OrganizationDetail</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
 <dd>
-<div class="block">A Cloud Foundry Organization</div>
+<div class="block">Immutable implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/operations.organizations.AbstractOrganizationDetail.html?is-external=true" title="class or interface in org.cloudfoundry"><code>AbstractOrganizationDetail</code></a>.</div>
 </dd>
-<dt><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">OrganizationDetail.OrganizationDetailBuilder</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html#organizationId-java.lang.String-">organizationId(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.OrganizationQuotaBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">OrganizationDetail.Builder</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
+<dd>
+<div class="block">Builds instances of type <a href="org/cloudfoundry/operations/organizations/OrganizationDetail.html" title="class in org.cloudfoundry.operations.organizations"><code>OrganizationDetail</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html#organizationId-java.lang.String-">organizationId(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>organizationId</code> attribute.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/spaceadmin/SpaceQuota.Builder.html#organizationId-java.lang.String-">organizationId(String)</a></span> - Method in class org.cloudfoundry.operations.spaceadmin.<a href="org/cloudfoundry/operations/spaceadmin/SpaceQuota.Builder.html" title="class in org.cloudfoundry.operations.spaceadmin">SpaceQuota.Builder</a></dt>
 <dd>
 <div class="block">Initializes the value for the <code>organizationId</code> attribute.</div>
 </dd>
 <dt><a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">OrganizationInfoRequest</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
 <dd>
-<div class="block">The request options for the Organization Information Operation</div>
+<div class="block">Immutable implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/operations.organizations.AbstractOrganizationInfoRequest.html?is-external=true" title="class or interface in org.cloudfoundry"><code>AbstractOrganizationInfoRequest</code></a>.</div>
 </dd>
-<dt><a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.OrganizationInfoRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">OrganizationInfoRequest.OrganizationInfoRequestBuilder</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
-<dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">OrganizationInfoRequest.Builder</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
+<dd>
+<div class="block">Builds instances of type <a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.html" title="class in org.cloudfoundry.operations.organizations"><code>OrganizationInfoRequest</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizationadmin/SetQuotaRequest.SetQuotaRequestBuilder.html#organizationName-java.lang.String-">organizationName(String)</a></span> - Method in class org.cloudfoundry.operations.organizationadmin.<a href="org/cloudfoundry/operations/organizationadmin/SetQuotaRequest.SetQuotaRequestBuilder.html" title="class in org.cloudfoundry.operations.organizationadmin">SetQuotaRequest.SetQuotaRequestBuilder</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.CreateOrganizationRequestBuilder.html#organizationName-java.lang.String-">organizationName(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.CreateOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest.CreateOrganizationRequestBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.Builder.html#organizationName-java.lang.String-">organizationName(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>organizationName</code> attribute.</div>
+</dd>
 <dt><a href="org/cloudfoundry/operations/organizationadmin/OrganizationQuota.html" title="class in org.cloudfoundry.operations.organizationadmin"><span class="typeNameLink">OrganizationQuota</span></a> - Class in <a href="org/cloudfoundry/operations/organizationadmin/package-summary.html">org.cloudfoundry.operations.organizationadmin</a></dt>
 <dd>
 <div class="block">A Cloud Foundry Quota</div>
 </dd>
 <dt><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">OrganizationQuota</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
 <dd>
-<div class="block">A Cloud Foundry Quota</div>
+<div class="block">Immutable implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/operations.organizations.AbstractOrganizationQuota.html?is-external=true" title="class or interface in org.cloudfoundry"><code>AbstractOrganizationQuota</code></a>.</div>
+</dd>
+<dt><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">OrganizationQuota.Builder</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
+<dd>
+<div class="block">Builds instances of type <a href="org/cloudfoundry/operations/organizations/OrganizationQuota.html" title="class in org.cloudfoundry.operations.organizations"><code>OrganizationQuota</code></a>.</div>
 </dd>
 <dt><a href="org/cloudfoundry/operations/organizationadmin/OrganizationQuota.OrganizationQuotaBuilder.html" title="class in org.cloudfoundry.operations.organizationadmin"><span class="typeNameLink">OrganizationQuota.OrganizationQuotaBuilder</span></a> - Class in <a href="org/cloudfoundry/operations/organizationadmin/package-summary.html">org.cloudfoundry.operations.organizationadmin</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">OrganizationQuota.OrganizationQuotaBuilder</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/CloudFoundryOperations.html#organizations--">organizations()</a></span> - Method in interface org.cloudfoundry.operations.<a href="org/cloudfoundry/operations/CloudFoundryOperations.html" title="interface in org.cloudfoundry.operations">CloudFoundryOperations</a></dt>
 <dd>
@@ -3857,18 +3983,22 @@
 </dd>
 <dt><a href="org/cloudfoundry/operations/organizations/OrganizationSummary.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">OrganizationSummary</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
 <dd>
-<div class="block">A Cloud Foundry Organization</div>
+<div class="block">Immutable implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/operations.organizations.AbstractOrganizationSummary.html?is-external=true" title="class or interface in org.cloudfoundry"><code>AbstractOrganizationSummary</code></a>.</div>
 </dd>
-<dt><a href="org/cloudfoundry/operations/organizations/OrganizationSummary.OrganizationSummaryBuilder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">OrganizationSummary.OrganizationSummaryBuilder</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
-<dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/operations/organizations/OrganizationSummary.Builder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">OrganizationSummary.Builder</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
+<dd>
+<div class="block">Builds instances of type <a href="org/cloudfoundry/operations/organizations/OrganizationSummary.html" title="class in org.cloudfoundry.operations.organizations"><code>OrganizationSummary</code></a>.</div>
+</dd>
 </dl>
 <a name="I:P">
 <!--   -->
 </a>
 <h2 class="title">P</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html#paidServicePlans-java.lang.Boolean-">paidServicePlans(Boolean)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.OrganizationQuotaBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html#paidServicePlans-java.lang.Boolean-">paidServicePlans(Boolean)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>paidServicePlans</code> attribute.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/spaceadmin/SpaceQuota.Builder.html#paidServicePlans-java.lang.Boolean-">paidServicePlans(Boolean)</a></span> - Method in class org.cloudfoundry.operations.spaceadmin.<a href="org/cloudfoundry/operations/spaceadmin/SpaceQuota.Builder.html" title="class in org.cloudfoundry.operations.spaceadmin">SpaceQuota.Builder</a></dt>
 <dd>
 <div class="block">Initializes the value for the <code>paidServicePlans</code> attribute.</div>
@@ -4011,10 +4141,14 @@
 </a>
 <h2 class="title">Q</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html#quota-org.cloudfoundry.operations.organizations.OrganizationQuota-">quota(OrganizationQuota)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.OrganizationDetailBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.CreateOrganizationRequestBuilder.html#quotaDefinitionName-java.lang.String-">quotaDefinitionName(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.CreateOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest.CreateOrganizationRequestBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html#quota-org.cloudfoundry.operations.organizations.OrganizationQuota-">quota(OrganizationQuota)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>quota</code> attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.Builder.html#quotaDefinitionName-java.lang.String-">quotaDefinitionName(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>quotaDefinitionName</code> attribute.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizationadmin/SetQuotaRequest.SetQuotaRequestBuilder.html#quotaName-java.lang.String-">quotaName(String)</a></span> - Method in class org.cloudfoundry.operations.organizationadmin.<a href="org/cloudfoundry/operations/organizationadmin/SetQuotaRequest.SetQuotaRequestBuilder.html" title="class in org.cloudfoundry.operations.organizationadmin">SetQuotaRequest.SetQuotaRequestBuilder</a></dt>
 <dd>&nbsp;</dd>
 </dl>
@@ -4051,10 +4185,12 @@
 </dd>
 <dt><a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">RenameOrganizationRequest</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
 <dd>
-<div class="block">The request options for the rename organization operation</div>
+<div class="block">Immutable implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/operations.organizations.AbstractRenameOrganizationRequest.html?is-external=true" title="class or interface in org.cloudfoundry"><code>AbstractRenameOrganizationRequest</code></a>.</div>
 </dd>
-<dt><a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.RenameOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">RenameOrganizationRequest.RenameOrganizationRequestBuilder</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
-<dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.Builder.html" title="class in org.cloudfoundry.operations.organizations"><span class="typeNameLink">RenameOrganizationRequest.Builder</span></a> - Class in <a href="org/cloudfoundry/operations/organizations/package-summary.html">org.cloudfoundry.operations.organizations</a></dt>
+<dd>
+<div class="block">Builds instances of type <a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations"><code>RenameOrganizationRequest</code></a>.</div>
+</dd>
 <dt><a href="org/cloudfoundry/operations/services/RenameServiceInstanceRequest.html" title="class in org.cloudfoundry.operations.services"><span class="typeNameLink">RenameServiceInstanceRequest</span></a> - Class in <a href="org/cloudfoundry/operations/services/package-summary.html">org.cloudfoundry.operations.services</a></dt>
 <dd>
 <div class="block">Immutable implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/operations.services.AbstractRenameServiceInstanceRequest.html?is-external=true" title="class or interface in org.cloudfoundry"><code>AbstractRenameServiceInstanceRequest</code></a>.</div>
@@ -4381,8 +4517,14 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/applications/ApplicationDetail.InstanceDetail.InstanceDetailBuilder.html#since-java.util.Date-">since(Date)</a></span> - Method in class org.cloudfoundry.operations.applications.<a href="org/cloudfoundry/operations/applications/ApplicationDetail.InstanceDetail.InstanceDetailBuilder.html" title="class in org.cloudfoundry.operations.applications">ApplicationDetail.InstanceDetail.InstanceDetailBuilder</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html#space-java.lang.String-">space(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.OrganizationDetailBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html#space-java.lang.String-">space(String)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.Builder</a></dt>
+<dd>
+<div class="block">Adds one element to <code>spaces</code> list.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html#space-java.lang.String...-">space(String...)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.Builder</a></dt>
+<dd>
+<div class="block">Adds elements to <code>spaces</code> list.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/routes/CreateRouteRequest.Builder.html#space-java.lang.String-">space(String)</a></span> - Method in class org.cloudfoundry.operations.routes.<a href="org/cloudfoundry/operations/routes/CreateRouteRequest.Builder.html" title="class in org.cloudfoundry.operations.routes">CreateRouteRequest.Builder</a></dt>
 <dd>
 <div class="block">Initializes the value for the <code>space</code> attribute.</div>
@@ -4407,8 +4549,14 @@
 <dd>
 <div class="block">Builds instances of type <a href="org/cloudfoundry/operations/spaces/SpaceDetail.html" title="class in org.cloudfoundry.operations.spaces"><code>SpaceDetail</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html#spaceQuota-org.cloudfoundry.operations.spaceadmin.SpaceQuota-">spaceQuota(SpaceQuota)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.OrganizationDetailBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html#spaceQuota-org.cloudfoundry.operations.spaceadmin.SpaceQuota-">spaceQuota(SpaceQuota)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.Builder</a></dt>
+<dd>
+<div class="block">Adds one element to <code>spaceQuotas</code> list.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html#spaceQuota-org.cloudfoundry.operations.spaceadmin.SpaceQuota...-">spaceQuota(SpaceQuota...)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.Builder</a></dt>
+<dd>
+<div class="block">Adds elements to <code>spaceQuotas</code> list.</div>
+</dd>
 <dt><a href="org/cloudfoundry/operations/spaceadmin/SpaceQuota.html" title="class in org.cloudfoundry.operations.spaceadmin"><span class="typeNameLink">SpaceQuota</span></a> - Class in <a href="org/cloudfoundry/operations/spaceadmin/package-summary.html">org.cloudfoundry.operations.spaceadmin</a></dt>
 <dd>
 <div class="block">Immutable implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/operations.spaceadmin.AbstractSpaceQuota.html?is-external=true" title="class or interface in org.cloudfoundry"><code>AbstractSpaceQuota</code></a>.</div>
@@ -4429,14 +4577,18 @@
 <dd>
 <div class="block">Builds instances of type <a href="org/cloudfoundry/operations/spaceadmin/SpaceQuota.html" title="class in org.cloudfoundry.operations.spaceadmin"><code>SpaceQuota</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html#spaceQuotas-java.util.Collection-">spaceQuotas(Collection&lt;? extends SpaceQuota&gt;)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.OrganizationDetailBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html#spaceQuotas-java.lang.Iterable-">spaceQuotas(Iterable&lt;? extends SpaceQuota&gt;)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.Builder</a></dt>
+<dd>
+<div class="block">Sets or replaces all elements for <code>spaceQuotas</code> list.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/CloudFoundryOperations.html#spaces--">spaces()</a></span> - Method in interface org.cloudfoundry.operations.<a href="org/cloudfoundry/operations/CloudFoundryOperations.html" title="interface in org.cloudfoundry.operations">CloudFoundryOperations</a></dt>
 <dd>
 <div class="block">Main entry point to the Cloud Foundry Spaces Operations API</div>
 </dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html#spaces-java.util.Collection-">spaces(Collection&lt;? extends String&gt;)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.OrganizationDetailBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html#spaces-java.lang.Iterable-">spaces(Iterable&lt;String&gt;)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.Builder</a></dt>
+<dd>
+<div class="block">Sets or replaces all elements for <code>spaces</code> list.</div>
+</dd>
 <dt><a href="org/cloudfoundry/operations/spaces/Spaces.html" title="interface in org.cloudfoundry.operations.spaces"><span class="typeNameLink">Spaces</span></a> - Interface in <a href="org/cloudfoundry/operations/spaces/package-summary.html">org.cloudfoundry.operations.spaces</a></dt>
 <dd>
 <div class="block">Main entry point to the Cloud Foundry Spaces Operations API</div>
@@ -4787,34 +4939,34 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.UpdateQuotaRequestBuilder.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.organizationadmin.<a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.UpdateQuotaRequestBuilder.html" title="class in org.cloudfoundry.operations.organizationadmin">UpdateQuotaRequest.UpdateQuotaRequestBuilder</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.CreateOrganizationRequestBuilder.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.CreateOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest.CreateOrganizationRequestBuilder</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/CreateOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations">CreateOrganizationRequest</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.DeleteOrganizationRequestBuilder.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.DeleteOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations">DeleteOrganizationRequest.DeleteOrganizationRequestBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Prints the immutable value <code>CreateOrganizationRequest</code> with attribute values.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/DeleteOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations">DeleteOrganizationRequest</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.OrganizationDetailBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail.OrganizationDetailBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Prints the immutable value <code>DeleteOrganizationRequest</code> with attribute values.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationDetail.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationDetail.html" title="class in org.cloudfoundry.operations.organizations">OrganizationDetail</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.OrganizationInfoRequestBuilder.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.OrganizationInfoRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationInfoRequest.OrganizationInfoRequestBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Prints the immutable value <code>OrganizationDetail</code> with attribute values.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationInfoRequest.html" title="class in org.cloudfoundry.operations.organizations">OrganizationInfoRequest</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.OrganizationQuotaBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Prints the immutable value <code>OrganizationInfoRequest</code> with attribute values.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationSummary.OrganizationSummaryBuilder.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationSummary.OrganizationSummaryBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationSummary.OrganizationSummaryBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Prints the immutable value <code>OrganizationQuota</code> with attribute values.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationSummary.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationSummary.html" title="class in org.cloudfoundry.operations.organizations">OrganizationSummary</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.RenameOrganizationRequestBuilder.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.RenameOrganizationRequestBuilder.html" title="class in org.cloudfoundry.operations.organizations">RenameOrganizationRequest.RenameOrganizationRequestBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Prints the immutable value <code>OrganizationSummary</code> with attribute values.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/RenameOrganizationRequest.html" title="class in org.cloudfoundry.operations.organizations">RenameOrganizationRequest</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Prints the immutable value <code>RenameOrganizationRequest</code> with attribute values.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/routes/CheckRouteRequest.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.routes.<a href="org/cloudfoundry/operations/routes/CheckRouteRequest.html" title="class in org.cloudfoundry.operations.routes">CheckRouteRequest</a></dt>
 <dd>
 <div class="block">Prints the immutable value <code>CheckRouteRequest</code> with attribute values.</div>
@@ -4975,8 +5127,10 @@
 <dd>
 <div class="block">Prints the immutable value <code>Stack</code> with attribute values.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html#totalMemoryLimit-java.lang.Integer-">totalMemoryLimit(Integer)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.OrganizationQuotaBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html#totalMemoryLimit-java.lang.Integer-">totalMemoryLimit(Integer)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>totalMemoryLimit</code> attribute.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/spaceadmin/SpaceQuota.Builder.html#totalMemoryLimit-java.lang.Integer-">totalMemoryLimit(Integer)</a></span> - Method in class org.cloudfoundry.operations.spaceadmin.<a href="org/cloudfoundry/operations/spaceadmin/SpaceQuota.Builder.html" title="class in org.cloudfoundry.operations.spaceadmin">SpaceQuota.Builder</a></dt>
 <dd>
 <div class="block">Initializes the value for the <code>totalMemoryLimit</code> attribute.</div>
@@ -4987,14 +5141,18 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.UpdateQuotaRequestBuilder.html#totalRoutes-java.lang.Integer-">totalRoutes(Integer)</a></span> - Method in class org.cloudfoundry.operations.organizationadmin.<a href="org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.UpdateQuotaRequestBuilder.html" title="class in org.cloudfoundry.operations.organizationadmin">UpdateQuotaRequest.UpdateQuotaRequestBuilder</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html#totalRoutes-java.lang.Integer-">totalRoutes(Integer)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.OrganizationQuotaBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html#totalRoutes-java.lang.Integer-">totalRoutes(Integer)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>totalRoutes</code> attribute.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/spaceadmin/SpaceQuota.Builder.html#totalRoutes-java.lang.Integer-">totalRoutes(Integer)</a></span> - Method in class org.cloudfoundry.operations.spaceadmin.<a href="org/cloudfoundry/operations/spaceadmin/SpaceQuota.Builder.html" title="class in org.cloudfoundry.operations.spaceadmin">SpaceQuota.Builder</a></dt>
 <dd>
 <div class="block">Initializes the value for the <code>totalRoutes</code> attribute.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html#totalServiceInstances-java.lang.Integer-">totalServiceInstances(Integer)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.OrganizationQuotaBuilder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.OrganizationQuotaBuilder</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html#totalServiceInstances-java.lang.Integer-">totalServiceInstances(Integer)</a></span> - Method in class org.cloudfoundry.operations.organizations.<a href="org/cloudfoundry/operations/organizations/OrganizationQuota.Builder.html" title="class in org.cloudfoundry.operations.organizations">OrganizationQuota.Builder</a></dt>
+<dd>
+<div class="block">Initializes the value for the <code>totalServiceInstances</code> attribute.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/spaceadmin/SpaceQuota.Builder.html#totalServiceInstances-java.lang.Integer-">totalServiceInstances(Integer)</a></span> - Method in class org.cloudfoundry.operations.spaceadmin.<a href="org/cloudfoundry/operations/spaceadmin/SpaceQuota.Builder.html" title="class in org.cloudfoundry.operations.spaceadmin">SpaceQuota.Builder</a></dt>
 <dd>
 <div class="block">Initializes the value for the <code>totalServiceInstances</code> attribute.</div>
