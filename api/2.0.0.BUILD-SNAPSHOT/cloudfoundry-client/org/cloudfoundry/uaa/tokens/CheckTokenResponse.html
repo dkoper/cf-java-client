@@ -289,7 +289,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenResponse.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>audiences</code>, <code>authorizationTime</code>, <code>authorities</code>, <code>authorizedParty</code>, <code>cid</code>, <code>clientId</code>, <code>email</code>, <code>expirationTime</code>, <code>grantType</code>, <code>issuedAt</code>, <code>issuer</code>, <code>jwtId</code>, <code>origin</code>, <code>revocable</code>, <code>revocationSignature</code>, <code>scopes</code>, <code>subject</code>, <code>userId</code>, <code>userName</code>, <code>zoneId</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>audiences</code>, <code>authorities</code>, <code>authorizationTime</code>, <code>authorizedParty</code>, <code>cid</code>, <code>clientId</code>, <code>email</code>, <code>expirationTime</code>, <code>grantType</code>, <code>issuedAt</code>, <code>issuer</code>, <code>jwtId</code>, <code>origin</code>, <code>revocable</code>, <code>revocationSignature</code>, <code>scopes</code>, <code>subject</code>, <code>userId</code>, <code>userName</code>, <code>zoneId</code>.</div>
 </td>
 </tr>
 <tr id="i23" class="rowColor">
@@ -330,16 +330,6 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">The audience claim</div>
 </li>
 </ul>
-<a name="getAuthorizationTime--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getAuthorizationTime</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;getAuthorizationTime()</pre>
-<div class="block">The auth time</div>
-</li>
-</ul>
 <a name="getAuthorities--">
 <!--   -->
 </a>
@@ -348,6 +338,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>getAuthorities</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getAuthorities()</pre>
 <div class="block">The authorities</div>
+</li>
+</ul>
+<a name="getAuthorizationTime--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAuthorizationTime</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;getAuthorizationTime()</pre>
+<div class="block">The auth time</div>
 </li>
 </ul>
 <a name="getAuthorizedParty--">
@@ -543,7 +543,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>audiences</code>, <code>authorizationTime</code>, <code>authorities</code>, <code>authorizedParty</code>, <code>cid</code>, <code>clientId</code>, <code>email</code>, <code>expirationTime</code>, <code>grantType</code>, <code>issuedAt</code>, <code>issuer</code>, <code>jwtId</code>, <code>origin</code>, <code>revocable</code>, <code>revocationSignature</code>, <code>scopes</code>, <code>subject</code>, <code>userId</code>, <code>userName</code>, <code>zoneId</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>audiences</code>, <code>authorities</code>, <code>authorizationTime</code>, <code>authorizedParty</code>, <code>cid</code>, <code>clientId</code>, <code>email</code>, <code>expirationTime</code>, <code>grantType</code>, <code>issuedAt</code>, <code>issuer</code>, <code>jwtId</code>, <code>origin</code>, <code>revocable</code>, <code>revocationSignature</code>, <code>scopes</code>, <code>subject</code>, <code>userId</code>, <code>userName</code>, <code>zoneId</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
