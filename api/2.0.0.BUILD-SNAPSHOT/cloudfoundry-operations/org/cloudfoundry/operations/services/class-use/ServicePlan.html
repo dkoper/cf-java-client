@@ -103,7 +103,9 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/operations/services/ServicePlan.html" title="class in org.cloudfoundry.operations.services">ServicePlan</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ServicePlan.ServicePlanBuilder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/operations/services/ServicePlan.ServicePlanBuilder.html#build--">build</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ServicePlan.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/operations/services/ServicePlan.Builder.html#build--">build</a></span>()</code>
+<div class="block">Builds a new <a href="../../../../../org/cloudfoundry/operations/services/ServicePlan.html" title="class in org.cloudfoundry.operations.services"><code>ServicePlan</code></a>.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -130,8 +132,22 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/operations/services/ServiceOffering.ServiceOfferingBuilder.html" title="class in org.cloudfoundry.operations.services">ServiceOffering.ServiceOfferingBuilder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ServiceOffering.ServiceOfferingBuilder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/operations/services/ServiceOffering.ServiceOfferingBuilder.html#servicePlan-org.cloudfoundry.operations.services.ServicePlan-">servicePlan</a></span>(<a href="../../../../../org/cloudfoundry/operations/services/ServicePlan.html" title="class in org.cloudfoundry.operations.services">ServicePlan</a>&nbsp;servicePlan)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/operations/services/ServicePlan.Builder.html" title="class in org.cloudfoundry.operations.services">ServicePlan.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ServicePlan.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/operations/services/ServicePlan.Builder.html#from-org.cloudfoundry.operations.services.ServicePlan-">from</a></span>(<a href="../../../../../org/cloudfoundry/operations/services/ServicePlan.html" title="class in org.cloudfoundry.operations.services">ServicePlan</a>&nbsp;instance)</code>
+<div class="block">Fill a builder with attribute values from the provided <code>ServicePlan</code> instance.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/operations/services/ServiceOffering.Builder.html" title="class in org.cloudfoundry.operations.services">ServiceOffering.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ServiceOffering.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/operations/services/ServiceOffering.Builder.html#servicePlan-org.cloudfoundry.operations.services.ServicePlan...-">servicePlan</a></span>(<a href="../../../../../org/cloudfoundry/operations/services/ServicePlan.html" title="class in org.cloudfoundry.operations.services">ServicePlan</a>...&nbsp;elements)</code>
+<div class="block">Adds elements to <code>servicePlans</code> list.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/operations/services/ServiceOffering.Builder.html" title="class in org.cloudfoundry.operations.services">ServiceOffering.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ServiceOffering.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/operations/services/ServiceOffering.Builder.html#servicePlan-org.cloudfoundry.operations.services.ServicePlan-">servicePlan</a></span>(<a href="../../../../../org/cloudfoundry/operations/services/ServicePlan.html" title="class in org.cloudfoundry.operations.services">ServicePlan</a>&nbsp;element)</code>
+<div class="block">Adds one element to <code>servicePlans</code> list.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -143,8 +159,16 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/operations/services/ServiceOffering.ServiceOfferingBuilder.html" title="class in org.cloudfoundry.operations.services">ServiceOffering.ServiceOfferingBuilder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ServiceOffering.ServiceOfferingBuilder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/operations/services/ServiceOffering.ServiceOfferingBuilder.html#servicePlans-java.util.Collection-">servicePlans</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends <a href="../../../../../org/cloudfoundry/operations/services/ServicePlan.html" title="class in org.cloudfoundry.operations.services">ServicePlan</a>&gt;&nbsp;servicePlans)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/operations/services/ServiceOffering.Builder.html" title="class in org.cloudfoundry.operations.services">ServiceOffering.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ServiceOffering.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/operations/services/ServiceOffering.Builder.html#addAllServicePlans-java.lang.Iterable-">addAllServicePlans</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="../../../../../org/cloudfoundry/operations/services/ServicePlan.html" title="class in org.cloudfoundry.operations.services">ServicePlan</a>&gt;&nbsp;elements)</code>
+<div class="block">Adds elements to <code>servicePlans</code> list.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/operations/services/ServiceOffering.Builder.html" title="class in org.cloudfoundry.operations.services">ServiceOffering.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ServiceOffering.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/operations/services/ServiceOffering.Builder.html#servicePlans-java.lang.Iterable-">servicePlans</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="../../../../../org/cloudfoundry/operations/services/ServicePlan.html" title="class in org.cloudfoundry.operations.services">ServicePlan</a>&gt;&nbsp;elements)</code>
+<div class="block">Sets or replaces all elements for <code>servicePlans</code> list.</div>
+</td>
 </tr>
 </tbody>
 </table>
