@@ -111,7 +111,24 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Relationship.RelationshipBuilder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/Relationship.RelationshipBuilder.html#build--">build</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">Relationship.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/Relationship.Builder.html#build--">build</a></span>()</code>
+<div class="block">Builds a new <a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3"><code>Relationship</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/cloudfoundry/client/v3/package-summary.html">org.cloudfoundry.client.v3</a> with parameters of type <a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v3/Relationship.Builder.html" title="class in org.cloudfoundry.client.v3">Relationship.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Relationship.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/Relationship.Builder.html#from-org.cloudfoundry.client.v3.Relationship-">from</a></span>(<a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a>&nbsp;instance)</code>
+<div class="block">Fill a builder with attribute values from the provided <code>Relationship</code> instance.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -121,16 +138,16 @@
 </a>
 <h3>Uses of <a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a> in <a href="../../../../../org/cloudfoundry/client/v3/applications/package-summary.html">org.cloudfoundry.client.v3.applications</a></h3>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../org/cloudfoundry/client/v3/applications/package-summary.html">org.cloudfoundry.client.v3.applications</a> that return types with arguments of type <a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Methods in <a href="../../../../../org/cloudfoundry/client/v3/applications/package-summary.html">org.cloudfoundry.client.v3.applications</a> that return <a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">CreateApplicationRequest.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/applications/CreateApplicationRequest.html#getRelationships--">getRelationships</a></span>()</code>
-<div class="block">The relationships</div>
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Relationships.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/applications/Relationships.html#getSpace--">getSpace</a></span>()</code>
+<div class="block">The space relationship</div>
 </td>
 </tr>
 </tbody>
@@ -143,22 +160,10 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v3/applications/CreateApplicationRequest.CreateApplicationRequestBuilder.html" title="class in org.cloudfoundry.client.v3.applications">CreateApplicationRequest.CreateApplicationRequestBuilder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">CreateApplicationRequest.CreateApplicationRequestBuilder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/applications/CreateApplicationRequest.CreateApplicationRequestBuilder.html#relationship-java.lang.String-org.cloudfoundry.client.v3.Relationship-">relationship</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;relationshipKey,
-            <a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a>&nbsp;relationshipValue)</code>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Method parameters in <a href="../../../../../org/cloudfoundry/client/v3/applications/package-summary.html">org.cloudfoundry.client.v3.applications</a> with type arguments of type <a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v3/applications/CreateApplicationRequest.CreateApplicationRequestBuilder.html" title="class in org.cloudfoundry.client.v3.applications">CreateApplicationRequest.CreateApplicationRequestBuilder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">CreateApplicationRequest.CreateApplicationRequestBuilder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/applications/CreateApplicationRequest.CreateApplicationRequestBuilder.html#relationships-java.util.Map-">relationships</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,? extends <a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a>&gt;&nbsp;relationships)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v3/applications/Relationships.Builder.html" title="class in org.cloudfoundry.client.v3.applications">Relationships.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Relationships.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/applications/Relationships.Builder.html#space-org.cloudfoundry.client.v3.Relationship-">space</a></span>(<a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a>&nbsp;space)</code>
+<div class="block">Initializes the value for the <code>space</code> attribute.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -176,11 +181,15 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a></code></td>
-<td class="colLast"><span class="typeNameLabel">CreateServiceBindingRequest.Relationships.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Relationships.html#getApplication--">getApplication</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">Relationships.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/Relationships.html#getApplication--">getApplication</a></span>()</code>
+<div class="block">The application relationship</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a></code></td>
-<td class="colLast"><span class="typeNameLabel">CreateServiceBindingRequest.Relationships.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Relationships.html#getServiceInstance--">getServiceInstance</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">Relationships.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/Relationships.html#getServiceInstance--">getServiceInstance</a></span>()</code>
+<div class="block">The service instance relationship</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -192,24 +201,16 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Relationships.RelationshipsBuilder.html" title="class in org.cloudfoundry.client.v3.servicebindings">CreateServiceBindingRequest.Relationships.RelationshipsBuilder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">CreateServiceBindingRequest.Relationships.RelationshipsBuilder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Relationships.RelationshipsBuilder.html#application-org.cloudfoundry.client.v3.Relationship-">application</a></span>(<a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a>&nbsp;application)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/Relationships.Builder.html" title="class in org.cloudfoundry.client.v3.servicebindings">Relationships.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Relationships.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/Relationships.Builder.html#application-org.cloudfoundry.client.v3.Relationship-">application</a></span>(<a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a>&nbsp;application)</code>
+<div class="block">Initializes the value for the <code>application</code> attribute.</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Relationships.RelationshipsBuilder.html" title="class in org.cloudfoundry.client.v3.servicebindings">CreateServiceBindingRequest.Relationships.RelationshipsBuilder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">CreateServiceBindingRequest.Relationships.RelationshipsBuilder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Relationships.RelationshipsBuilder.html#serviceInstance-org.cloudfoundry.client.v3.Relationship-">serviceInstance</a></span>(<a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a>&nbsp;serviceInstance)</code>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
-<caption><span>Constructors in <a href="../../../../../org/cloudfoundry/client/v3/servicebindings/package-summary.html">org.cloudfoundry.client.v3.servicebindings</a> with parameters of type <a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Relationships.html#Relationships-org.cloudfoundry.client.v3.Relationship-org.cloudfoundry.client.v3.Relationship-">Relationships</a></span>(<a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a>&nbsp;application,
-             <a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a>&nbsp;serviceInstance)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/Relationships.Builder.html" title="class in org.cloudfoundry.client.v3.servicebindings">Relationships.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Relationships.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/Relationships.Builder.html#serviceInstance-org.cloudfoundry.client.v3.Relationship-">serviceInstance</a></span>(<a href="../../../../../org/cloudfoundry/client/v3/Relationship.html" title="class in org.cloudfoundry.client.v3">Relationship</a>&nbsp;serviceInstance)</code>
+<div class="block">Initializes the value for the <code>serviceInstance</code> attribute.</div>
+</td>
 </tr>
 </tbody>
 </table>

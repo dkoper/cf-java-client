@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.CreateServiceBindingRequestBuilder.html" title="class in org.cloudfoundry.client.v3.servicebindings"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Builder.html" title="class in org.cloudfoundry.client.v3.servicebindings"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.html" target="_top">Frames</a></li>
@@ -106,16 +106,15 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../org/cloudfoundry/Validatable.html" title="interface in org.cloudfoundry">Validatable</a></dd>
-</dl>
 <hr>
 <br>
-<pre>public final class <span class="typeNameLabel">CreateServiceBindingRequest</span>
-extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../../../org/cloudfoundry/Validatable.html" title="interface in org.cloudfoundry">Validatable</a></pre>
-<div class="block">The request payload for the Delete Service Binding operation.</div>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>={"Immutables.generator","AbstractCreateServiceBindingRequest"})
+public final class <span class="typeNameLabel">CreateServiceBindingRequest</span>
+extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block">Immutable implementation of <code>AbstractCreateServiceBindingRequest</code>.
+ <p>
+ Use the builder to create immutable instances:
+ <code>CreateServiceBindingRequest.builder()</code>.</div>
 </li>
 </ul>
 </div>
@@ -136,15 +135,9 @@ implements <a href="../../../../../org/cloudfoundry/Validatable.html" title="int
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.CreateServiceBindingRequestBuilder.html" title="class in org.cloudfoundry.client.v3.servicebindings">CreateServiceBindingRequest.CreateServiceBindingRequestBuilder</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Data.html" title="class in org.cloudfoundry.client.v3.servicebindings">CreateServiceBindingRequest.Data</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Relationships.html" title="class in org.cloudfoundry.client.v3.servicebindings">CreateServiceBindingRequest.Relationships</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Builder.html" title="class in org.cloudfoundry.client.v3.servicebindings">CreateServiceBindingRequest.Builder</a></span></code>
+<div class="block">Builds instances of type <a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.html" title="class in org.cloudfoundry.client.v3.servicebindings"><code>CreateServiceBindingRequest</code></a>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -162,21 +155,25 @@ implements <a href="../../../../../org/cloudfoundry/Validatable.html" title="int
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static <a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.CreateServiceBindingRequestBuilder.html" title="class in org.cloudfoundry.client.v3.servicebindings">CreateServiceBindingRequest.CreateServiceBindingRequestBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.html#builder--">builder</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Builder.html" title="class in org.cloudfoundry.client.v3.servicebindings">CreateServiceBindingRequest.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.html#builder--">builder</a></span>()</code>
+<div class="block">Creates a builder for <a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.html" title="class in org.cloudfoundry.client.v3.servicebindings"><code>CreateServiceBindingRequest</code></a>.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</code>
+<div class="block">This instance is equal to all instances of <code>CreateServiceBindingRequest</code> that have equal attribute values.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Data.html" title="class in org.cloudfoundry.client.v3.servicebindings">CreateServiceBindingRequest.Data</a></code></td>
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/Data.html" title="class in org.cloudfoundry.client.v3.servicebindings">Data</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.html#getData--">getData</a></span>()</code>
 <div class="block">The data</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Relationships.html" title="class in org.cloudfoundry.client.v3.servicebindings">CreateServiceBindingRequest.Relationships</a></code></td>
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/Relationships.html" title="class in org.cloudfoundry.client.v3.servicebindings">Relationships</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.html#getRelationships--">getRelationships</a></span>()</code>
 <div class="block">The relationships</div>
 </td>
@@ -189,17 +186,15 @@ implements <a href="../../../../../org/cloudfoundry/Validatable.html" title="int
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.html#isValid--">isValid</a></span>()</code>
-<div class="block">Returns whether an instance is valid</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.html#hashCode--">hashCode</a></span>()</code>
+<div class="block">Computes a hash code from attributes: <code>data</code>, <code>relationships</code>, <code>type</code>.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.html#toString--">toString</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.html#toString--">toString</a></span>()</code>
+<div class="block">Prints the immutable value <code>CreateServiceBindingRequest</code> with attribute values.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -223,31 +218,34 @@ implements <a href="../../../../../org/cloudfoundry/Validatable.html" title="int
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="isValid--">
+<a name="getData--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isValid</h4>
-<pre>public&nbsp;<a href="../../../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a>&nbsp;isValid()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../org/cloudfoundry/Validatable.html#isValid--">Validatable</a></code></span></div>
-<div class="block">Returns whether an instance is valid</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/Validatable.html#isValid--">isValid</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/cloudfoundry/Validatable.html" title="interface in org.cloudfoundry">Validatable</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>a result indicating whether an instance is valid, and messages about what is wrong if it is invalid</dd>
-</dl>
+<h4>getData</h4>
+<pre>public&nbsp;<a href="../../../../../org/cloudfoundry/client/v3/servicebindings/Data.html" title="class in org.cloudfoundry.client.v3.servicebindings">Data</a>&nbsp;getData()</pre>
+<div class="block">The data</div>
 </li>
 </ul>
-<a name="builder--">
+<a name="getRelationships--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>builder</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.CreateServiceBindingRequestBuilder.html" title="class in org.cloudfoundry.client.v3.servicebindings">CreateServiceBindingRequest.CreateServiceBindingRequestBuilder</a>&nbsp;builder()</pre>
+<h4>getRelationships</h4>
+<pre>public&nbsp;<a href="../../../../../org/cloudfoundry/client/v3/servicebindings/Relationships.html" title="class in org.cloudfoundry.client.v3.servicebindings">Relationships</a>&nbsp;getRelationships()</pre>
+<div class="block">The relationships</div>
+</li>
+</ul>
+<a name="getType--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getType</h4>
+<pre>public&nbsp;<a href="../../../../../org/cloudfoundry/client/v3/servicebindings/ServiceBindingType.html" title="enum in org.cloudfoundry.client.v3.servicebindings">ServiceBindingType</a>&nbsp;getType()</pre>
+<div class="block">The type</div>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">
@@ -256,11 +254,13 @@ public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v3/servicebin
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</pre>
+<div class="block">This instance is equal to all instances of <code>CreateServiceBindingRequest</code> that have equal attribute values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if <code>this</code> is equal to <code>another</code> instance</dd>
 </dl>
 </li>
 </ul>
@@ -270,11 +270,13 @@ public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/ap
 <ul class="blockList">
 <li class="blockList">
 <h4>hashCode</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;int&nbsp;hashCode()</pre>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block">Computes a hash code from attributes: <code>data</code>, <code>relationships</code>, <code>type</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>hashCode value</dd>
 </dl>
 </li>
 </ul>
@@ -284,56 +286,27 @@ public&nbsp;int&nbsp;hashCode()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">Prints the immutable value <code>CreateServiceBindingRequest</code> with attribute values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getData--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getData</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Data.html" title="class in org.cloudfoundry.client.v3.servicebindings">CreateServiceBindingRequest.Data</a>&nbsp;getData()</pre>
-<div class="block">The data</div>
-<dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the data</dd>
+<dd>A string representation of the value</dd>
 </dl>
 </li>
 </ul>
-<a name="getRelationships--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getRelationships</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Relationships.html" title="class in org.cloudfoundry.client.v3.servicebindings">CreateServiceBindingRequest.Relationships</a>&nbsp;getRelationships()</pre>
-<div class="block">The relationships</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the relationships</dd>
-</dl>
-</li>
-</ul>
-<a name="getType--">
+<a name="builder--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getType</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="../../../../../org/cloudfoundry/client/v3/servicebindings/ServiceBindingType.html" title="enum in org.cloudfoundry.client.v3.servicebindings">ServiceBindingType</a>&nbsp;getType()</pre>
-<div class="block">The type</div>
+<h4>builder</h4>
+<pre>public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Builder.html" title="class in org.cloudfoundry.client.v3.servicebindings">CreateServiceBindingRequest.Builder</a>&nbsp;builder()</pre>
+<div class="block">Creates a builder for <a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.html" title="class in org.cloudfoundry.client.v3.servicebindings"><code>CreateServiceBindingRequest</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the type</dd>
+<dd>A new CreateServiceBindingRequest builder</dd>
 </dl>
 </li>
 </ul>
@@ -366,7 +339,7 @@ public&nbsp;<a href="../../../../../org/cloudfoundry/client/v3/servicebindings/S
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.CreateServiceBindingRequestBuilder.html" title="class in org.cloudfoundry.client.v3.servicebindings"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.Builder.html" title="class in org.cloudfoundry.client.v3.servicebindings"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?org/cloudfoundry/client/v3/servicebindings/CreateServiceBindingRequest.html" target="_top">Frames</a></li>
