@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9};
+var methods = {"i0":9,"i1":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -111,37 +111,18 @@ var activeTableTab = "activeTableTab";
 <pre>public abstract class <span class="typeNameLabel">TestObjects</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 <div class="block"><code>TestObjects</code> provides a utility which calls setters of an object of <code>*Builder</code> type and returns the resulting builder object.
-
- <p>The exported static methods are <a href="../../../../org/cloudfoundry/util/test/TestObjects.html#fill-T-"><code>&lt;T&gt;fill(T,String)</code></a> and <a href="../../../../org/cloudfoundry/util/test/TestObjects.html#fillPage-T-"><code>&lt;T&gt;fillPage(T,String)</code></a>. The <code>T</code> argument is a builder object, and the <code>String</code> is a
- <i>modifier</i> which is used to augment the <code>String</code> values set. <code>fill(b)</code> is equivalent to <code>fill(b,"")</code> and <code>fillPage(b)</code> is equivalent to <code>fillPage(b,"")</code>.</p>
-
- <p><code>TestObjects</code> is designed to populate builder objects with test values. Object setters are called with standard values based upon the parameter type and the name of the setter method.
- Setters which take collections are ignored.</p>
-
- <ul>
-
- <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> types are set to <code>"test-"+modifier+settername</code>, where <code>modifier</code> is supplied on the call <code>fill(b,modifier)</code> or <code>fillPage(b,modifier)</code>.</li>
-
- <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang"><code>Boolean</code></a> types are set to <code>true</code>.</li>
-
- <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang"><code>Integer</code></a> or <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang"><code>Long</code></a> types are set to <code>1</code>.</li>
-
- <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang"><code>Float</code></a> or <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang"><code>Double</code></a> types are set to <code>1.0</code>.</li>
-
+ <p>
+ The exported static methods are <a href="../../../../org/cloudfoundry/util/test/TestObjects.html#fill-T-"><code>&lt;T&gt;fill(T,String)</code></a> The <code>T</code> argument is a builder object, and the <code>String</code> is a <i>modifier</i> which is used to augment the <code>String</code> values set. <code>fill(b)</code> is equivalent to <code>fill(b,"")</code> and <code>fillPage(b)</code> is equivalent to <code>fillPage(b,"")</code>.
+ <p>
+ <code>TestObjects</code> is designed to populate builder objects with test values. Object setters are called with standard values based upon the parameter type and the name of the setter method. Setters
+ which take collections are ignored.
+ <p>
+ <ul> <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> types are set to <code>"test-"+modifier+settername</code>, where <code>modifier</code> is supplied on the call <code>fill(b,modifier)</code> or <code>fillPage(b,modifier)</code>.</li>
+ <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang"><code>Boolean</code></a> types are set to <code>true</code>.</li> <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang"><code>Integer</code></a> or <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang"><code>Long</code></a> types are set to <code>1</code>.</li> <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang"><code>Float</code></a> or <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang"><code>Double</code></a> types are set to <code>1.0</code>.</li>
  <li>Types with names ending in <code>Entity</code> or <code>Metadata</code><sup>1</sup> are recursively filled, using <a href="../../../../org/cloudfoundry/util/test/TestObjects.html#fill-T-"><code>fill(builder-of-type, modifier)</code></a>, if their builder types can be found.</li>
-
  </ul>
-
- <h1>Paginated Types</h1>
-
- <p>Paginated builder objects<sup>1</sup> (built type subclassing <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/PaginatedRequest.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2"><code>PaginatedRequest</code></a> or <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2"><code>PaginatedResponse</code></a>) can only be filled with <a href="../../../../org/cloudfoundry/util/test/TestObjects.html#fillPage-T-"><code>fillPage(T)</code></a> (which will call <code>Assert.fail()</code> if the builder does <i>not</i> build a paginated type). The setters are treated specially, to set page request fields consistently with the operations
- implementations. In particular the setters <code>resultsPerPage</code> and <code>orderDirection</code> are <i>not set</i>.</p>
-
- <p><a href="../../../../org/cloudfoundry/util/test/TestObjects.html#fill-T-"><code>fill(T)</code></a> will call <code>Assert.fail()</code> if the builder object builds an object of paginated type.</p>
-
- <p>If <a href="../../../../org/cloudfoundry/util/test/TestObjects.html#fillPage-T-"><code>fillPage(T)</code></a> or <a href="../../../../org/cloudfoundry/util/test/TestObjects.html#fill-T-"><code>fill(T)</code></a> recurses (on Entity or Metadata types), it is assumed that these are <i>not</i> paginated.</p>
-
- <p><sup>1</sup>These special cases make the <code>TestObjects</code> class specific to v2 CloudFoundry REST api interfaces.</p></div>
+ <p>
+ <sup>1</sup>These special cases make the <code>TestObjects</code> class specific to v2 CloudFoundry REST api interfaces.</div>
 </li>
 </ul>
 </div>
@@ -163,27 +144,14 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/util/test/TestObjects.html#fill-T-">fill</a></span>(T&nbsp;builder)</code>
-<div class="block">Fill the builder "fields" by calling their setters with default values.</div>
+<div class="block">Fill a builder by calling its configuration methods with default values.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/util/test/TestObjects.html#fill-T-java.lang.String-">fill</a></span>(T&nbsp;builder,
     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;modifier)</code>
-<div class="block">Fill the builder "fields" by calling their setters with default values.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/util/test/TestObjects.html#fillPage-T-">fillPage</a></span>(T&nbsp;builder)</code>
-<div class="block">Fill the builder "fields" by calling their setters with default values.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/util/test/TestObjects.html#fillPage-T-java.lang.String-">fillPage</a></span>(T&nbsp;builder,
-        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;modifier)</code>
-<div class="block">Fill the builder "fields" by calling their setters with default values.</div>
+<div class="block">Fill a builder by calling its configuration methods with default values.</div>
 </td>
 </tr>
 </table>
@@ -217,14 +185,14 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>fill</h4>
 <pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;fill(T&nbsp;builder)</pre>
-<div class="block">Fill the builder "fields" by calling their setters with default values. Fails if this builds a paginated type.</div>
+<div class="block">Fill a builder by calling its configuration methods with default values.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>T</code> - the type of the builder object</dd>
+<dd><code>T</code> - The type of the builder</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>builder</code> - an object of type T which is a builder type</dd>
+<dd><code>builder</code> - the builder to fill</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>builder with setter fields "filled in"</dd>
+<dd>the filled builder</dd>
 </dl>
 </li>
 </ul>
@@ -233,62 +201,20 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </a><a name="fill-T-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>fill</h4>
 <pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;fill(T&nbsp;builder,
                          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;modifier)</pre>
-<div class="block">Fill the builder "fields" by calling their setters with default values. Fails if this builds a paginated type.</div>
+<div class="block">Fill a builder by calling its configuration methods with default values.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>T</code> - the type of the builder object</dd>
+<dd><code>T</code> - The type of the builder</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>builder</code> - an object of type T which is a builder of a type which is <i>not</i> paginated</dd>
-<dd><code>modifier</code> - a modifier for <code>String</code> types which are set</dd>
+<dd><code>builder</code> - the builder to fill</dd>
+<dd><code>modifier</code> - a modifier for the values of <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> types</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>builder with setter fields "filled in"</dd>
-</dl>
-</li>
-</ul>
-<a name="fillPage-java.lang.Object-">
-<!--   -->
-</a><a name="fillPage-T-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>fillPage</h4>
-<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;fillPage(T&nbsp;builder)</pre>
-<div class="block">Fill the builder "fields" by calling their setters with default values.</div>
-<dl>
-<dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>T</code> - the type of the builder object</dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>builder</code> - an object of type T which is a builder type</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>builder with setter fields "filled in"</dd>
-</dl>
-</li>
-</ul>
-<a name="fillPage-java.lang.Object-java.lang.String-">
-<!--   -->
-</a><a name="fillPage-T-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>fillPage</h4>
-<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;fillPage(T&nbsp;builder,
-                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;modifier)</pre>
-<div class="block">Fill the builder "fields" by calling their setters with default values. Fails if this builds a type which is <i>not</i> paginated.</div>
-<dl>
-<dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>T</code> - the type of the builder object</dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>builder</code> - an object of type T which is a builder of a paginated type</dd>
-<dd><code>modifier</code> - a modifier for <code>String</code> types which are set</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>builder with setter fields "filled in"</dd>
+<dd>the filled builder</dd>
 </dl>
 </li>
 </ul>
