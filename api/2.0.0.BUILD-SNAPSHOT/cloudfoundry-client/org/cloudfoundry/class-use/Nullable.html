@@ -94,6 +94,14 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="#org.cloudfoundry.client.v2.buildpacks">org.cloudfoundry.client.v2.buildpacks</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.cloudfoundry.client.v2.domains">org.cloudfoundry.client.v2.domains</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.cloudfoundry.client.v2.organizations">org.cloudfoundry.client.v2.organizations</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -293,15 +301,15 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
-<td class="colLast"><span class="typeNameLabel">UpdateApplicationRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/UpdateApplicationRequest.html#getDiskQuota--">getDiskQuota</a></span>()</code>
-<div class="block">The maximum amount of disk available to an instance of an application.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Statistics.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/Statistics.html#getDiskQuota--">getDiskQuota</a></span>()</code>
 <div class="block">The application disk quota</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<td class="colLast"><span class="typeNameLabel">UpdateApplicationRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/UpdateApplicationRequest.html#getDiskQuota--">getDiskQuota</a></span>()</code>
+<div class="block">The maximum amount of disk available to an instance of an application.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -432,14 +440,14 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><span class="typeNameLabel">UpdateApplicationRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/UpdateApplicationRequest.html#getName--">getName</a></span>()</code>
-<div class="block">The name of the application</div>
+<td class="colLast"><span class="typeNameLabel">Statistics.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/Statistics.html#getName--">getName</a></span>()</code>
+<div class="block">The application name</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Statistics.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/Statistics.html#getName--">getName</a></span>()</code>
-<div class="block">The application name</div>
+<td class="colLast"><span class="typeNameLabel">UpdateApplicationRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/UpdateApplicationRequest.html#getName--">getName</a></span>()</code>
+<div class="block">The name of the application</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -504,14 +512,14 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><span class="typeNameLabel">InstanceStatistics.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/InstanceStatistics.html#getState--">getState</a></span>()</code>
-<div class="block">The instance state</div>
+<td class="colLast"><span class="typeNameLabel">CreateApplicationRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/CreateApplicationRequest.html#getState--">getState</a></span>()</code>
+<div class="block">The current desired state of the application</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><span class="typeNameLabel">CreateApplicationRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/CreateApplicationRequest.html#getState--">getState</a></span>()</code>
-<div class="block">The current desired state of the application</div>
+<td class="colLast"><span class="typeNameLabel">InstanceStatistics.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/InstanceStatistics.html#getState--">getState</a></span>()</code>
+<div class="block">The instance state</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -528,14 +536,14 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ApplicationInstanceInfo.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/ApplicationInstanceInfo.html#getUptime--">getUptime</a></span>()</code>
-<div class="block">The update</div>
+<td class="colLast"><span class="typeNameLabel">Statistics.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/Statistics.html#getUptime--">getUptime</a></span>()</code>
+<div class="block">The application uptime</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Statistics.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/Statistics.html#getUptime--">getUptime</a></span>()</code>
-<div class="block">The application uptime</div>
+<td class="colLast"><span class="typeNameLabel">ApplicationInstanceInfo.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/ApplicationInstanceInfo.html#getUptime--">getUptime</a></span>()</code>
+<div class="block">The update</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -806,14 +814,14 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/applications/UpdateApplicationRequest.Builder.html" title="class in org.cloudfoundry.client.v2.applications">UpdateApplicationRequest.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">UpdateApplicationRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/UpdateApplicationRequest.Builder.html#name-java.lang.String-">name</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/applications/Statistics.Builder.html" title="class in org.cloudfoundry.client.v2.applications">Statistics.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Statistics.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/Statistics.Builder.html#name-java.lang.String-">name</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
 <div class="block">Initializes the value for the <code>name</code> attribute.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/applications/Statistics.Builder.html" title="class in org.cloudfoundry.client.v2.applications">Statistics.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Statistics.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/Statistics.Builder.html#name-java.lang.String-">name</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/applications/UpdateApplicationRequest.Builder.html" title="class in org.cloudfoundry.client.v2.applications">UpdateApplicationRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">UpdateApplicationRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/UpdateApplicationRequest.Builder.html#name-java.lang.String-">name</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
 <div class="block">Initializes the value for the <code>name</code> attribute.</div>
 </td>
 </tr>
@@ -878,14 +886,14 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/applications/InstanceStatistics.Builder.html" title="class in org.cloudfoundry.client.v2.applications">InstanceStatistics.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">InstanceStatistics.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/InstanceStatistics.Builder.html#state-java.lang.String-">state</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;state)</code>
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/applications/CreateApplicationRequest.Builder.html" title="class in org.cloudfoundry.client.v2.applications">CreateApplicationRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CreateApplicationRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/CreateApplicationRequest.Builder.html#state-java.lang.String-">state</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;state)</code>
 <div class="block">Initializes the value for the <code>state</code> attribute.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/applications/CreateApplicationRequest.Builder.html" title="class in org.cloudfoundry.client.v2.applications">CreateApplicationRequest.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">CreateApplicationRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/CreateApplicationRequest.Builder.html#state-java.lang.String-">state</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;state)</code>
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/applications/InstanceStatistics.Builder.html" title="class in org.cloudfoundry.client.v2.applications">InstanceStatistics.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">InstanceStatistics.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/InstanceStatistics.Builder.html#state-java.lang.String-">state</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;state)</code>
 <div class="block">Initializes the value for the <code>state</code> attribute.</div>
 </td>
 </tr>
@@ -902,14 +910,14 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/applications/ApplicationInstanceInfo.Builder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationInstanceInfo.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ApplicationInstanceInfo.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/ApplicationInstanceInfo.Builder.html#uptime-java.lang.Long-">uptime</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;uptime)</code>
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/applications/Statistics.Builder.html" title="class in org.cloudfoundry.client.v2.applications">Statistics.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Statistics.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/Statistics.Builder.html#uptime-java.lang.Long-">uptime</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;uptime)</code>
 <div class="block">Initializes the value for the <code>uptime</code> attribute.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/applications/Statistics.Builder.html" title="class in org.cloudfoundry.client.v2.applications">Statistics.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Statistics.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/Statistics.Builder.html#uptime-java.lang.Long-">uptime</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;uptime)</code>
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/applications/ApplicationInstanceInfo.Builder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationInstanceInfo.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ApplicationInstanceInfo.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applications/ApplicationInstanceInfo.Builder.html#uptime-java.lang.Long-">uptime</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;uptime)</code>
 <div class="block">Initializes the value for the <code>uptime</code> attribute.</div>
 </td>
 </tr>
@@ -994,6 +1002,304 @@
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/applicationusageevents/ApplicationUsageEventEntity.Builder.html" title="class in org.cloudfoundry.client.v2.applicationusageevents">ApplicationUsageEventEntity.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">ApplicationUsageEventEntity.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/applicationusageevents/ApplicationUsageEventEntity.Builder.html#taskName-java.lang.String-">taskName</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;taskName)</code>
 <div class="block">Initializes the value for the <code>taskName</code> attribute.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.cloudfoundry.client.v2.buildpacks">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../org/cloudfoundry/Nullable.html" title="annotation in org.cloudfoundry">Nullable</a> in <a href="../../../org/cloudfoundry/client/v2/buildpacks/package-summary.html">org.cloudfoundry.client.v2.buildpacks</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../org/cloudfoundry/client/v2/buildpacks/package-summary.html">org.cloudfoundry.client.v2.buildpacks</a> with annotations of type <a href="../../../org/cloudfoundry/Nullable.html" title="annotation in org.cloudfoundry">Nullable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DeleteBuildpackRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/DeleteBuildpackRequest.html#getAsync--">getAsync</a></span>()</code>
+<div class="block">The async flag</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CreateBuildpackRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/CreateBuildpackRequest.html#getEnabled--">getEnabled</a></span>()</code>
+<div class="block">The enabled flag</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
+<td class="colLast"><span class="typeNameLabel">UpdateBuildpackRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/UpdateBuildpackRequest.html#getEnabled--">getEnabled</a></span>()</code>
+<div class="block">The enabled flag</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CreateBuildpackRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/CreateBuildpackRequest.html#getFilename--">getFilename</a></span>()</code>
+<div class="block">The filename</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">UpdateBuildpackRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/UpdateBuildpackRequest.html#getFilename--">getFilename</a></span>()</code>
+<div class="block">The filename</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BuildpackEntity.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/BuildpackEntity.html#getFilename--">getFilename</a></span>()</code>
+<div class="block">The filename</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CreateBuildpackRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/CreateBuildpackRequest.html#getLocked--">getLocked</a></span>()</code>
+<div class="block">The locked flag</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
+<td class="colLast"><span class="typeNameLabel">UpdateBuildpackRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/UpdateBuildpackRequest.html#getLocked--">getLocked</a></span>()</code>
+<div class="block">The locked flag</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">UpdateBuildpackRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/UpdateBuildpackRequest.html#getName--">getName</a></span>()</code>
+<div class="block">The name</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CreateBuildpackRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/CreateBuildpackRequest.html#getPosition--">getPosition</a></span>()</code>
+<div class="block">The position</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<td class="colLast"><span class="typeNameLabel">UpdateBuildpackRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/UpdateBuildpackRequest.html#getPosition--">getPosition</a></span>()</code>
+<div class="block">The position</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Method parameters in <a href="../../../org/cloudfoundry/client/v2/buildpacks/package-summary.html">org.cloudfoundry.client.v2.buildpacks</a> with annotations of type <a href="../../../org/cloudfoundry/Nullable.html" title="annotation in org.cloudfoundry">Nullable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/buildpacks/DeleteBuildpackRequest.Builder.html" title="class in org.cloudfoundry.client.v2.buildpacks">DeleteBuildpackRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DeleteBuildpackRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/DeleteBuildpackRequest.Builder.html#async-java.lang.Boolean-">async</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;async)</code>
+<div class="block">Initializes the value for the <code>async</code> attribute.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/buildpacks/CreateBuildpackRequest.Builder.html" title="class in org.cloudfoundry.client.v2.buildpacks">CreateBuildpackRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CreateBuildpackRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/CreateBuildpackRequest.Builder.html#enabled-java.lang.Boolean-">enabled</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;enabled)</code>
+<div class="block">Initializes the value for the <code>enabled</code> attribute.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/buildpacks/UpdateBuildpackRequest.Builder.html" title="class in org.cloudfoundry.client.v2.buildpacks">UpdateBuildpackRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">UpdateBuildpackRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/UpdateBuildpackRequest.Builder.html#enabled-java.lang.Boolean-">enabled</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;enabled)</code>
+<div class="block">Initializes the value for the <code>enabled</code> attribute.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/buildpacks/CreateBuildpackRequest.Builder.html" title="class in org.cloudfoundry.client.v2.buildpacks">CreateBuildpackRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CreateBuildpackRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/CreateBuildpackRequest.Builder.html#filename-java.lang.String-">filename</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filename)</code>
+<div class="block">Initializes the value for the <code>filename</code> attribute.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/buildpacks/UpdateBuildpackRequest.Builder.html" title="class in org.cloudfoundry.client.v2.buildpacks">UpdateBuildpackRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">UpdateBuildpackRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/UpdateBuildpackRequest.Builder.html#filename-java.lang.String-">filename</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filename)</code>
+<div class="block">Initializes the value for the <code>filename</code> attribute.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/buildpacks/BuildpackEntity.Builder.html" title="class in org.cloudfoundry.client.v2.buildpacks">BuildpackEntity.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BuildpackEntity.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/BuildpackEntity.Builder.html#filename-java.lang.String-">filename</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filename)</code>
+<div class="block">Initializes the value for the <code>filename</code> attribute.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/buildpacks/CreateBuildpackRequest.Builder.html" title="class in org.cloudfoundry.client.v2.buildpacks">CreateBuildpackRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CreateBuildpackRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/CreateBuildpackRequest.Builder.html#locked-java.lang.Boolean-">locked</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;locked)</code>
+<div class="block">Initializes the value for the <code>locked</code> attribute.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/buildpacks/UpdateBuildpackRequest.Builder.html" title="class in org.cloudfoundry.client.v2.buildpacks">UpdateBuildpackRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">UpdateBuildpackRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/UpdateBuildpackRequest.Builder.html#locked-java.lang.Boolean-">locked</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;locked)</code>
+<div class="block">Initializes the value for the <code>locked</code> attribute.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/buildpacks/UpdateBuildpackRequest.Builder.html" title="class in org.cloudfoundry.client.v2.buildpacks">UpdateBuildpackRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">UpdateBuildpackRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/UpdateBuildpackRequest.Builder.html#name-java.lang.String-">name</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
+<div class="block">Initializes the value for the <code>name</code> attribute.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/buildpacks/CreateBuildpackRequest.Builder.html" title="class in org.cloudfoundry.client.v2.buildpacks">CreateBuildpackRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CreateBuildpackRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/CreateBuildpackRequest.Builder.html#position-java.lang.Integer-">position</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;position)</code>
+<div class="block">Initializes the value for the <code>position</code> attribute.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/buildpacks/UpdateBuildpackRequest.Builder.html" title="class in org.cloudfoundry.client.v2.buildpacks">UpdateBuildpackRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">UpdateBuildpackRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/buildpacks/UpdateBuildpackRequest.Builder.html#position-java.lang.Integer-">position</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;position)</code>
+<div class="block">Initializes the value for the <code>position</code> attribute.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.cloudfoundry.client.v2.domains">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../org/cloudfoundry/Nullable.html" title="annotation in org.cloudfoundry">Nullable</a> in <a href="../../../org/cloudfoundry/client/v2/domains/package-summary.html">org.cloudfoundry.client.v2.domains</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../org/cloudfoundry/client/v2/domains/package-summary.html">org.cloudfoundry.client.v2.domains</a> with annotations of type <a href="../../../org/cloudfoundry/Nullable.html" title="annotation in org.cloudfoundry">Nullable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DeleteDomainRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/DeleteDomainRequest.html#getAsync--">getAsync</a></span>()</code>
+<div class="block">Whether to delete asynchronously</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DomainEntity.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/DomainEntity.html#getOwningOrganizationId--">getOwningOrganizationId</a></span>()</code>
+<div class="block">The owning organization id</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CreateDomainRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/CreateDomainRequest.html#getOwningOrganizationId--">getOwningOrganizationId</a></span>()</code>
+<div class="block">The owning organization id</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Domain.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/Domain.html#getOwningOrganizationId--">getOwningOrganizationId</a></span>()</code>
+<div class="block">The owning organization id</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DomainEntity.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/DomainEntity.html#getOwningOrganizationUrl--">getOwningOrganizationUrl</a></span>()</code>
+<div class="block">The owning organization url</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DomainEntity.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/DomainEntity.html#getRouterGroupId--">getRouterGroupId</a></span>()</code>
+<div class="block">The router group id</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Domain.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/Domain.html#getRouterGroupId--">getRouterGroupId</a></span>()</code>
+<div class="block">The router group id</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DomainEntity.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/DomainEntity.html#getRouterGroupType--">getRouterGroupType</a></span>()</code>
+<div class="block">The router group type</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Domain.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/Domain.html#getRouterGroupType--">getRouterGroupType</a></span>()</code>
+<div class="block">The router group type</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DomainEntity.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/DomainEntity.html#getSpacesUrl--">getSpacesUrl</a></span>()</code>
+<div class="block">The spaces url</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Method parameters in <a href="../../../org/cloudfoundry/client/v2/domains/package-summary.html">org.cloudfoundry.client.v2.domains</a> with annotations of type <a href="../../../org/cloudfoundry/Nullable.html" title="annotation in org.cloudfoundry">Nullable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/domains/DeleteDomainRequest.Builder.html" title="class in org.cloudfoundry.client.v2.domains">DeleteDomainRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DeleteDomainRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/DeleteDomainRequest.Builder.html#async-java.lang.Boolean-">async</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;async)</code>
+<div class="block">Initializes the value for the <code>async</code> attribute.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/domains/DomainEntity.Builder.html" title="class in org.cloudfoundry.client.v2.domains">DomainEntity.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DomainEntity.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/DomainEntity.Builder.html#owningOrganizationId-java.lang.String-">owningOrganizationId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;owningOrganizationId)</code>
+<div class="block">Initializes the value for the <code>owningOrganizationId</code> attribute.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/domains/CreateDomainRequest.Builder.html" title="class in org.cloudfoundry.client.v2.domains">CreateDomainRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CreateDomainRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/CreateDomainRequest.Builder.html#owningOrganizationId-java.lang.String-">owningOrganizationId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;owningOrganizationId)</code>
+<div class="block">Initializes the value for the <code>owningOrganizationId</code> attribute.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/domains/Domain.Builder.html" title="class in org.cloudfoundry.client.v2.domains">Domain.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Domain.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/Domain.Builder.html#owningOrganizationId-java.lang.String-">owningOrganizationId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;owningOrganizationId)</code>
+<div class="block">Initializes the value for the <code>owningOrganizationId</code> attribute.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/domains/DomainEntity.Builder.html" title="class in org.cloudfoundry.client.v2.domains">DomainEntity.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DomainEntity.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/DomainEntity.Builder.html#owningOrganizationUrl-java.lang.String-">owningOrganizationUrl</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;owningOrganizationUrl)</code>
+<div class="block">Initializes the value for the <code>owningOrganizationUrl</code> attribute.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/domains/DomainEntity.Builder.html" title="class in org.cloudfoundry.client.v2.domains">DomainEntity.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DomainEntity.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/DomainEntity.Builder.html#routerGroupId-java.lang.String-">routerGroupId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;routerGroupId)</code>
+<div class="block">Initializes the value for the <code>routerGroupId</code> attribute.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/domains/Domain.Builder.html" title="class in org.cloudfoundry.client.v2.domains">Domain.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Domain.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/Domain.Builder.html#routerGroupId-java.lang.String-">routerGroupId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;routerGroupId)</code>
+<div class="block">Initializes the value for the <code>routerGroupId</code> attribute.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/domains/DomainEntity.Builder.html" title="class in org.cloudfoundry.client.v2.domains">DomainEntity.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DomainEntity.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/DomainEntity.Builder.html#routerGroupType-java.lang.String-">routerGroupType</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;routerGroupType)</code>
+<div class="block">Initializes the value for the <code>routerGroupType</code> attribute.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/domains/Domain.Builder.html" title="class in org.cloudfoundry.client.v2.domains">Domain.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Domain.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/Domain.Builder.html#routerGroupType-java.lang.String-">routerGroupType</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;routerGroupType)</code>
+<div class="block">Initializes the value for the <code>routerGroupType</code> attribute.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/client/v2/domains/DomainEntity.Builder.html" title="class in org.cloudfoundry.client.v2.domains">DomainEntity.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DomainEntity.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/client/v2/domains/DomainEntity.Builder.html#spacesUrl-java.lang.String-">spacesUrl</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;spacesUrl)</code>
+<div class="block">Initializes the value for the <code>spacesUrl</code> attribute.</div>
 </td>
 </tr>
 </tbody>
@@ -1353,7 +1659,19 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
+<td class="colLast"><span class="typeNameLabel">HttpStartStop.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#getApplicationId--">getApplicationId</a></span>()</code>
+<div class="block">The application id</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
 <td class="colLast"><span class="typeNameLabel">HttpStop.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStop.html#getApplicationId--">getApplicationId</a></span>()</code>
+<div class="block">The application id</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
+<td class="colLast"><span class="typeNameLabel">HttpStart.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStart.html#getApplicationId--">getApplicationId</a></span>()</code>
 <div class="block">The application id</div>
 </td>
 </tr>
@@ -1364,38 +1682,26 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
-<td class="colLast"><span class="typeNameLabel">HttpStart.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStart.html#getApplicationId--">getApplicationId</a></span>()</code>
-<div class="block">The application id</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
-<td class="colLast"><span class="typeNameLabel">HttpStartStop.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#getApplicationId--">getApplicationId</a></span>()</code>
-<div class="block">The application id</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><span class="typeNameLabel">HttpStart.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStart.html#getInstanceId--">getInstanceId</a></span>()</code>
-<div class="block">The ID of the application instance</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><span class="typeNameLabel">HttpStartStop.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#getInstanceId--">getInstanceId</a></span>()</code>
 <div class="block">The ID of the application instance</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">HttpStart.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStart.html#getInstanceId--">getInstanceId</a></span>()</code>
+<div class="block">The ID of the application instance</div>
+</td>
+</tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
-<td class="colLast"><span class="typeNameLabel">HttpStart.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStart.html#getInstanceIndex--">getInstanceIndex</a></span>()</code>
+<td class="colLast"><span class="typeNameLabel">HttpStartStop.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#getInstanceIndex--">getInstanceIndex</a></span>()</code>
 <div class="block">The index of the application instance</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
-<td class="colLast"><span class="typeNameLabel">HttpStartStop.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#getInstanceIndex--">getInstanceIndex</a></span>()</code>
+<td class="colLast"><span class="typeNameLabel">HttpStart.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStart.html#getInstanceIndex--">getInstanceIndex</a></span>()</code>
 <div class="block">The index of the application instance</div>
 </td>
 </tr>
@@ -1439,44 +1745,44 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/HttpStop.Builder.html" title="class in org.cloudfoundry.doppler">HttpStop.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">HttpStop.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStop.Builder.html#applicationId-java.util.UUID-">applicationId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;applicationId)</code>
-<div class="block">Initializes the value for the <code>applicationId</code> attribute.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/HttpStart.Builder.html" title="class in org.cloudfoundry.doppler">HttpStart.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">HttpStart.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStart.Builder.html#applicationId-java.util.UUID-">applicationId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;applicationId)</code>
-<div class="block">Initializes the value for the <code>applicationId</code> attribute.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/HttpStartStop.Builder.html" title="class in org.cloudfoundry.doppler">HttpStartStop.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">HttpStartStop.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.Builder.html#applicationId-java.util.UUID-">applicationId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;applicationId)</code>
 <div class="block">Initializes the value for the <code>applicationId</code> attribute.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/HttpStart.Builder.html" title="class in org.cloudfoundry.doppler">HttpStart.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">HttpStart.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStart.Builder.html#instanceId-java.lang.String-">instanceId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;instanceId)</code>
-<div class="block">Initializes the value for the <code>instanceId</code> attribute.</div>
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/HttpStop.Builder.html" title="class in org.cloudfoundry.doppler">HttpStop.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">HttpStop.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStop.Builder.html#applicationId-java.util.UUID-">applicationId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;applicationId)</code>
+<div class="block">Initializes the value for the <code>applicationId</code> attribute.</div>
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/HttpStart.Builder.html" title="class in org.cloudfoundry.doppler">HttpStart.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">HttpStart.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStart.Builder.html#applicationId-java.util.UUID-">applicationId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;applicationId)</code>
+<div class="block">Initializes the value for the <code>applicationId</code> attribute.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/HttpStartStop.Builder.html" title="class in org.cloudfoundry.doppler">HttpStartStop.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">HttpStartStop.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.Builder.html#instanceId-java.lang.String-">instanceId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;instanceId)</code>
 <div class="block">Initializes the value for the <code>instanceId</code> attribute.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/HttpStart.Builder.html" title="class in org.cloudfoundry.doppler">HttpStart.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">HttpStart.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStart.Builder.html#instanceIndex-java.lang.Integer-">instanceIndex</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;instanceIndex)</code>
+<td class="colLast"><span class="typeNameLabel">HttpStart.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStart.Builder.html#instanceId-java.lang.String-">instanceId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;instanceId)</code>
+<div class="block">Initializes the value for the <code>instanceId</code> attribute.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/HttpStartStop.Builder.html" title="class in org.cloudfoundry.doppler">HttpStartStop.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">HttpStartStop.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.Builder.html#instanceIndex-java.lang.Integer-">instanceIndex</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;instanceIndex)</code>
 <div class="block">Initializes the value for the <code>instanceIndex</code> attribute.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/HttpStartStop.Builder.html" title="class in org.cloudfoundry.doppler">HttpStartStop.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">HttpStartStop.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.Builder.html#instanceIndex-java.lang.Integer-">instanceIndex</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;instanceIndex)</code>
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/HttpStart.Builder.html" title="class in org.cloudfoundry.doppler">HttpStart.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">HttpStart.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStart.Builder.html#instanceIndex-java.lang.Integer-">instanceIndex</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;instanceIndex)</code>
 <div class="block">Initializes the value for the <code>instanceIndex</code> attribute.</div>
 </td>
 </tr>
@@ -1532,13 +1838,13 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
-<td class="colLast"><span class="typeNameLabel">UpdateIdentityZoneRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/identityzones/UpdateIdentityZoneRequest.html#getVersion--">getVersion</a></span>()</code>
+<td class="colLast"><span class="typeNameLabel">CreateIdentityZoneRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/identityzones/CreateIdentityZoneRequest.html#getVersion--">getVersion</a></span>()</code>
 <div class="block">The version of the identity zone</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
-<td class="colLast"><span class="typeNameLabel">CreateIdentityZoneRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/identityzones/CreateIdentityZoneRequest.html#getVersion--">getVersion</a></span>()</code>
+<td class="colLast"><span class="typeNameLabel">UpdateIdentityZoneRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/identityzones/UpdateIdentityZoneRequest.html#getVersion--">getVersion</a></span>()</code>
 <div class="block">The version of the identity zone</div>
 </td>
 </tr>
@@ -1564,14 +1870,14 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/identityzones/UpdateIdentityZoneRequest.Builder.html" title="class in org.cloudfoundry.uaa.identityzones">UpdateIdentityZoneRequest.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">UpdateIdentityZoneRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/identityzones/UpdateIdentityZoneRequest.Builder.html#version-java.lang.Integer-">version</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;version)</code>
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/identityzones/CreateIdentityZoneRequest.Builder.html" title="class in org.cloudfoundry.uaa.identityzones">CreateIdentityZoneRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CreateIdentityZoneRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/identityzones/CreateIdentityZoneRequest.Builder.html#version-java.lang.Integer-">version</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;version)</code>
 <div class="block">Initializes the value for the <code>version</code> attribute.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/identityzones/CreateIdentityZoneRequest.Builder.html" title="class in org.cloudfoundry.uaa.identityzones">CreateIdentityZoneRequest.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">CreateIdentityZoneRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/identityzones/CreateIdentityZoneRequest.Builder.html#version-java.lang.Integer-">version</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;version)</code>
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/identityzones/UpdateIdentityZoneRequest.Builder.html" title="class in org.cloudfoundry.uaa.identityzones">UpdateIdentityZoneRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">UpdateIdentityZoneRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/identityzones/UpdateIdentityZoneRequest.Builder.html#version-java.lang.Integer-">version</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;version)</code>
 <div class="block">Initializes the value for the <code>version</code> attribute.</div>
 </td>
 </tr>
@@ -1591,13 +1897,13 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><span class="typeNameLabel">TokenKey.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/TokenKey.html#getId--">getId</a></span>()</code>
+<td class="colLast"><span class="typeNameLabel">GetTokenKeyResponse.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenKeyResponse.html#getId--">getId</a></span>()</code>
 <div class="block">The id</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><span class="typeNameLabel">GetTokenKeyResponse.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenKeyResponse.html#getId--">getId</a></span>()</code>
+<td class="colLast"><span class="typeNameLabel">TokenKey.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/TokenKey.html#getId--">getId</a></span>()</code>
 <div class="block">The id</div>
 </td>
 </tr>
@@ -1621,19 +1927,7 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/tokens/TokenFormat.html" title="enum in org.cloudfoundry.uaa.tokens">TokenFormat</a></code></td>
-<td class="colLast"><span class="typeNameLabel">GetTokenByAuthorizationCodeRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByAuthorizationCodeRequest.html#getTokenFormat--">getTokenFormat</a></span>()</code>
-<div class="block">The token format</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/tokens/TokenFormat.html" title="enum in org.cloudfoundry.uaa.tokens">TokenFormat</a></code></td>
 <td class="colLast"><span class="typeNameLabel">GetTokenByOneTimePasscodeRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.html#getTokenFormat--">getTokenFormat</a></span>()</code>
-<div class="block">The token format</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/tokens/TokenFormat.html" title="enum in org.cloudfoundry.uaa.tokens">TokenFormat</a></code></td>
-<td class="colLast"><span class="typeNameLabel">GetTokenByOpenIdRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByOpenIdRequest.html#getTokenFormat--">getTokenFormat</a></span>()</code>
 <div class="block">The token format</div>
 </td>
 </tr>
@@ -1651,7 +1945,19 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/tokens/TokenFormat.html" title="enum in org.cloudfoundry.uaa.tokens">TokenFormat</a></code></td>
+<td class="colLast"><span class="typeNameLabel">GetTokenByAuthorizationCodeRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByAuthorizationCodeRequest.html#getTokenFormat--">getTokenFormat</a></span>()</code>
+<div class="block">The token format</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/tokens/TokenFormat.html" title="enum in org.cloudfoundry.uaa.tokens">TokenFormat</a></code></td>
 <td class="colLast"><span class="typeNameLabel">GetTokenByClientCredentialsRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByClientCredentialsRequest.html#getTokenFormat--">getTokenFormat</a></span>()</code>
+<div class="block">The token format</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/tokens/TokenFormat.html" title="enum in org.cloudfoundry.uaa.tokens">TokenFormat</a></code></td>
+<td class="colLast"><span class="typeNameLabel">GetTokenByOpenIdRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByOpenIdRequest.html#getTokenFormat--">getTokenFormat</a></span>()</code>
 <div class="block">The token format</div>
 </td>
 </tr>
@@ -1665,14 +1971,14 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/tokens/TokenKey.Builder.html" title="class in org.cloudfoundry.uaa.tokens">TokenKey.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">TokenKey.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/TokenKey.Builder.html#id-java.lang.String-">id</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id)</code>
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenKeyResponse.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenKeyResponse.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">GetTokenKeyResponse.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenKeyResponse.Builder.html#id-java.lang.String-">id</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id)</code>
 <div class="block">Initializes the value for the <code>id</code> attribute.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenKeyResponse.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenKeyResponse.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">GetTokenKeyResponse.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenKeyResponse.Builder.html#id-java.lang.String-">id</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id)</code>
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/tokens/TokenKey.Builder.html" title="class in org.cloudfoundry.uaa.tokens">TokenKey.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">TokenKey.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/TokenKey.Builder.html#id-java.lang.String-">id</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id)</code>
 <div class="block">Initializes the value for the <code>id</code> attribute.</div>
 </td>
 </tr>
@@ -1695,20 +2001,8 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByAuthorizationCodeRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByAuthorizationCodeRequest.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">GetTokenByAuthorizationCodeRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByAuthorizationCodeRequest.Builder.html#tokenFormat-org.cloudfoundry.uaa.tokens.TokenFormat-">tokenFormat</a></span>(<a href="../../../org/cloudfoundry/uaa/tokens/TokenFormat.html" title="enum in org.cloudfoundry.uaa.tokens">TokenFormat</a>&nbsp;tokenFormat)</code>
-<div class="block">Initializes the value for the <code>tokenFormat</code> attribute.</div>
-</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOneTimePasscodeRequest.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">GetTokenByOneTimePasscodeRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html#tokenFormat-org.cloudfoundry.uaa.tokens.TokenFormat-">tokenFormat</a></span>(<a href="../../../org/cloudfoundry/uaa/tokens/TokenFormat.html" title="enum in org.cloudfoundry.uaa.tokens">TokenFormat</a>&nbsp;tokenFormat)</code>
-<div class="block">Initializes the value for the <code>tokenFormat</code> attribute.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByOpenIdRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOpenIdRequest.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">GetTokenByOpenIdRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByOpenIdRequest.Builder.html#tokenFormat-org.cloudfoundry.uaa.tokens.TokenFormat-">tokenFormat</a></span>(<a href="../../../org/cloudfoundry/uaa/tokens/TokenFormat.html" title="enum in org.cloudfoundry.uaa.tokens">TokenFormat</a>&nbsp;tokenFormat)</code>
 <div class="block">Initializes the value for the <code>tokenFormat</code> attribute.</div>
 </td>
 </tr>
@@ -1725,8 +2019,20 @@
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByAuthorizationCodeRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByAuthorizationCodeRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">GetTokenByAuthorizationCodeRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByAuthorizationCodeRequest.Builder.html#tokenFormat-org.cloudfoundry.uaa.tokens.TokenFormat-">tokenFormat</a></span>(<a href="../../../org/cloudfoundry/uaa/tokens/TokenFormat.html" title="enum in org.cloudfoundry.uaa.tokens">TokenFormat</a>&nbsp;tokenFormat)</code>
+<div class="block">Initializes the value for the <code>tokenFormat</code> attribute.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByClientCredentialsRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByClientCredentialsRequest.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">GetTokenByClientCredentialsRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByClientCredentialsRequest.Builder.html#tokenFormat-org.cloudfoundry.uaa.tokens.TokenFormat-">tokenFormat</a></span>(<a href="../../../org/cloudfoundry/uaa/tokens/TokenFormat.html" title="enum in org.cloudfoundry.uaa.tokens">TokenFormat</a>&nbsp;tokenFormat)</code>
+<div class="block">Initializes the value for the <code>tokenFormat</code> attribute.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByOpenIdRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOpenIdRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">GetTokenByOpenIdRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/tokens/GetTokenByOpenIdRequest.Builder.html#tokenFormat-org.cloudfoundry.uaa.tokens.TokenFormat-">tokenFormat</a></span>(<a href="../../../org/cloudfoundry/uaa/tokens/TokenFormat.html" title="enum in org.cloudfoundry.uaa.tokens">TokenFormat</a>&nbsp;tokenFormat)</code>
 <div class="block">Initializes the value for the <code>tokenFormat</code> attribute.</div>
 </td>
 </tr>
