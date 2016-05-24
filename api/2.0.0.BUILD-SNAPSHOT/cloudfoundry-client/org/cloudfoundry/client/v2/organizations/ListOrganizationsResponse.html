@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsRequest.Builder.html" title="class in org.cloudfoundry.client.v2.organizations"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.ListOrganizationsResponseBuilder.html" title="class in org.cloudfoundry.client.v2.organizations"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.Builder.html" title="class in org.cloudfoundry.client.v2.organizations"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html" target="_top">Frames</a></li>
@@ -113,9 +113,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public final class <span class="typeNameLabel">ListOrganizationsResponse</span>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>={"Immutables.generator","AbstractListOrganizationsResponse"})
+public final class <span class="typeNameLabel">ListOrganizationsResponse</span>
 extends <a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html" title="class in org.cloudfoundry.client.v2">PaginatedResponse</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/organizations/OrganizationResource.html" title="class in org.cloudfoundry.client.v2.organizations">OrganizationResource</a>&gt;</pre>
-<div class="block">The response payload for the List Operations operation</div>
+<div class="block">Immutable implementation of <code>AbstractListOrganizationsResponse</code>.
+ <p>
+ Use the builder to create immutable instances:
+ <code>ListOrganizationsResponse.builder()</code>.</div>
 </li>
 </ul>
 </div>
@@ -136,7 +140,9 @@ extends <a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.htm
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.ListOrganizationsResponseBuilder.html" title="class in org.cloudfoundry.client.v2.organizations">ListOrganizationsResponse.ListOrganizationsResponseBuilder</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.Builder.html" title="class in org.cloudfoundry.client.v2.organizations">ListOrganizationsResponse.Builder</a></span></code>
+<div class="block">Builds instances of type <a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html" title="class in org.cloudfoundry.client.v2.organizations"><code>ListOrganizationsResponse</code></a>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -154,33 +160,60 @@ extends <a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.htm
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static <a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.ListOrganizationsResponseBuilder.html" title="class in org.cloudfoundry.client.v2.organizations">ListOrganizationsResponse.ListOrganizationsResponseBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html#builder--">builder</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.Builder.html" title="class in org.cloudfoundry.client.v2.organizations">ListOrganizationsResponse.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html#builder--">builder</a></span>()</code>
+<div class="block">Creates a builder for <a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html" title="class in org.cloudfoundry.client.v2.organizations"><code>ListOrganizationsResponse</code></a>.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html#canEqual-java.lang.Object-">canEqual</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</code>
+<div class="block">This instance is equal to all instances of <code>ListOrganizationsResponse</code> that have equal attribute values.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html#getNextUrl--">getNextUrl</a></span>()</code>
+<div class="block">The next url</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html#getPreviousUrl--">getPreviousUrl</a></span>()</code>
+<div class="block">The previous url</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/organizations/OrganizationResource.html" title="class in org.cloudfoundry.client.v2.organizations">OrganizationResource</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html#getResources--">getResources</a></span>()</code>
+<div class="block">The resources</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html#getTotalPages--">getTotalPages</a></span>()</code>
+<div class="block">The total pages</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html#getTotalResults--">getTotalResults</a></span>()</code>
+<div class="block">The total results</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html#hashCode--">hashCode</a></span>()</code>
+<div class="block">Computes a hash code from attributes: <code>nextUrl</code>, <code>previousUrl</code>, <code>resources</code>, <code>totalPages</code>, <code>totalResults</code>.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html#toString--">toString</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html#toString--">toString</a></span>()</code>
+<div class="block">Prints the immutable value <code>ListOrganizationsResponse</code> with attribute values.</div>
+</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.org.cloudfoundry.client.v2.PaginatedResponse">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;org.cloudfoundry.client.v2.<a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html" title="class in org.cloudfoundry.client.v2">PaginatedResponse</a></h3>
-<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html#getNextUrl--">getNextUrl</a>, <a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html#getPreviousUrl--">getPreviousUrl</a>, <a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html#getResources--">getResources</a>, <a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html#getTotalPages--">getTotalPages</a>, <a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html#getTotalResults--">getTotalResults</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -202,14 +235,74 @@ extends <a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.htm
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="builder--">
+<a name="getNextUrl--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>builder</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.ListOrganizationsResponseBuilder.html" title="class in org.cloudfoundry.client.v2.organizations">ListOrganizationsResponse.ListOrganizationsResponseBuilder</a>&nbsp;builder()</pre>
+<h4>getNextUrl</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getNextUrl()</pre>
+<div class="block">The next url</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html#getNextUrl--">getNextUrl</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html" title="class in org.cloudfoundry.client.v2">PaginatedResponse</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/organizations/OrganizationResource.html" title="class in org.cloudfoundry.client.v2.organizations">OrganizationResource</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getPreviousUrl--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPreviousUrl</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getPreviousUrl()</pre>
+<div class="block">The previous url</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html#getPreviousUrl--">getPreviousUrl</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html" title="class in org.cloudfoundry.client.v2">PaginatedResponse</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/organizations/OrganizationResource.html" title="class in org.cloudfoundry.client.v2.organizations">OrganizationResource</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getResources--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getResources</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/organizations/OrganizationResource.html" title="class in org.cloudfoundry.client.v2.organizations">OrganizationResource</a>&gt;&nbsp;getResources()</pre>
+<div class="block">The resources</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html#getResources--">getResources</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html" title="class in org.cloudfoundry.client.v2">PaginatedResponse</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/organizations/OrganizationResource.html" title="class in org.cloudfoundry.client.v2.organizations">OrganizationResource</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTotalPages--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTotalPages</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getTotalPages()</pre>
+<div class="block">The total pages</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html#getTotalPages--">getTotalPages</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html" title="class in org.cloudfoundry.client.v2">PaginatedResponse</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/organizations/OrganizationResource.html" title="class in org.cloudfoundry.client.v2.organizations">OrganizationResource</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTotalResults--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTotalResults</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getTotalResults()</pre>
+<div class="block">The total results</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html#getTotalResults--">getTotalResults</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html" title="class in org.cloudfoundry.client.v2">PaginatedResponse</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/organizations/OrganizationResource.html" title="class in org.cloudfoundry.client.v2.organizations">OrganizationResource</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">
@@ -218,25 +311,13 @@ public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/organizati
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</pre>
+<div class="block">This instance is equal to all instances of <code>ListOrganizationsResponse</code> that have equal attribute values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html#equals-java.lang.Object-">equals</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html" title="class in org.cloudfoundry.client.v2">PaginatedResponse</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/organizations/OrganizationResource.html" title="class in org.cloudfoundry.client.v2.organizations">OrganizationResource</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="canEqual-java.lang.Object-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>canEqual</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-protected&nbsp;boolean&nbsp;canEqual(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html#canEqual-java.lang.Object-">canEqual</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html" title="class in org.cloudfoundry.client.v2">PaginatedResponse</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/organizations/OrganizationResource.html" title="class in org.cloudfoundry.client.v2.organizations">OrganizationResource</a>&gt;</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if <code>this</code> is equal to <code>another</code> instance</dd>
 </dl>
 </li>
 </ul>
@@ -246,25 +327,43 @@ protected&nbsp;boolean&nbsp;canEqual(<a href="http://docs.oracle.com/javase/8/do
 <ul class="blockList">
 <li class="blockList">
 <h4>hashCode</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;int&nbsp;hashCode()</pre>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block">Computes a hash code from attributes: <code>nextUrl</code>, <code>previousUrl</code>, <code>resources</code>, <code>totalPages</code>, <code>totalResults</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html#hashCode--">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html" title="class in org.cloudfoundry.client.v2">PaginatedResponse</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/organizations/OrganizationResource.html" title="class in org.cloudfoundry.client.v2.organizations">OrganizationResource</a>&gt;</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>hashCode value</dd>
 </dl>
 </li>
 </ul>
 <a name="toString--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">Prints the immutable value <code>ListOrganizationsResponse</code> with attribute values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html#toString--">toString</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedResponse.html" title="class in org.cloudfoundry.client.v2">PaginatedResponse</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/organizations/OrganizationResource.html" title="class in org.cloudfoundry.client.v2.organizations">OrganizationResource</a>&gt;</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A string representation of the value</dd>
+</dl>
+</li>
+</ul>
+<a name="builder--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>builder</h4>
+<pre>public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.Builder.html" title="class in org.cloudfoundry.client.v2.organizations">ListOrganizationsResponse.Builder</a>&nbsp;builder()</pre>
+<div class="block">Creates a builder for <a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html" title="class in org.cloudfoundry.client.v2.organizations"><code>ListOrganizationsResponse</code></a>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A new ListOrganizationsResponse builder</dd>
 </dl>
 </li>
 </ul>
@@ -297,7 +396,7 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.h
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsRequest.Builder.html" title="class in org.cloudfoundry.client.v2.organizations"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.ListOrganizationsResponseBuilder.html" title="class in org.cloudfoundry.client.v2.organizations"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.Builder.html" title="class in org.cloudfoundry.client.v2.organizations"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?org/cloudfoundry/client/v2/organizations/ListOrganizationsResponse.html" target="_top">Frames</a></li>
