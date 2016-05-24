@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpacesResponse.ListSpacesResponseBuilder.html" title="class in org.cloudfoundry.client.v2.spaces"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.ListSpaceUserRolesRequestBuilder.html" title="class in org.cloudfoundry.client.v2.spaces"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.Builder.html" title="class in org.cloudfoundry.client.v2.spaces"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html" target="_top">Frames</a></li>
@@ -111,16 +111,15 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../org/cloudfoundry/Validatable.html" title="interface in org.cloudfoundry">Validatable</a></dd>
-</dl>
 <hr>
 <br>
-<pre>public final class <span class="typeNameLabel">ListSpaceUserRolesRequest</span>
-extends <a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html" title="class in org.cloudfoundry.client.v2">PaginatedRequest</a>
-implements <a href="../../../../../org/cloudfoundry/Validatable.html" title="interface in org.cloudfoundry">Validatable</a></pre>
-<div class="block">The request payload for the Retrieving the roles of all Users in the Space operation</div>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>={"Immutables.generator","AbstractListSpaceUserRolesRequest"})
+public final class <span class="typeNameLabel">ListSpaceUserRolesRequest</span>
+extends <a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html" title="class in org.cloudfoundry.client.v2">PaginatedRequest</a></pre>
+<div class="block">Immutable implementation of <code>AbstractListSpaceUserRolesRequest</code>.
+ <p>
+ Use the builder to create immutable instances:
+ <code>ListSpaceUserRolesRequest.builder()</code>.</div>
 </li>
 </ul>
 </div>
@@ -141,7 +140,9 @@ implements <a href="../../../../../org/cloudfoundry/Validatable.html" title="int
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.ListSpaceUserRolesRequestBuilder.html" title="class in org.cloudfoundry.client.v2.spaces">ListSpaceUserRolesRequest.ListSpaceUserRolesRequestBuilder</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.Builder.html" title="class in org.cloudfoundry.client.v2.spaces">ListSpaceUserRolesRequest.Builder</a></span></code>
+<div class="block">Builds instances of type <a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html" title="class in org.cloudfoundry.client.v2.spaces"><code>ListSpaceUserRolesRequest</code></a>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -159,45 +160,54 @@ implements <a href="../../../../../org/cloudfoundry/Validatable.html" title="int
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static <a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.ListSpaceUserRolesRequestBuilder.html" title="class in org.cloudfoundry.client.v2.spaces">ListSpaceUserRolesRequest.ListSpaceUserRolesRequestBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html#builder--">builder</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.Builder.html" title="class in org.cloudfoundry.client.v2.spaces">ListSpaceUserRolesRequest.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html#builder--">builder</a></span>()</code>
+<div class="block">Creates a builder for <a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html" title="class in org.cloudfoundry.client.v2.spaces"><code>ListSpaceUserRolesRequest</code></a>.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html#canEqual-java.lang.Object-">canEqual</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</code>
+<div class="block">This instance is equal to all instances of <code>ListSpaceUserRolesRequest</code> that have equal attribute values.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/OrderDirection.html" title="enum in org.cloudfoundry.client.v2">OrderDirection</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html#getOrderDirection--">getOrderDirection</a></span>()</code>
+<div class="block">The order direction</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html#getPage--">getPage</a></span>()</code>
+<div class="block">The page</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html#getResultsPerPage--">getResultsPerPage</a></span>()</code>
+<div class="block">The results per page</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html#getSpaceId--">getSpaceId</a></span>()</code>
 <div class="block">The space id</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html#isValid--">isValid</a></span>()</code>
-<div class="block">Returns whether an instance is valid</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html#hashCode--">hashCode</a></span>()</code>
+<div class="block">Computes a hash code from attributes: <code>spaceId</code>, <code>orderDirection</code>, <code>page</code>, <code>resultsPerPage</code>.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html#toString--">toString</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html#toString--">toString</a></span>()</code>
+<div class="block">Prints the immutable value <code>ListSpaceUserRolesRequest</code> with attribute values.</div>
+</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.org.cloudfoundry.client.v2.PaginatedRequest">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;org.cloudfoundry.client.v2.<a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html" title="class in org.cloudfoundry.client.v2">PaginatedRequest</a></h3>
-<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html#getOrderDirection--">getOrderDirection</a>, <a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html#getPage--">getPage</a>, <a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html#getResultsPerPage--">getResultsPerPage</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -219,31 +229,56 @@ implements <a href="../../../../../org/cloudfoundry/Validatable.html" title="int
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="isValid--">
+<a name="getSpaceId--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isValid</h4>
-<pre>public&nbsp;<a href="../../../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a>&nbsp;isValid()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../org/cloudfoundry/Validatable.html#isValid--">Validatable</a></code></span></div>
-<div class="block">Returns whether an instance is valid</div>
+<h4>getSpaceId</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getSpaceId()</pre>
+<div class="block">The space id</div>
+</li>
+</ul>
+<a name="getOrderDirection--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOrderDirection</h4>
+<pre>public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/OrderDirection.html" title="enum in org.cloudfoundry.client.v2">OrderDirection</a>&nbsp;getOrderDirection()</pre>
+<div class="block">The order direction</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/Validatable.html#isValid--">isValid</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/cloudfoundry/Validatable.html" title="interface in org.cloudfoundry">Validatable</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>a result indicating whether an instance is valid, and messages about what is wrong if it is invalid</dd>
+<dd><code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html#getOrderDirection--">getOrderDirection</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html" title="class in org.cloudfoundry.client.v2">PaginatedRequest</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="builder--">
+<a name="getPage--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>builder</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.ListSpaceUserRolesRequestBuilder.html" title="class in org.cloudfoundry.client.v2.spaces">ListSpaceUserRolesRequest.ListSpaceUserRolesRequestBuilder</a>&nbsp;builder()</pre>
+<h4>getPage</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getPage()</pre>
+<div class="block">The page</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html#getPage--">getPage</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html" title="class in org.cloudfoundry.client.v2">PaginatedRequest</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getResultsPerPage--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getResultsPerPage</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getResultsPerPage()</pre>
+<div class="block">The results per page</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html#getResultsPerPage--">getResultsPerPage</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html" title="class in org.cloudfoundry.client.v2">PaginatedRequest</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">
@@ -252,25 +287,13 @@ public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/spaces/Lis
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</pre>
+<div class="block">This instance is equal to all instances of <code>ListSpaceUserRolesRequest</code> that have equal attribute values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html#equals-java.lang.Object-">equals</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html" title="class in org.cloudfoundry.client.v2">PaginatedRequest</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="canEqual-java.lang.Object-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>canEqual</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-protected&nbsp;boolean&nbsp;canEqual(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html#canEqual-java.lang.Object-">canEqual</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html" title="class in org.cloudfoundry.client.v2">PaginatedRequest</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if <code>this</code> is equal to <code>another</code> instance</dd>
 </dl>
 </li>
 </ul>
@@ -280,11 +303,13 @@ protected&nbsp;boolean&nbsp;canEqual(<a href="http://docs.oracle.com/javase/8/do
 <ul class="blockList">
 <li class="blockList">
 <h4>hashCode</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;int&nbsp;hashCode()</pre>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block">Computes a hash code from attributes: <code>spaceId</code>, <code>orderDirection</code>, <code>page</code>, <code>resultsPerPage</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html#hashCode--">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html" title="class in org.cloudfoundry.client.v2">PaginatedRequest</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>hashCode value</dd>
 </dl>
 </li>
 </ul>
@@ -294,26 +319,27 @@ public&nbsp;int&nbsp;hashCode()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">Prints the immutable value <code>ListSpaceUserRolesRequest</code> with attribute values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html#toString--">toString</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/PaginatedRequest.html" title="class in org.cloudfoundry.client.v2">PaginatedRequest</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A string representation of the value</dd>
 </dl>
 </li>
 </ul>
-<a name="getSpaceId--">
+<a name="builder--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getSpaceId</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getSpaceId()</pre>
-<div class="block">The space id</div>
+<h4>builder</h4>
+<pre>public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.Builder.html" title="class in org.cloudfoundry.client.v2.spaces">ListSpaceUserRolesRequest.Builder</a>&nbsp;builder()</pre>
+<div class="block">Creates a builder for <a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html" title="class in org.cloudfoundry.client.v2.spaces"><code>ListSpaceUserRolesRequest</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the space id</dd>
+<dd>A new ListSpaceUserRolesRequest builder</dd>
 </dl>
 </li>
 </ul>
@@ -346,7 +372,7 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.h
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpacesResponse.ListSpacesResponseBuilder.html" title="class in org.cloudfoundry.client.v2.spaces"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.ListSpaceUserRolesRequestBuilder.html" title="class in org.cloudfoundry.client.v2.spaces"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.Builder.html" title="class in org.cloudfoundry.client.v2.spaces"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?org/cloudfoundry/client/v2/spaces/ListSpaceUserRolesRequest.html" target="_top">Frames</a></li>
