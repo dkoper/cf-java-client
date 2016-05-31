@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerRequest.UpdateServiceBrokerRequestBuilder.html" title="class in org.cloudfoundry.client.v2.servicebrokers"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.UpdateServiceBrokerResponseBuilder.html" title="class in org.cloudfoundry.client.v2.servicebrokers"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.Builder.html" title="class in org.cloudfoundry.client.v2.servicebrokers"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.html" target="_top">Frames</a></li>
@@ -102,7 +102,12 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title="class in org.cloudfoundry.client.v2">org.cloudfoundry.client.v2.Resource</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/ServiceBrokerEntity.html" title="class in org.cloudfoundry.client.v2.servicebrokers">ServiceBrokerEntity</a>&gt;</li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/AbstractServiceBrokerResource.html" title="class in org.cloudfoundry.client.v2.servicebrokers">org.cloudfoundry.client.v2.servicebrokers.AbstractServiceBrokerResource</a></li>
+<li>
+<ul class="inheritance">
 <li>org.cloudfoundry.client.v2.servicebrokers.UpdateServiceBrokerResponse</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -113,9 +118,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public final class <span class="typeNameLabel">UpdateServiceBrokerResponse</span>
-extends <a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title="class in org.cloudfoundry.client.v2">Resource</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/ServiceBrokerEntity.html" title="class in org.cloudfoundry.client.v2.servicebrokers">ServiceBrokerEntity</a>&gt;</pre>
-<div class="block">The response payload for the the Update Service Broker request.</div>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>={"Immutables.generator","_UpdateServiceBrokerResponse"})
+public final class <span class="typeNameLabel">UpdateServiceBrokerResponse</span>
+extends <a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/AbstractServiceBrokerResource.html" title="class in org.cloudfoundry.client.v2.servicebrokers">AbstractServiceBrokerResource</a></pre>
+<div class="block">Immutable implementation of <code>_UpdateServiceBrokerResponse</code>.
+ <p>
+ Use the builder to create immutable instances:
+ <code>UpdateServiceBrokerResponse.builder()</code>.</div>
 </li>
 </ul>
 </div>
@@ -136,7 +145,9 @@ extends <a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title=
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.UpdateServiceBrokerResponseBuilder.html" title="class in org.cloudfoundry.client.v2.servicebrokers">UpdateServiceBrokerResponse.UpdateServiceBrokerResponseBuilder</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.Builder.html" title="class in org.cloudfoundry.client.v2.servicebrokers">UpdateServiceBrokerResponse.Builder</a></span></code>
+<div class="block">Builds instances of type <a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.html" title="class in org.cloudfoundry.client.v2.servicebrokers"><code>UpdateServiceBrokerResponse</code></a>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -148,23 +159,48 @@ extends <a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title=
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static <a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.UpdateServiceBrokerResponseBuilder.html" title="class in org.cloudfoundry.client.v2.servicebrokers">UpdateServiceBrokerResponse.UpdateServiceBrokerResponseBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.html#builder--">builder</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.Builder.html" title="class in org.cloudfoundry.client.v2.servicebrokers">UpdateServiceBrokerResponse.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.html#builder--">builder</a></span>()</code>
+<div class="block">Creates a builder for <a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.html" title="class in org.cloudfoundry.client.v2.servicebrokers"><code>UpdateServiceBrokerResponse</code></a>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</code>
+<div class="block">This instance is equal to all instances of <code>UpdateServiceBrokerResponse</code> that have equal attribute values.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/ServiceBrokerEntity.html" title="class in org.cloudfoundry.client.v2.servicebrokers">ServiceBrokerEntity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.html#getEntity--">getEntity</a></span>()</code>
+<div class="block">The resource's entity</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/Metadata.html" title="class in org.cloudfoundry.client.v2">Metadata</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.html#getMetadata--">getMetadata</a></span>()</code>
+<div class="block">The resource's metdata</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.html#hashCode--">hashCode</a></span>()</code>
+<div class="block">Computes a hash code from attributes: <code>entity</code>, <code>metadata</code>.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.html#toString--">toString</a></span>()</code>
+<div class="block">Prints the immutable value <code>UpdateServiceBrokerResponse</code> with attribute values.</div>
+</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.org.cloudfoundry.client.v2.Resource">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;org.cloudfoundry.client.v2.<a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title="class in org.cloudfoundry.client.v2">Resource</a></h3>
-<code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html#canEqual-java.lang.Object-">canEqual</a>, <a href="../../../../../org/cloudfoundry/client/v2/Resource.html#equals-java.lang.Object-">equals</a>, <a href="../../../../../org/cloudfoundry/client/v2/Resource.html#getEntity--">getEntity</a>, <a href="../../../../../org/cloudfoundry/client/v2/Resource.html#getMetadata--">getMetadata</a>, <a href="../../../../../org/cloudfoundry/client/v2/Resource.html#hashCode--">hashCode</a>, <a href="../../../../../org/cloudfoundry/client/v2/Resource.html#toString--">toString</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -186,14 +222,94 @@ extends <a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title=
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getEntity--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEntity</h4>
+<pre>public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/ServiceBrokerEntity.html" title="class in org.cloudfoundry.client.v2.servicebrokers">ServiceBrokerEntity</a>&nbsp;getEntity()</pre>
+<div class="block">The resource's entity</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html#getEntity--">getEntity</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title="class in org.cloudfoundry.client.v2">Resource</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/ServiceBrokerEntity.html" title="class in org.cloudfoundry.client.v2.servicebrokers">ServiceBrokerEntity</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getMetadata--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMetadata</h4>
+<pre>public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/Metadata.html" title="class in org.cloudfoundry.client.v2">Metadata</a>&nbsp;getMetadata()</pre>
+<div class="block">The resource's metdata</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html#getMetadata--">getMetadata</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title="class in org.cloudfoundry.client.v2">Resource</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/ServiceBrokerEntity.html" title="class in org.cloudfoundry.client.v2.servicebrokers">ServiceBrokerEntity</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="equals-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</pre>
+<div class="block">This instance is equal to all instances of <code>UpdateServiceBrokerResponse</code> that have equal attribute values.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if <code>this</code> is equal to <code>another</code> instance</dd>
+</dl>
+</li>
+</ul>
+<a name="hashCode--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block">Computes a hash code from attributes: <code>entity</code>, <code>metadata</code>.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>hashCode value</dd>
+</dl>
+</li>
+</ul>
+<a name="toString--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">Prints the immutable value <code>UpdateServiceBrokerResponse</code> with attribute values.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A string representation of the value</dd>
+</dl>
+</li>
+</ul>
 <a name="builder--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>builder</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.UpdateServiceBrokerResponseBuilder.html" title="class in org.cloudfoundry.client.v2.servicebrokers">UpdateServiceBrokerResponse.UpdateServiceBrokerResponseBuilder</a>&nbsp;builder()</pre>
+<pre>public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.Builder.html" title="class in org.cloudfoundry.client.v2.servicebrokers">UpdateServiceBrokerResponse.Builder</a>&nbsp;builder()</pre>
+<div class="block">Creates a builder for <a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.html" title="class in org.cloudfoundry.client.v2.servicebrokers"><code>UpdateServiceBrokerResponse</code></a>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A new UpdateServiceBrokerResponse builder</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -225,7 +341,7 @@ public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/servicebro
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerRequest.UpdateServiceBrokerRequestBuilder.html" title="class in org.cloudfoundry.client.v2.servicebrokers"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.UpdateServiceBrokerResponseBuilder.html" title="class in org.cloudfoundry.client.v2.servicebrokers"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.Builder.html" title="class in org.cloudfoundry.client.v2.servicebrokers"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?org/cloudfoundry/client/v2/servicebrokers/UpdateServiceBrokerResponse.html" target="_top">Frames</a></li>

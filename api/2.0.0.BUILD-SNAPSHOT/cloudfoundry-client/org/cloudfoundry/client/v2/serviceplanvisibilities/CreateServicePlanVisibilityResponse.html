@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityRequest.CreateServicePlanVisibilityRequestBuilder.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.CreateServicePlanVisibilityResponseBuilder.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.Builder.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.html" target="_top">Frames</a></li>
@@ -102,7 +102,12 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title="class in org.cloudfoundry.client.v2">org.cloudfoundry.client.v2.Resource</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/ServicePlanVisibilityEntity.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">ServicePlanVisibilityEntity</a>&gt;</li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/AbstractServicePlanVisibilityResource.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">org.cloudfoundry.client.v2.serviceplanvisibilities.AbstractServicePlanVisibilityResource</a></li>
+<li>
+<ul class="inheritance">
 <li>org.cloudfoundry.client.v2.serviceplanvisibilities.CreateServicePlanVisibilityResponse</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -113,9 +118,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public final class <span class="typeNameLabel">CreateServicePlanVisibilityResponse</span>
-extends <a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title="class in org.cloudfoundry.client.v2">Resource</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/ServicePlanVisibilityEntity.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">ServicePlanVisibilityEntity</a>&gt;</pre>
-<div class="block">The response payload for the the Create Service Plan Visibility request.</div>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>={"Immutables.generator","_CreateServicePlanVisibilityResponse"})
+public final class <span class="typeNameLabel">CreateServicePlanVisibilityResponse</span>
+extends <a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/AbstractServicePlanVisibilityResource.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">AbstractServicePlanVisibilityResource</a></pre>
+<div class="block">Immutable implementation of <code>_CreateServicePlanVisibilityResponse</code>.
+ <p>
+ Use the builder to create immutable instances:
+ <code>CreateServicePlanVisibilityResponse.builder()</code>.</div>
 </li>
 </ul>
 </div>
@@ -136,7 +145,9 @@ extends <a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title=
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.CreateServicePlanVisibilityResponseBuilder.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">CreateServicePlanVisibilityResponse.CreateServicePlanVisibilityResponseBuilder</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.Builder.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">CreateServicePlanVisibilityResponse.Builder</a></span></code>
+<div class="block">Builds instances of type <a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities"><code>CreateServicePlanVisibilityResponse</code></a>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -154,33 +165,42 @@ extends <a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title=
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static <a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.CreateServicePlanVisibilityResponseBuilder.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">CreateServicePlanVisibilityResponse.CreateServicePlanVisibilityResponseBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.html#builder--">builder</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.Builder.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">CreateServicePlanVisibilityResponse.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.html#builder--">builder</a></span>()</code>
+<div class="block">Creates a builder for <a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities"><code>CreateServicePlanVisibilityResponse</code></a>.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.html#canEqual-java.lang.Object-">canEqual</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</code>
+<div class="block">This instance is equal to all instances of <code>CreateServicePlanVisibilityResponse</code> that have equal attribute values.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/ServicePlanVisibilityEntity.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">ServicePlanVisibilityEntity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.html#getEntity--">getEntity</a></span>()</code>
+<div class="block">The resource's entity</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/Metadata.html" title="class in org.cloudfoundry.client.v2">Metadata</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.html#getMetadata--">getMetadata</a></span>()</code>
+<div class="block">The resource's metdata</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.html#hashCode--">hashCode</a></span>()</code>
+<div class="block">Computes a hash code from attributes: <code>entity</code>, <code>metadata</code>.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.html#toString--">toString</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.html#toString--">toString</a></span>()</code>
+<div class="block">Prints the immutable value <code>CreateServicePlanVisibilityResponse</code> with attribute values.</div>
+</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.org.cloudfoundry.client.v2.Resource">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;org.cloudfoundry.client.v2.<a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title="class in org.cloudfoundry.client.v2">Resource</a></h3>
-<code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html#getEntity--">getEntity</a>, <a href="../../../../../org/cloudfoundry/client/v2/Resource.html#getMetadata--">getMetadata</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -202,14 +222,32 @@ extends <a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title=
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="builder--">
+<a name="getEntity--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>builder</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.CreateServicePlanVisibilityResponseBuilder.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">CreateServicePlanVisibilityResponse.CreateServicePlanVisibilityResponseBuilder</a>&nbsp;builder()</pre>
+<h4>getEntity</h4>
+<pre>public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/ServicePlanVisibilityEntity.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">ServicePlanVisibilityEntity</a>&nbsp;getEntity()</pre>
+<div class="block">The resource's entity</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html#getEntity--">getEntity</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title="class in org.cloudfoundry.client.v2">Resource</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/ServicePlanVisibilityEntity.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">ServicePlanVisibilityEntity</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getMetadata--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMetadata</h4>
+<pre>public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/Metadata.html" title="class in org.cloudfoundry.client.v2">Metadata</a>&nbsp;getMetadata()</pre>
+<div class="block">The resource's metdata</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html#getMetadata--">getMetadata</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title="class in org.cloudfoundry.client.v2">Resource</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/ServicePlanVisibilityEntity.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">ServicePlanVisibilityEntity</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">
@@ -218,25 +256,13 @@ public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/servicepla
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</pre>
+<div class="block">This instance is equal to all instances of <code>CreateServicePlanVisibilityResponse</code> that have equal attribute values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html#equals-java.lang.Object-">equals</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title="class in org.cloudfoundry.client.v2">Resource</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/ServicePlanVisibilityEntity.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">ServicePlanVisibilityEntity</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="canEqual-java.lang.Object-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>canEqual</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-protected&nbsp;boolean&nbsp;canEqual(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html#canEqual-java.lang.Object-">canEqual</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title="class in org.cloudfoundry.client.v2">Resource</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/ServicePlanVisibilityEntity.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">ServicePlanVisibilityEntity</a>&gt;</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if <code>this</code> is equal to <code>another</code> instance</dd>
 </dl>
 </li>
 </ul>
@@ -246,25 +272,43 @@ protected&nbsp;boolean&nbsp;canEqual(<a href="http://docs.oracle.com/javase/8/do
 <ul class="blockList">
 <li class="blockList">
 <h4>hashCode</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;int&nbsp;hashCode()</pre>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block">Computes a hash code from attributes: <code>entity</code>, <code>metadata</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html#hashCode--">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title="class in org.cloudfoundry.client.v2">Resource</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/ServicePlanVisibilityEntity.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">ServicePlanVisibilityEntity</a>&gt;</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>hashCode value</dd>
 </dl>
 </li>
 </ul>
 <a name="toString--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">Prints the immutable value <code>CreateServicePlanVisibilityResponse</code> with attribute values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html#toString--">toString</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/Resource.html" title="class in org.cloudfoundry.client.v2">Resource</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/ServicePlanVisibilityEntity.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">ServicePlanVisibilityEntity</a>&gt;</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A string representation of the value</dd>
+</dl>
+</li>
+</ul>
+<a name="builder--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>builder</h4>
+<pre>public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.Builder.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities">CreateServicePlanVisibilityResponse.Builder</a>&nbsp;builder()</pre>
+<div class="block">Creates a builder for <a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities"><code>CreateServicePlanVisibilityResponse</code></a>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A new CreateServicePlanVisibilityResponse builder</dd>
 </dl>
 </li>
 </ul>
@@ -297,7 +341,7 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.h
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityRequest.CreateServicePlanVisibilityRequestBuilder.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.CreateServicePlanVisibilityResponseBuilder.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.Builder.html" title="class in org.cloudfoundry.client.v2.serviceplanvisibilities"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?org/cloudfoundry/client/v2/serviceplanvisibilities/CreateServicePlanVisibilityResponse.html" target="_top">Frames</a></li>

@@ -82,10 +82,6 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a href="#org.cloudfoundry.client.v3.applications">org.cloudfoundry.client.v3.applications</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><a href="#org.cloudfoundry.client.v3.processes">org.cloudfoundry.client.v3.processes</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -94,41 +90,10 @@
 </li>
 <li class="blockList">
 <ul class="blockList">
-<li class="blockList"><a name="org.cloudfoundry.client.v3.applications">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.html" title="class in org.cloudfoundry.client.v3.processes">ProcessUsage</a> in <a href="../../../../../../org/cloudfoundry/client/v3/applications/package-summary.html">org.cloudfoundry.client.v3.applications</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../org/cloudfoundry/client/v3/applications/package-summary.html">org.cloudfoundry.client.v3.applications</a> with parameters of type <a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.html" title="class in org.cloudfoundry.client.v3.processes">ProcessUsage</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../org/cloudfoundry/client/v3/applications/GetApplicationProcessStatisticsResponse.Resource.ResourceBuilder.html" title="class in org.cloudfoundry.client.v3.applications">GetApplicationProcessStatisticsResponse.Resource.ResourceBuilder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">GetApplicationProcessStatisticsResponse.Resource.ResourceBuilder.</span><code><span class="memberNameLink"><a href="../../../../../../org/cloudfoundry/client/v3/applications/GetApplicationProcessStatisticsResponse.Resource.ResourceBuilder.html#usage-org.cloudfoundry.client.v3.processes.ProcessUsage-">usage</a></span>(<a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.html" title="class in org.cloudfoundry.client.v3.processes">ProcessUsage</a>&nbsp;usage)</code>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-</li>
 <li class="blockList"><a name="org.cloudfoundry.client.v3.processes">
 <!--   -->
 </a>
 <h3>Uses of <a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.html" title="class in org.cloudfoundry.client.v3.processes">ProcessUsage</a> in <a href="../../../../../../org/cloudfoundry/client/v3/processes/package-summary.html">org.cloudfoundry.client.v3.processes</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing fields, and an explanation">
-<caption><span>Fields in <a href="../../../../../../org/cloudfoundry/client/v3/processes/package-summary.html">org.cloudfoundry.client.v3.processes</a> declared as <a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.html" title="class in org.cloudfoundry.client.v3.processes">ProcessUsage</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.html" title="class in org.cloudfoundry.client.v3.processes">ProcessUsage</a></code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractProcessStatistics.</span><code><span class="memberNameLink"><a href="../../../../../../org/cloudfoundry/client/v3/processes/AbstractProcessStatistics.html#usage">usage</a></span></code>&nbsp;</td>
-</tr>
-</tbody>
-</table>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
 <caption><span>Methods in <a href="../../../../../../org/cloudfoundry/client/v3/processes/package-summary.html">org.cloudfoundry.client.v3.processes</a> that return <a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.html" title="class in org.cloudfoundry.client.v3.processes">ProcessUsage</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
@@ -138,11 +103,21 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.html" title="class in org.cloudfoundry.client.v3.processes">ProcessUsage</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ProcessUsage.ProcessUsageBuilder.</span><code><span class="memberNameLink"><a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.ProcessUsageBuilder.html#build--">build</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ProcessUsage.Builder.</span><code><span class="memberNameLink"><a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.Builder.html#build--">build</a></span>()</code>
+<div class="block">Builds a new <a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.html" title="class in org.cloudfoundry.client.v3.processes"><code>ProcessUsage</code></a>.</div>
+</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>abstract <a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.html" title="class in org.cloudfoundry.client.v3.processes">ProcessUsage</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ProcessStatistics.</span><code><span class="memberNameLink"><a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessStatistics.html#getUsage--">getUsage</a></span>()</code>
+<div class="block">The usage</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.html" title="class in org.cloudfoundry.client.v3.processes">ProcessUsage</a></code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractProcessStatistics.</span><code><span class="memberNameLink"><a href="../../../../../../org/cloudfoundry/client/v3/processes/AbstractProcessStatistics.html#getUsage--">getUsage</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ProcessStatisticsResource.</span><code><span class="memberNameLink"><a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessStatisticsResource.html#getUsage--">getUsage</a></span>()</code>
+<div class="block">The usage</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -154,28 +129,16 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../org/cloudfoundry/client/v3/processes/GetProcessStatisticsResponse.Resource.ResourceBuilder.html" title="class in org.cloudfoundry.client.v3.processes">GetProcessStatisticsResponse.Resource.ResourceBuilder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">GetProcessStatisticsResponse.Resource.ResourceBuilder.</span><code><span class="memberNameLink"><a href="../../../../../../org/cloudfoundry/client/v3/processes/GetProcessStatisticsResponse.Resource.ResourceBuilder.html#usage-org.cloudfoundry.client.v3.processes.ProcessUsage-">usage</a></span>(<a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.html" title="class in org.cloudfoundry.client.v3.processes">ProcessUsage</a>&nbsp;usage)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.Builder.html" title="class in org.cloudfoundry.client.v3.processes">ProcessUsage.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ProcessUsage.Builder.</span><code><span class="memberNameLink"><a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.Builder.html#from-org.cloudfoundry.client.v3.processes.ProcessUsage-">from</a></span>(<a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.html" title="class in org.cloudfoundry.client.v3.processes">ProcessUsage</a>&nbsp;instance)</code>
+<div class="block">Fill a builder with attribute values from the provided <code>ProcessUsage</code> instance.</div>
+</td>
 </tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
-<caption><span>Constructors in <a href="../../../../../../org/cloudfoundry/client/v3/processes/package-summary.html">org.cloudfoundry.client.v3.processes</a> with parameters of type <a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.html" title="class in org.cloudfoundry.client.v3.processes">ProcessUsage</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../org/cloudfoundry/client/v3/processes/AbstractProcessStatistics.html#AbstractProcessStatistics-java.lang.Long-java.lang.Integer-java.lang.String-java.lang.Integer-java.util.List-java.lang.Long-java.lang.String-java.lang.String-java.lang.Long-org.cloudfoundry.client.v3.processes.ProcessUsage-">AbstractProcessStatistics</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;diskQuota,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;fdsQuota,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;host,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;index,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/cloudfoundry/client/v3/processes/AbstractProcessStatistics.PortMapping.html" title="class in org.cloudfoundry.client.v3.processes">AbstractProcessStatistics.PortMapping</a>&gt;&nbsp;instancePorts,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;memoryQuota,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;state,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;type,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;uptime,
-                         <a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.html" title="class in org.cloudfoundry.client.v3.processes">ProcessUsage</a>&nbsp;usage)</code>&nbsp;</td>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessStatisticsResource.Builder.html" title="class in org.cloudfoundry.client.v3.processes">ProcessStatisticsResource.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ProcessStatisticsResource.Builder.</span><code><span class="memberNameLink"><a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessStatisticsResource.Builder.html#usage-org.cloudfoundry.client.v3.processes.ProcessUsage-">usage</a></span>(<a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessUsage.html" title="class in org.cloudfoundry.client.v3.processes">ProcessUsage</a>&nbsp;usage)</code>
+<div class="block">Initializes the value for the <a href="../../../../../../org/cloudfoundry/client/v3/processes/ProcessStatistics.html#getUsage--"><code>usage</code></a> attribute.</div>
+</td>
 </tr>
 </tbody>
 </table>

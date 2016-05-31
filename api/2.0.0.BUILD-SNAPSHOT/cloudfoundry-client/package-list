@@ -41,3 +41,4 @@ org.cloudfoundry.doppler
 org.cloudfoundry.uaa
 org.cloudfoundry.uaa.identityzones
 org.cloudfoundry.uaa.tokens
+org.cloudfoundry.uaa.users
