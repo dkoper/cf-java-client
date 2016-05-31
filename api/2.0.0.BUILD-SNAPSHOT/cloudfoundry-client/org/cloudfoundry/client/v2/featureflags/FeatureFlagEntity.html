@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../org/cloudfoundry/client/v2/featureflags/AbstractFeatureFlag.html" title="class in org.cloudfoundry.client.v2.featureflags"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.FeatureFlagEntityBuilder.html" title="class in org.cloudfoundry.client.v2.featureflags"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.Builder.html" title="class in org.cloudfoundry.client.v2.featureflags"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html" target="_top">Frames</a></li>
@@ -113,9 +113,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public final class <span class="typeNameLabel">FeatureFlagEntity</span>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>={"Immutables.generator","_FeatureFlagEntity"})
+public final class <span class="typeNameLabel">FeatureFlagEntity</span>
 extends <a href="../../../../../org/cloudfoundry/client/v2/featureflags/AbstractFeatureFlag.html" title="class in org.cloudfoundry.client.v2.featureflags">AbstractFeatureFlag</a></pre>
-<div class="block">The entity response payload for Feature Flag operation</div>
+<div class="block">Immutable implementation of <code>_FeatureFlagEntity</code>.
+ <p>
+ Use the builder to create immutable instances:
+ <code>FeatureFlagEntity.builder()</code>.</div>
 </li>
 </ul>
 </div>
@@ -136,7 +140,9 @@ extends <a href="../../../../../org/cloudfoundry/client/v2/featureflags/Abstract
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.FeatureFlagEntityBuilder.html" title="class in org.cloudfoundry.client.v2.featureflags">FeatureFlagEntity.FeatureFlagEntityBuilder</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.Builder.html" title="class in org.cloudfoundry.client.v2.featureflags">FeatureFlagEntity.Builder</a></span></code>
+<div class="block">Builds instances of type <a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html" title="class in org.cloudfoundry.client.v2.featureflags"><code>FeatureFlagEntity</code></a>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -154,33 +160,54 @@ extends <a href="../../../../../org/cloudfoundry/client/v2/featureflags/Abstract
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static <a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.FeatureFlagEntityBuilder.html" title="class in org.cloudfoundry.client.v2.featureflags">FeatureFlagEntity.FeatureFlagEntityBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html#builder--">builder</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.Builder.html" title="class in org.cloudfoundry.client.v2.featureflags">FeatureFlagEntity.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html#builder--">builder</a></span>()</code>
+<div class="block">Creates a builder for <a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html" title="class in org.cloudfoundry.client.v2.featureflags"><code>FeatureFlagEntity</code></a>.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html#canEqual-java.lang.Object-">canEqual</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</code>
+<div class="block">This instance is equal to all instances of <code>FeatureFlagEntity</code> that have equal attribute values.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html#getEnabled--">getEnabled</a></span>()</code>
+<div class="block">The state of the feature flag</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html#getErrorMessage--">getErrorMessage</a></span>()</code>
+<div class="block">The custom error message for the feature flag</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html#toString--">toString</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html#getName--">getName</a></span>()</code>
+<div class="block">The name of the feature flag</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html#getUrl--">getUrl</a></span>()</code>
+<div class="block">The url for the feature flag</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html#hashCode--">hashCode</a></span>()</code>
+<div class="block">Computes a hash code from attributes: <code>enabled</code>, <code>errorMessage</code>, <code>name</code>, <code>url</code>.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html#toString--">toString</a></span>()</code>
+<div class="block">Prints the immutable value <code>FeatureFlagEntity</code> with attribute values.</div>
+</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.org.cloudfoundry.client.v2.featureflags.AbstractFeatureFlag">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;org.cloudfoundry.client.v2.featureflags.<a href="../../../../../org/cloudfoundry/client/v2/featureflags/AbstractFeatureFlag.html" title="class in org.cloudfoundry.client.v2.featureflags">AbstractFeatureFlag</a></h3>
-<code><a href="../../../../../org/cloudfoundry/client/v2/featureflags/AbstractFeatureFlag.html#getEnabled--">getEnabled</a>, <a href="../../../../../org/cloudfoundry/client/v2/featureflags/AbstractFeatureFlag.html#getErrorMessage--">getErrorMessage</a>, <a href="../../../../../org/cloudfoundry/client/v2/featureflags/AbstractFeatureFlag.html#getName--">getName</a>, <a href="../../../../../org/cloudfoundry/client/v2/featureflags/AbstractFeatureFlag.html#getUrl--">getUrl</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -202,14 +229,44 @@ extends <a href="../../../../../org/cloudfoundry/client/v2/featureflags/Abstract
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="builder--">
+<a name="getEnabled--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>builder</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.FeatureFlagEntityBuilder.html" title="class in org.cloudfoundry.client.v2.featureflags">FeatureFlagEntity.FeatureFlagEntityBuilder</a>&nbsp;builder()</pre>
+<h4>getEnabled</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;getEnabled()</pre>
+<div class="block">The state of the feature flag</div>
+</li>
+</ul>
+<a name="getErrorMessage--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getErrorMessage</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getErrorMessage()</pre>
+<div class="block">The custom error message for the feature flag</div>
+</li>
+</ul>
+<a name="getName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getName</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
+<div class="block">The name of the feature flag</div>
+</li>
+</ul>
+<a name="getUrl--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUrl</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getUrl()</pre>
+<div class="block">The url for the feature flag</div>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">
@@ -218,25 +275,13 @@ public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/featurefla
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;another)</pre>
+<div class="block">This instance is equal to all instances of <code>FeatureFlagEntity</code> that have equal attribute values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/client/v2/featureflags/AbstractFeatureFlag.html#equals-java.lang.Object-">equals</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/featureflags/AbstractFeatureFlag.html" title="class in org.cloudfoundry.client.v2.featureflags">AbstractFeatureFlag</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="canEqual-java.lang.Object-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>canEqual</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-protected&nbsp;boolean&nbsp;canEqual(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/client/v2/featureflags/AbstractFeatureFlag.html#canEqual-java.lang.Object-">canEqual</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/featureflags/AbstractFeatureFlag.html" title="class in org.cloudfoundry.client.v2.featureflags">AbstractFeatureFlag</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if <code>this</code> is equal to <code>another</code> instance</dd>
 </dl>
 </li>
 </ul>
@@ -246,25 +291,43 @@ protected&nbsp;boolean&nbsp;canEqual(<a href="http://docs.oracle.com/javase/8/do
 <ul class="blockList">
 <li class="blockList">
 <h4>hashCode</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;int&nbsp;hashCode()</pre>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block">Computes a hash code from attributes: <code>enabled</code>, <code>errorMessage</code>, <code>name</code>, <code>url</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/client/v2/featureflags/AbstractFeatureFlag.html#hashCode--">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/featureflags/AbstractFeatureFlag.html" title="class in org.cloudfoundry.client.v2.featureflags">AbstractFeatureFlag</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>hashCode value</dd>
 </dl>
 </li>
 </ul>
 <a name="toString--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">Prints the immutable value <code>FeatureFlagEntity</code> with attribute values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../org/cloudfoundry/client/v2/featureflags/AbstractFeatureFlag.html#toString--">toString</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/cloudfoundry/client/v2/featureflags/AbstractFeatureFlag.html" title="class in org.cloudfoundry.client.v2.featureflags">AbstractFeatureFlag</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A string representation of the value</dd>
+</dl>
+</li>
+</ul>
+<a name="builder--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>builder</h4>
+<pre>public static&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.Builder.html" title="class in org.cloudfoundry.client.v2.featureflags">FeatureFlagEntity.Builder</a>&nbsp;builder()</pre>
+<div class="block">Creates a builder for <a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html" title="class in org.cloudfoundry.client.v2.featureflags"><code>FeatureFlagEntity</code></a>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A new FeatureFlagEntity builder</dd>
 </dl>
 </li>
 </ul>
@@ -297,7 +360,7 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.h
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../org/cloudfoundry/client/v2/featureflags/AbstractFeatureFlag.html" title="class in org.cloudfoundry.client.v2.featureflags"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.FeatureFlagEntityBuilder.html" title="class in org.cloudfoundry.client.v2.featureflags"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.Builder.html" title="class in org.cloudfoundry.client.v2.featureflags"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?org/cloudfoundry/client/v2/featureflags/FeatureFlagEntity.html" target="_top">Frames</a></li>
