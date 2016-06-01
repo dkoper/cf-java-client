@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6};
+var methods = {"i0":6,"i1":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -121,9 +121,15 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/CreateUserResponse.html" title="class in org.cloudfoundry.uaa.users">CreateUserResponse</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/Users.html#create-org.cloudfoundry.uaa.users.CreateUserRequest-">create</a></span>(<a href="../../../../org/cloudfoundry/uaa/users/CreateUserRequest.html" title="class in org.cloudfoundry.uaa.users">CreateUserRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#create48">Create Users</a> request</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/ListUsersResponse.html" title="class in org.cloudfoundry.uaa.users">ListUsersResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/Users.html#list-org.cloudfoundry.uaa.users.ListUsersRequest-">list</a></span>(<a href="../../../../org/cloudfoundry/uaa/users/ListUsersRequest.html" title="class in org.cloudfoundry.uaa.users">ListUsersRequest</a>&nbsp;request)</code>
-<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#authorization-code-grant12">List Users</a> request</div>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#list">List Users</a> request</div>
 </td>
 </tr>
 </table>
@@ -141,6 +147,22 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="create-org.cloudfoundry.uaa.users.CreateUserRequest-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/CreateUserResponse.html" title="class in org.cloudfoundry.uaa.users">CreateUserResponse</a>&gt;&nbsp;create(<a href="../../../../org/cloudfoundry/uaa/users/CreateUserRequest.html" title="class in org.cloudfoundry.uaa.users">CreateUserRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#create48">Create Users</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - the Create Users request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the response from the Create Users request</dd>
+</dl>
+</li>
+</ul>
 <a name="list-org.cloudfoundry.uaa.users.ListUsersRequest-">
 <!--   -->
 </a>
@@ -148,7 +170,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>list</h4>
 <pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/ListUsersResponse.html" title="class in org.cloudfoundry.uaa.users">ListUsersResponse</a>&gt;&nbsp;list(<a href="../../../../org/cloudfoundry/uaa/users/ListUsersRequest.html" title="class in org.cloudfoundry.uaa.users">ListUsersRequest</a>&nbsp;request)</pre>
-<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#authorization-code-grant12">List Users</a> request</div>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#list">List Users</a> request</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>request</code> - the List Users request</dd>
