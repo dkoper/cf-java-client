@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6};
+var methods = {"i0":6,"i1":6,"i2":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/cloudfoundry/operations/serviceadmin/CreateServiceBrokerRequest.Builder.html" title="class in org.cloudfoundry.operations.serviceadmin"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../org/cloudfoundry/operations/serviceadmin/DeleteServiceBrokerRequest.Builder.html" title="class in org.cloudfoundry.operations.serviceadmin"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../org/cloudfoundry/operations/serviceadmin/ServiceBroker.html" title="class in org.cloudfoundry.operations.serviceadmin"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -127,8 +127,14 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/serviceadmin/ServiceAdmin.html#delete-org.cloudfoundry.operations.serviceadmin.DeleteServiceBrokerRequest-">delete</a></span>(<a href="../../../../org/cloudfoundry/operations/serviceadmin/DeleteServiceBrokerRequest.html" title="class in org.cloudfoundry.operations.serviceadmin">DeleteServiceBrokerRequest</a>&nbsp;request)</code>
+<div class="block">Deletes a service broker</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../../org/cloudfoundry/operations/serviceadmin/ServiceBroker.html" title="class in org.cloudfoundry.operations.serviceadmin">ServiceBroker</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/serviceadmin/ServiceAdmin.html#listServiceBrokers--">listServiceBrokers</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/serviceadmin/ServiceAdmin.html#list--">list</a></span>()</code>
 <div class="block">Lists the service brokers</div>
 </td>
 </tr>
@@ -163,13 +169,29 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="listServiceBrokers--">
+<a name="delete-org.cloudfoundry.operations.serviceadmin.DeleteServiceBrokerRequest-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>delete</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;delete(<a href="../../../../org/cloudfoundry/operations/serviceadmin/DeleteServiceBrokerRequest.html" title="class in org.cloudfoundry.operations.serviceadmin">DeleteServiceBrokerRequest</a>&nbsp;request)</pre>
+<div class="block">Deletes a service broker</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - the Delete Service Broker request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a completion indicator</dd>
+</dl>
+</li>
+</ul>
+<a name="list--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>listServiceBrokers</h4>
-<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../../org/cloudfoundry/operations/serviceadmin/ServiceBroker.html" title="class in org.cloudfoundry.operations.serviceadmin">ServiceBroker</a>&gt;&nbsp;listServiceBrokers()</pre>
+<h4>list</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../../org/cloudfoundry/operations/serviceadmin/ServiceBroker.html" title="class in org.cloudfoundry.operations.serviceadmin">ServiceBroker</a>&gt;&nbsp;list()</pre>
 <div class="block">Lists the service brokers</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -205,7 +227,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/cloudfoundry/operations/serviceadmin/CreateServiceBrokerRequest.Builder.html" title="class in org.cloudfoundry.operations.serviceadmin"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../org/cloudfoundry/operations/serviceadmin/DeleteServiceBrokerRequest.Builder.html" title="class in org.cloudfoundry.operations.serviceadmin"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../org/cloudfoundry/operations/serviceadmin/ServiceBroker.html" title="class in org.cloudfoundry.operations.serviceadmin"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
