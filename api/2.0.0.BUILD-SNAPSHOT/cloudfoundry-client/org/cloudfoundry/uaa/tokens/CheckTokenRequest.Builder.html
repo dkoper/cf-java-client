@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -151,29 +151,41 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">CheckTokenRequest.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenRequest.Builder.html#clientId-java.lang.String-">clientId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;clientId)</code>
+<div class="block">Initializes the value for the <code>clientId</code> attribute.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">CheckTokenRequest.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenRequest.Builder.html#clientSecret-java.lang.String-">clientSecret</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;clientSecret)</code>
+<div class="block">Initializes the value for the <code>clientSecret</code> attribute.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">CheckTokenRequest.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenRequest.Builder.html#from-org.cloudfoundry.uaa.tokens.CheckTokenRequest-">from</a></span>(<a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenRequest.html" title="class in org.cloudfoundry.uaa.tokens">CheckTokenRequest</a>&nbsp;instance)</code>
 <div class="block">Fill a builder with attribute values from the provided <code>CheckTokenRequest</code> instance.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">CheckTokenRequest.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenRequest.Builder.html#scope-java.lang.String...-">scope</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>...&nbsp;elements)</code>
 <div class="block">Adds elements to <code>scopes</code> list.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">CheckTokenRequest.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenRequest.Builder.html#scope-java.lang.String-">scope</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;element)</code>
 <div class="block">Adds one element to <code>scopes</code> list.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">CheckTokenRequest.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenRequest.Builder.html#scopes-java.lang.Iterable-">scopes</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;elements)</code>
 <div class="block">Sets or replaces all elements for <code>scopes</code> list.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">CheckTokenRequest.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenRequest.Builder.html#token-java.lang.String-">token</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;token)</code>
 <div class="block">Initializes the value for the <code>token</code> attribute.</div>
@@ -215,6 +227,38 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>instance</code> - The instance from which to copy values</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for use in a chained invocation</dd>
+</dl>
+</li>
+</ul>
+<a name="clientId-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clientId</h4>
+<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">CheckTokenRequest.Builder</a>&nbsp;clientId(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;clientId)</pre>
+<div class="block">Initializes the value for the <code>clientId</code> attribute.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>clientId</code> - The value for clientId</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for use in a chained invocation</dd>
+</dl>
+</li>
+</ul>
+<a name="clientSecret-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clientSecret</h4>
+<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/tokens/CheckTokenRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">CheckTokenRequest.Builder</a>&nbsp;clientSecret(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;clientSecret)</pre>
+<div class="block">Initializes the value for the <code>clientSecret</code> attribute.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>clientSecret</code> - The value for clientSecret</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
