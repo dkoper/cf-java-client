@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/cloudfoundry/uaa/identityzones/ListIdentityZonesResponse.Builder.html" title="class in org.cloudfoundry.uaa.identityzones"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../org/cloudfoundry/uaa/identityzones/TokenPolicy.Builder.html" title="class in org.cloudfoundry.uaa.identityzones"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../org/cloudfoundry/uaa/identityzones/UpdateIdentityZoneRequest.Builder.html" title="class in org.cloudfoundry.uaa.identityzones"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -167,42 +167,48 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/identityzones/IdentityZoneConfiguration.html" title="class in org.cloudfoundry.uaa.identityzones">IdentityZoneConfiguration</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/identityzones/UpdateIdentityZoneRequest.html#getConfiguration--">getConfiguration</a></span>()</code>
+<div class="block">The configuration</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/identityzones/UpdateIdentityZoneRequest.html#getDescription--">getDescription</a></span>()</code>
 <div class="block">The description of the identity zone</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/identityzones/UpdateIdentityZoneRequest.html#getIdentityZoneId--">getIdentityZoneId</a></span>()</code>
 <div class="block">The id of the identity zone.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/identityzones/UpdateIdentityZoneRequest.html#getName--">getName</a></span>()</code>
 <div class="block">The name of the identity zone</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/identityzones/UpdateIdentityZoneRequest.html#getSubdomain--">getSubdomain</a></span>()</code>
 <div class="block">The unique subdomain.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/identityzones/UpdateIdentityZoneRequest.html#getVersion--">getVersion</a></span>()</code>
 <div class="block">The version of the identity zone</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/identityzones/UpdateIdentityZoneRequest.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>description</code>, <code>identityZoneId</code>, <code>name</code>, <code>subdomain</code>, <code>version</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>configuration</code>, <code>description</code>, <code>identityZoneId</code>, <code>name</code>, <code>subdomain</code>, <code>version</code>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/identityzones/UpdateIdentityZoneRequest.html#toString--">toString</a></span>()</code>
 <div class="block">Prints the immutable value <code>UpdateIdentityZoneRequest</code> with attribute values.</div>
@@ -230,6 +236,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getConfiguration--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConfiguration</h4>
+<pre>public&nbsp;<a href="../../../../org/cloudfoundry/uaa/identityzones/IdentityZoneConfiguration.html" title="class in org.cloudfoundry.uaa.identityzones">IdentityZoneConfiguration</a>&nbsp;getConfiguration()</pre>
+<div class="block">The configuration</div>
+</li>
+</ul>
 <a name="getDescription--">
 <!--   -->
 </a>
@@ -303,7 +319,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>description</code>, <code>identityZoneId</code>, <code>name</code>, <code>subdomain</code>, <code>version</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>configuration</code>, <code>description</code>, <code>identityZoneId</code>, <code>name</code>, <code>subdomain</code>, <code>version</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
@@ -370,7 +386,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/cloudfoundry/uaa/identityzones/ListIdentityZonesResponse.Builder.html" title="class in org.cloudfoundry.uaa.identityzones"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../org/cloudfoundry/uaa/identityzones/TokenPolicy.Builder.html" title="class in org.cloudfoundry.uaa.identityzones"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../org/cloudfoundry/uaa/identityzones/UpdateIdentityZoneRequest.Builder.html" title="class in org.cloudfoundry.uaa.identityzones"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
