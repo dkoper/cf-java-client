@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":42,"i5":42,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":42,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
+var methods = {"i0":6,"i1":6,"i2":38,"i3":38,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":38,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -130,32 +130,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
 <caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
-<th class="colFirst" scope="col">Modifier</th>
-<th class="colLast" scope="col">Constructor and Description</th>
+<th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#AbstractApplicationEntity-java.lang.String-java.lang.String-java.lang.Boolean-java.lang.Boolean-java.lang.String-java.lang.Boolean-java.lang.Integer-java.util.Map-java.lang.String-java.util.Map-java.lang.Integer-java.lang.String-java.lang.Integer-java.lang.Integer-java.lang.String-java.lang.Boolean-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">AbstractApplicationEntity</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;buildpack,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;command,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;console,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;debug,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;detectedStartCommand,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;diego,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;diskQuota,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;dockerCredentialsJsons,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dockerImage,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;environmentJsons,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;healthCheckTimeout,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;healthCheckType,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;instances,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;memory,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;production,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;spaceId,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;stackId,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;stagingFailedDescription,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;stagingFailedReason,
-                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;state)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#AbstractApplicationEntity--">AbstractApplicationEntity</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -167,152 +145,142 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#canEqual-java.lang.Object-">canEqual</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</code>&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getBuildpack--">getBuildpack</a></span>()</code>
 <div class="block">The buildpack</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getCommand--">getCommand</a></span>()</code>
 <div class="block">The command</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getConsole--">getConsole</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getDebug--">getDebug</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getDetectedStartCommand--">getDetectedStartCommand</a></span>()</code>
 <div class="block">The detected start command</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getDiego--">getDiego</a></span>()</code>
 <div class="block">Diego</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getDiskQuota--">getDiskQuota</a></span>()</code>
 <div class="block">The disk quota in megabytes</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getDockerCredentialsJsons--">getDockerCredentialsJsons</a></span>()</code>
 <div class="block">The docker credentials JSONs</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getDockerImage--">getDockerImage</a></span>()</code>
 <div class="block">The docker image</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getEnvironmentJsons--">getEnvironmentJsons</a></span>()</code>
 <div class="block">The environment JSONs</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getHealthCheckTimeout--">getHealthCheckTimeout</a></span>()</code>
 <div class="block">The health check timeout</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getHealthCheckType--">getHealthCheckType</a></span>()</code>
 <div class="block">The health check type</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getInstances--">getInstances</a></span>()</code>
 <div class="block">The instances</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getMemory--">getMemory</a></span>()</code>
 <div class="block">The memory in megabytes</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getName--">getName</a></span>()</code>
 <div class="block">The name</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getProduction--">getProduction</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getSpaceId--">getSpaceId</a></span>()</code>
 <div class="block">The space id</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getStackId--">getStackId</a></span>()</code>
 <div class="block">The stack id</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getStagingFailedDescription--">getStagingFailedDescription</a></span>()</code>
 <div class="block">The staging failed description</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getStagingFailedReason--">getStagingFailedReason</a></span>()</code>
 <div class="block">The staging failed reason</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getStagingTaskId--">getStagingTaskId</a></span>()</code>
+<div class="block">The staging task id</div>
+</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getState--">getState</a></span>()</code>
 <div class="block">The state</div>
 </td>
-</tr>
-<tr id="i23" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i24" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -320,7 +288,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -336,36 +304,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AbstractApplicationEntity-java.lang.String-java.lang.String-java.lang.Boolean-java.lang.Boolean-java.lang.String-java.lang.Boolean-java.lang.Integer-java.util.Map-java.lang.String-java.util.Map-java.lang.Integer-java.lang.String-java.lang.Integer-java.lang.Integer-java.lang.String-java.lang.Boolean-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">
+<a name="AbstractApplicationEntity--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractApplicationEntity</h4>
-<pre>protected&nbsp;AbstractApplicationEntity(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;buildpack,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;command,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;console,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;debug,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;detectedStartCommand,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;diego,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;diskQuota,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;dockerCredentialsJsons,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dockerImage,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;environmentJsons,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;healthCheckTimeout,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;healthCheckType,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;instances,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;memory,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;production,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;spaceId,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;stackId,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;stagingFailedDescription,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;stagingFailedReason,
-                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;state)</pre>
+<pre>public&nbsp;AbstractApplicationEntity()</pre>
 </li>
 </ul>
 </li>
@@ -382,13 +327,8 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getBuildpack</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getBuildpack()</pre>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getBuildpack()</pre>
 <div class="block">The buildpack</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the buildpack</dd>
-</dl>
 </li>
 </ul>
 <a name="getCommand--">
@@ -397,305 +337,8 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.h
 <ul class="blockList">
 <li class="blockList">
 <h4>getCommand</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getCommand()</pre>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getCommand()</pre>
 <div class="block">The command</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the command</dd>
-</dl>
-</li>
-</ul>
-<a name="getDetectedStartCommand--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDetectedStartCommand</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDetectedStartCommand()</pre>
-<div class="block">The detected start command</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the detected start command</dd>
-</dl>
-</li>
-</ul>
-<a name="getDiego--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDiego</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;getDiego()</pre>
-<div class="block">Diego</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>diego</dd>
-</dl>
-</li>
-</ul>
-<a name="getDiskQuota--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDiskQuota</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getDiskQuota()</pre>
-<div class="block">The disk quota in megabytes</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the disk quota in megabytes</dd>
-</dl>
-</li>
-</ul>
-<a name="getDockerCredentialsJsons--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDockerCredentialsJsons</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;getDockerCredentialsJsons()</pre>
-<div class="block">The docker credentials JSONs</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the docker credentials JSONs</dd>
-</dl>
-</li>
-</ul>
-<a name="getDockerImage--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDockerImage</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDockerImage()</pre>
-<div class="block">The docker image</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the docker image</dd>
-</dl>
-</li>
-</ul>
-<a name="getEnvironmentJsons--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getEnvironmentJsons</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;getEnvironmentJsons()</pre>
-<div class="block">The environment JSONs</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>environment JSONs</dd>
-</dl>
-</li>
-</ul>
-<a name="getHealthCheckTimeout--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getHealthCheckTimeout</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getHealthCheckTimeout()</pre>
-<div class="block">The health check timeout</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the health check timeout</dd>
-</dl>
-</li>
-</ul>
-<a name="getHealthCheckType--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getHealthCheckType</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getHealthCheckType()</pre>
-<div class="block">The health check type</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the health check type</dd>
-</dl>
-</li>
-</ul>
-<a name="getInstances--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getInstances</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getInstances()</pre>
-<div class="block">The instances</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the instances</dd>
-</dl>
-</li>
-</ul>
-<a name="getMemory--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getMemory</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getMemory()</pre>
-<div class="block">The memory in megabytes</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the memory in megabytes</dd>
-</dl>
-</li>
-</ul>
-<a name="getName--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getName</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
-<div class="block">The name</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the name</dd>
-</dl>
-</li>
-</ul>
-<a name="getSpaceId--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getSpaceId</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getSpaceId()</pre>
-<div class="block">The space id</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the space id</dd>
-</dl>
-</li>
-</ul>
-<a name="getStackId--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getStackId</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getStackId()</pre>
-<div class="block">The stack id</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the stack id</dd>
-</dl>
-</li>
-</ul>
-<a name="getStagingFailedDescription--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getStagingFailedDescription</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getStagingFailedDescription()</pre>
-<div class="block">The staging failed description</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the staging failed description</dd>
-</dl>
-</li>
-</ul>
-<a name="getStagingFailedReason--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getStagingFailedReason</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getStagingFailedReason()</pre>
-<div class="block">The staging failed reason</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the staging failed reason</dd>
-</dl>
-</li>
-</ul>
-<a name="getState--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getState</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getState()</pre>
-<div class="block">The state</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the state</dd>
-</dl>
-</li>
-</ul>
-<a name="equals-java.lang.Object-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>equals</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="canEqual-java.lang.Object-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>canEqual</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-protected&nbsp;boolean&nbsp;canEqual(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</pre>
-</li>
-</ul>
-<a name="hashCode--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>hashCode</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;int&nbsp;hashCode()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="toString--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>toString</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
-</dl>
 </li>
 </ul>
 <a name="getConsole--">
@@ -705,14 +348,9 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.h
 <li class="blockList">
 <h4>getConsole</h4>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
- <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;getConsole()</pre>
+public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;getConsole()</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">The console</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the console</dd>
-</dl>
 </li>
 </ul>
 <a name="getDebug--">
@@ -722,31 +360,191 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.
 <li class="blockList">
 <h4>getDebug</h4>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
- <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;getDebug()</pre>
+public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;getDebug()</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Debug</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>debug</dd>
-</dl>
+</li>
+</ul>
+<a name="getDetectedStartCommand--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDetectedStartCommand</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDetectedStartCommand()</pre>
+<div class="block">The detected start command</div>
+</li>
+</ul>
+<a name="getDiego--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDiego</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;getDiego()</pre>
+<div class="block">Diego</div>
+</li>
+</ul>
+<a name="getDiskQuota--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDiskQuota</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getDiskQuota()</pre>
+<div class="block">The disk quota in megabytes</div>
+</li>
+</ul>
+<a name="getDockerCredentialsJsons--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDockerCredentialsJsons</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;getDockerCredentialsJsons()</pre>
+<div class="block">The docker credentials JSONs</div>
+</li>
+</ul>
+<a name="getDockerImage--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDockerImage</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDockerImage()</pre>
+<div class="block">The docker image</div>
+</li>
+</ul>
+<a name="getEnvironmentJsons--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEnvironmentJsons</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;getEnvironmentJsons()</pre>
+<div class="block">The environment JSONs</div>
+</li>
+</ul>
+<a name="getHealthCheckTimeout--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHealthCheckTimeout</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getHealthCheckTimeout()</pre>
+<div class="block">The health check timeout</div>
+</li>
+</ul>
+<a name="getHealthCheckType--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHealthCheckType</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getHealthCheckType()</pre>
+<div class="block">The health check type</div>
+</li>
+</ul>
+<a name="getInstances--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInstances</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getInstances()</pre>
+<div class="block">The instances</div>
+</li>
+</ul>
+<a name="getMemory--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMemory</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getMemory()</pre>
+<div class="block">The memory in megabytes</div>
+</li>
+</ul>
+<a name="getName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getName</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
+<div class="block">The name</div>
 </li>
 </ul>
 <a name="getProduction--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getProduction</h4>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
- <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;getProduction()</pre>
+public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;getProduction()</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Production</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>production</dd>
-</dl>
+</li>
+</ul>
+<a name="getSpaceId--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSpaceId</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getSpaceId()</pre>
+<div class="block">The space id</div>
+</li>
+</ul>
+<a name="getStackId--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStackId</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getStackId()</pre>
+<div class="block">The stack id</div>
+</li>
+</ul>
+<a name="getStagingFailedDescription--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStagingFailedDescription</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getStagingFailedDescription()</pre>
+<div class="block">The staging failed description</div>
+</li>
+</ul>
+<a name="getStagingFailedReason--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStagingFailedReason</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getStagingFailedReason()</pre>
+<div class="block">The staging failed reason</div>
+</li>
+</ul>
+<a name="getStagingTaskId--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStagingTaskId</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getStagingTaskId()</pre>
+<div class="block">The staging task id</div>
+</li>
+</ul>
+<a name="getState--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getState</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getState()</pre>
+<div class="block">The state</div>
 </li>
 </ul>
 </li>
