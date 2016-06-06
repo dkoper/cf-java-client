@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -146,28 +146,34 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOneTimePasscodeRequest.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html#clientId-java.lang.String-">clientId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;clientId)</code>
-<div class="block">Initializes the value for the <code>clientId</code> attribute.</div>
+<div class="block">Initializes the value for the <a href="../../../../org/cloudfoundry/uaa/BasicAuthorized.html#getClientId--"><code>clientId</code></a> attribute.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOneTimePasscodeRequest.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html#clientSecret-java.lang.String-">clientSecret</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;clientSecret)</code>
-<div class="block">Initializes the value for the <code>clientSecret</code> attribute.</div>
+<div class="block">Initializes the value for the <a href="../../../../org/cloudfoundry/uaa/BasicAuthorized.html#getClientSecret--"><code>clientSecret</code></a> attribute.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOneTimePasscodeRequest.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html#from-org.cloudfoundry.uaa.BasicAuthorized-">from</a></span>(<a href="../../../../org/cloudfoundry/uaa/BasicAuthorized.html" title="interface in org.cloudfoundry.uaa">BasicAuthorized</a>&nbsp;instance)</code>
+<div class="block">Fill a builder with attribute values from the provided <code>org.cloudfoundry.uaa.BasicAuthorized</code> instance.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOneTimePasscodeRequest.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html#from-org.cloudfoundry.uaa.tokens.GetTokenByOneTimePasscodeRequest-">from</a></span>(<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOneTimePasscodeRequest</a>&nbsp;instance)</code>
 <div class="block">Fill a builder with attribute values from the provided <code>GetTokenByOneTimePasscodeRequest</code> instance.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOneTimePasscodeRequest.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html#passcode-java.lang.String-">passcode</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;passcode)</code>
 <div class="block">Initializes the value for the <code>passcode</code> attribute.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOneTimePasscodeRequest.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html#tokenFormat-org.cloudfoundry.uaa.tokens.TokenFormat-">tokenFormat</a></span>(<a href="../../../../org/cloudfoundry/uaa/tokens/TokenFormat.html" title="enum in org.cloudfoundry.uaa.tokens">TokenFormat</a>&nbsp;tokenFormat)</code>
 <div class="block">Initializes the value for the <code>tokenFormat</code> attribute.</div>
@@ -195,16 +201,14 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="from-org.cloudfoundry.uaa.tokens.GetTokenByOneTimePasscodeRequest-">
+<a name="from-org.cloudfoundry.uaa.BasicAuthorized-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>from</h4>
-<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOneTimePasscodeRequest.Builder</a>&nbsp;from(<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOneTimePasscodeRequest</a>&nbsp;instance)</pre>
-<div class="block">Fill a builder with attribute values from the provided <code>GetTokenByOneTimePasscodeRequest</code> instance.
- Regular attribute values will be replaced with those from the given instance.
- Absent optional values will not replace present values.</div>
+<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOneTimePasscodeRequest.Builder</a>&nbsp;from(<a href="../../../../org/cloudfoundry/uaa/BasicAuthorized.html" title="interface in org.cloudfoundry.uaa">BasicAuthorized</a>&nbsp;instance)</pre>
+<div class="block">Fill a builder with attribute values from the provided <code>org.cloudfoundry.uaa.BasicAuthorized</code> instance.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>instance</code> - The instance from which to copy values</dd>
@@ -213,33 +217,17 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a name="clientId-java.lang.String-">
+<a name="from-org.cloudfoundry.uaa.tokens.GetTokenByOneTimePasscodeRequest-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>clientId</h4>
-<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOneTimePasscodeRequest.Builder</a>&nbsp;clientId(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;clientId)</pre>
-<div class="block">Initializes the value for the <code>clientId</code> attribute.</div>
+<h4>from</h4>
+<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOneTimePasscodeRequest.Builder</a>&nbsp;from(<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOneTimePasscodeRequest</a>&nbsp;instance)</pre>
+<div class="block">Fill a builder with attribute values from the provided <code>GetTokenByOneTimePasscodeRequest</code> instance.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>clientId</code> - The value for clientId</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>this</code> builder for use in a chained invocation</dd>
-</dl>
-</li>
-</ul>
-<a name="clientSecret-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>clientSecret</h4>
-<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOneTimePasscodeRequest.Builder</a>&nbsp;clientSecret(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;clientSecret)</pre>
-<div class="block">Initializes the value for the <code>clientSecret</code> attribute.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>clientSecret</code> - The value for clientSecret</dd>
+<dd><code>instance</code> - The instance from which to copy values</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
@@ -272,6 +260,38 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>tokenFormat</code> - The value for tokenFormat (can be <code>null</code>)</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for use in a chained invocation</dd>
+</dl>
+</li>
+</ul>
+<a name="clientId-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clientId</h4>
+<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOneTimePasscodeRequest.Builder</a>&nbsp;clientId(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;clientId)</pre>
+<div class="block">Initializes the value for the <a href="../../../../org/cloudfoundry/uaa/BasicAuthorized.html#getClientId--"><code>clientId</code></a> attribute.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>clientId</code> - The value for clientId</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for use in a chained invocation</dd>
+</dl>
+</li>
+</ul>
+<a name="clientSecret-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clientSecret</h4>
+<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByOneTimePasscodeRequest.Builder.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByOneTimePasscodeRequest.Builder</a>&nbsp;clientSecret(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;clientSecret)</pre>
+<div class="block">Initializes the value for the <a href="../../../../org/cloudfoundry/uaa/BasicAuthorized.html#getClientSecret--"><code>clientSecret</code></a> attribute.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>clientSecret</code> - The value for clientSecret</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>

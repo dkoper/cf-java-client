@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -171,54 +171,61 @@ extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-cli
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>protected reactor.io.netty.http.HttpOutbound</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/reactor/uaa/AbstractUaaOperations.html#basicAuth-reactor.io.netty.http.HttpOutbound-java.lang.String-java.lang.String-">basicAuth</a></span>(reactor.io.netty.http.HttpOutbound&nbsp;outbound,
-         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;clientId,
-         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;clientSecret)</code>&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected &lt;T&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/reactor/uaa/AbstractUaaOperations.html#delete-java.lang.Object-java.lang.Class-java.util.function.Function-">delete</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;request,
       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;responseType,
       <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;org.springframework.web.util.UriComponentsBuilder,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected &lt;T&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/reactor/uaa/AbstractUaaOperations.html#delete-java.lang.Object-java.lang.Class-java.util.function.Function-java.util.function.Function-">delete</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;request,
       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;responseType,
       <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;org.springframework.web.util.UriComponentsBuilder,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer,
       <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;reactor.io.netty.http.HttpOutbound,reactor.io.netty.http.HttpOutbound&gt;&nbsp;requestTransformer)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>protected &lt;T&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/reactor/uaa/AbstractUaaOperations.html#get-java.lang.Object-java.lang.Class-java.util.function.Function-">get</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;request,
    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;responseType,
    <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;org.springframework.web.util.UriComponentsBuilder,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected <a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;reactor.io.netty.http.HttpInbound&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/reactor/uaa/AbstractUaaOperations.html#get-java.lang.Object-java.util.function.Function-">get</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;request,
    <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;org.springframework.web.util.UriComponentsBuilder,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>protected static <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;org.springframework.web.util.UriComponentsBuilder,org.springframework.web.util.UriComponentsBuilder&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/reactor/uaa/AbstractUaaOperations.html#getUriAugmenter-java.lang.Object-java.util.function.Function-">getUriAugmenter</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;request,
                <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;org.springframework.web.util.UriComponentsBuilder,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected &lt;T&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/reactor/uaa/AbstractUaaOperations.html#post-java.lang.Object-java.lang.Class-java.util.function.Function-">post</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;request,
     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;responseType,
     <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;org.springframework.web.util.UriComponentsBuilder,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected &lt;T&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/reactor/uaa/AbstractUaaOperations.html#post-java.lang.Object-java.lang.Class-java.util.function.Function-java.util.function.Function-">post</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;request,
     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;responseType,
     <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;org.springframework.web.util.UriComponentsBuilder,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer,
     <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;reactor.io.netty.http.HttpOutbound,reactor.io.netty.http.HttpOutbound&gt;&nbsp;requestTransformer)</code>&nbsp;</td>
 </tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>protected &lt;T&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;T&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/reactor/uaa/AbstractUaaOperations.html#postForm-java.lang.Object-java.lang.Class-java.util.function.Function-">postForm</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;request,
+        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;responseType,
+        <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;org.springframework.web.util.UriComponentsBuilder,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</code>&nbsp;</td>
+</tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>protected &lt;T&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;T&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/reactor/uaa/AbstractUaaOperations.html#postForm-java.lang.Object-java.lang.Class-java.util.function.Function-java.util.function.Function-">postForm</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;request,
+        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;responseType,
+        <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;org.springframework.web.util.UriComponentsBuilder,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer,
+        <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;reactor.io.netty.http.HttpOutbound,reactor.io.netty.http.HttpOutbound&gt;&nbsp;requestTransformer)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>protected &lt;T&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/reactor/uaa/AbstractUaaOperations.html#put-java.lang.Object-java.lang.Class-java.util.function.Function-">put</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;request,
    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;responseType,
@@ -281,17 +288,6 @@ extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-cli
 <h4>getUriAugmenter</h4>
 <pre>protected static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;org.springframework.web.util.UriComponentsBuilder,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;getUriAugmenter(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;request,
                                                                                                                                                <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;org.springframework.web.util.UriComponentsBuilder,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</pre>
-</li>
-</ul>
-<a name="basicAuth-reactor.io.netty.http.HttpOutbound-java.lang.String-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>basicAuth</h4>
-<pre>protected final&nbsp;reactor.io.netty.http.HttpOutbound&nbsp;basicAuth(reactor.io.netty.http.HttpOutbound&nbsp;outbound,
-                                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;clientId,
-                                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;clientSecret)</pre>
 </li>
 </ul>
 <a name="delete-java.lang.Object-java.lang.Class-java.util.function.Function-">
@@ -359,6 +355,29 @@ extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-cli
 <pre>protected final&nbsp;&lt;T&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;T&gt;&nbsp;post(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;request,
                                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;responseType,
                                  <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;org.springframework.web.util.UriComponentsBuilder,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</pre>
+</li>
+</ul>
+<a name="postForm-java.lang.Object-java.lang.Class-java.util.function.Function-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>postForm</h4>
+<pre>protected final&nbsp;&lt;T&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;T&gt;&nbsp;postForm(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;request,
+                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;responseType,
+                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;org.springframework.web.util.UriComponentsBuilder,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</pre>
+</li>
+</ul>
+<a name="postForm-java.lang.Object-java.lang.Class-java.util.function.Function-java.util.function.Function-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>postForm</h4>
+<pre>protected final&nbsp;&lt;T&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;T&gt;&nbsp;postForm(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;request,
+                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;responseType,
+                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;org.springframework.web.util.UriComponentsBuilder,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer,
+                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;reactor.io.netty.http.HttpOutbound,reactor.io.netty.http.HttpOutbound&gt;&nbsp;requestTransformer)</pre>
 </li>
 </ul>
 <a name="put-java.lang.Object-java.lang.Class-java.util.function.Function-">
