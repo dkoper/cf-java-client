@@ -217,7 +217,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/CreateUserRequest.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>active</code>, <code>email</code>, <code>externalId</code>, <code>name</code>, <code>password</code>, <code>origin</code>, <code>userName</code>, <code>verified</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>active</code>, <code>email</code>, <code>externalId</code>, <code>name</code>, <code>origin</code>, <code>password</code>, <code>userName</code>, <code>verified</code>.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
@@ -288,16 +288,6 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">The user's name</div>
 </li>
 </ul>
-<a name="getPassword--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getPassword</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getPassword()</pre>
-<div class="block">The password</div>
-</li>
-</ul>
 <a name="getOrigin--">
 <!--   -->
 </a>
@@ -306,6 +296,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>getOrigin</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getOrigin()</pre>
 <div class="block">The identity provider that authenticated this user</div>
+</li>
+</ul>
+<a name="getPassword--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPassword</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getPassword()</pre>
+<div class="block">The password</div>
 </li>
 </ul>
 <a name="getUserName--">
@@ -351,7 +351,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>active</code>, <code>email</code>, <code>externalId</code>, <code>name</code>, <code>password</code>, <code>origin</code>, <code>userName</code>, <code>verified</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>active</code>, <code>email</code>, <code>externalId</code>, <code>name</code>, <code>origin</code>, <code>password</code>, <code>userName</code>, <code>verified</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
