@@ -99,7 +99,17 @@ var activeTableTab = "activeTableTab";
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserid.html" title="class in org.cloudfoundry.uaa.users">org.cloudfoundry.uaa.users.AbstractUserid</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html" title="class in org.cloudfoundry.uaa.users">org.cloudfoundry.uaa.users.AbstractUserSummary</a></li>
+<li>
+<ul class="inheritance">
 <li>org.cloudfoundry.uaa.users.VerifyUserResponse</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -110,7 +120,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>={"Immutables.generator","_VerifyUserResponse"})
 public final class <span class="typeNameLabel">VerifyUserResponse</span>
-extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+extends <a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html" title="class in org.cloudfoundry.uaa.users">AbstractUserSummary</a></pre>
 <div class="block">Immutable implementation of <code>_VerifyUserResponse</code>.
  <p>
  Use the builder to create immutable instances:
@@ -181,7 +191,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/VerifyUserResponse.html#getId--">getId</a></span>()</code>
-<div class="block">The user id</div>
+<div class="block">The id</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -235,7 +245,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/VerifyUserResponse.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>active</code>, <code>email</code>, <code>id</code>, <code>meta</code>, <code>name</code>, <code>origin</code>, <code>passwordLastModified</code>, <code>schemas</code>, <code>userName</code>, <code>verified</code>, <code>zoneId</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>active</code>, <code>email</code>, <code>meta</code>, <code>name</code>, <code>passwordLastModified</code>, <code>schemas</code>, <code>verified</code>, <code>zoneId</code>, <code>id</code>, <code>origin</code>, <code>userName</code>.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
@@ -274,6 +284,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>getActive</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;getActive()</pre>
 <div class="block">Whether the user is active</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html#getActive--">getActive</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html" title="class in org.cloudfoundry.uaa.users">AbstractUserSummary</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="getEmail--">
@@ -284,16 +298,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>getEmail</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/Email.html" title="class in org.cloudfoundry.uaa.users">Email</a>&gt;&nbsp;getEmail()</pre>
 <div class="block">The emails for the user</div>
-</li>
-</ul>
-<a name="getId--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getId</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getId()</pre>
-<div class="block">The user id</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html#getEmail--">getEmail</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html" title="class in org.cloudfoundry.uaa.users">AbstractUserSummary</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="getMeta--">
@@ -304,6 +312,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>getMeta</h4>
 <pre>public&nbsp;<a href="../../../../org/cloudfoundry/uaa/users/Meta.html" title="class in org.cloudfoundry.uaa.users">Meta</a>&nbsp;getMeta()</pre>
 <div class="block">Metadata for the result</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html#getMeta--">getMeta</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html" title="class in org.cloudfoundry.uaa.users">AbstractUserSummary</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="getName--">
@@ -314,16 +326,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>getName</h4>
 <pre>public&nbsp;<a href="../../../../org/cloudfoundry/uaa/users/Name.html" title="class in org.cloudfoundry.uaa.users">Name</a>&nbsp;getName()</pre>
 <div class="block">The user's name</div>
-</li>
-</ul>
-<a name="getOrigin--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getOrigin</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getOrigin()</pre>
-<div class="block">The identity provider that authenticated this user</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html#getName--">getName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html" title="class in org.cloudfoundry.uaa.users">AbstractUserSummary</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="getPasswordLastModified--">
@@ -334,6 +340,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>getPasswordLastModified</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getPasswordLastModified()</pre>
 <div class="block">The timestamp when the user's password was last modified</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html#getPasswordLastModified--">getPasswordLastModified</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html" title="class in org.cloudfoundry.uaa.users">AbstractUserSummary</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="getSchemas--">
@@ -344,16 +354,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>getSchemas</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getSchemas()</pre>
 <div class="block">The schemas</div>
-</li>
-</ul>
-<a name="getUserName--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getUserName</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getUserName()</pre>
-<div class="block">The user name</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html#getSchemas--">getSchemas</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html" title="class in org.cloudfoundry.uaa.users">AbstractUserSummary</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="getVerified--">
@@ -364,6 +368,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>getVerified</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;getVerified()</pre>
 <div class="block">Whether the user's email is verified</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html#getVerified--">getVerified</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html" title="class in org.cloudfoundry.uaa.users">AbstractUserSummary</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="getZoneId--">
@@ -374,6 +382,52 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>getZoneId</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getZoneId()</pre>
 <div class="block">The zone id the user belongs to</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html#getZoneId--">getZoneId</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html" title="class in org.cloudfoundry.uaa.users">AbstractUserSummary</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getId--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getId</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getId()</pre>
+<div class="block">The id</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserid.html#getId--">getId</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserid.html" title="class in org.cloudfoundry.uaa.users">AbstractUserid</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getOrigin--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOrigin</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getOrigin()</pre>
+<div class="block">The identity provider that authenticated this user</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserid.html#getOrigin--">getOrigin</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserid.html" title="class in org.cloudfoundry.uaa.users">AbstractUserid</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getUserName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUserName</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getUserName()</pre>
+<div class="block">The user name</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserid.html#getUserName--">getUserName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUserid.html" title="class in org.cloudfoundry.uaa.users">AbstractUserid</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">
@@ -399,7 +453,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>active</code>, <code>email</code>, <code>id</code>, <code>meta</code>, <code>name</code>, <code>origin</code>, <code>passwordLastModified</code>, <code>schemas</code>, <code>userName</code>, <code>verified</code>, <code>zoneId</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>active</code>, <code>email</code>, <code>meta</code>, <code>name</code>, <code>passwordLastModified</code>, <code>schemas</code>, <code>verified</code>, <code>zoneId</code>, <code>id</code>, <code>origin</code>, <code>userName</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>

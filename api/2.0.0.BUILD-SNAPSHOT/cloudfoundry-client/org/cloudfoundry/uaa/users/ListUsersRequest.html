@@ -99,10 +99,15 @@ var activeTableTab = "activeTableTab";
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html" title="class in org.cloudfoundry.uaa">org.cloudfoundry.uaa.PaginatedRequest</a></li>
+<li><a href="../../../../org/cloudfoundry/uaa/PaginatedAndSortedRequest.html" title="class in org.cloudfoundry.uaa">org.cloudfoundry.uaa.PaginatedAndSortedRequest</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../org/cloudfoundry/uaa/PaginatedAndSortedByRequest.html" title="class in org.cloudfoundry.uaa">org.cloudfoundry.uaa.PaginatedAndSortedByRequest</a></li>
 <li>
 <ul class="inheritance">
 <li>org.cloudfoundry.uaa.users.ListUsersRequest</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -115,7 +120,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>={"Immutables.generator","_ListUsersRequest"})
 public final class <span class="typeNameLabel">ListUsersRequest</span>
-extends <a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html" title="class in org.cloudfoundry.uaa">PaginatedRequest</a></pre>
+extends <a href="../../../../org/cloudfoundry/uaa/PaginatedAndSortedByRequest.html" title="class in org.cloudfoundry.uaa">PaginatedAndSortedByRequest</a></pre>
 <div class="block">Immutable implementation of <code>_ListUsersRequest</code>.
  <p>
  Use the builder to create immutable instances:
@@ -204,7 +209,7 @@ extends <a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html" title="
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/ListUsersRequest.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>count</code>, <code>filter</code>, <code>sortBy</code>, <code>sortOrder</code>, <code>startIndex</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>sortBy</code>, <code>count</code>, <code>filter</code>, <code>sortOrder</code>, <code>startIndex</code>.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
@@ -235,6 +240,20 @@ extends <a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html" title="
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getSortBy--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSortBy</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getSortBy()</pre>
+<div class="block">The sort by</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/PaginatedAndSortedByRequest.html#getSortBy--">getSortBy</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/PaginatedAndSortedByRequest.html" title="class in org.cloudfoundry.uaa">PaginatedAndSortedByRequest</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getCount--">
 <!--   -->
 </a>
@@ -245,7 +264,7 @@ extends <a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html" title="
 <div class="block">The number of results per page</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html#getCount--">getCount</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html" title="class in org.cloudfoundry.uaa">PaginatedRequest</a></code></dd>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/PaginatedAndSortedRequest.html#getCount--">getCount</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/PaginatedAndSortedRequest.html" title="class in org.cloudfoundry.uaa">PaginatedAndSortedRequest</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -259,21 +278,7 @@ extends <a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html" title="
 <div class="block">The filter</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html#getFilter--">getFilter</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html" title="class in org.cloudfoundry.uaa">PaginatedRequest</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getSortBy--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getSortBy</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getSortBy()</pre>
-<div class="block">The sort by</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html#getSortBy--">getSortBy</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html" title="class in org.cloudfoundry.uaa">PaginatedRequest</a></code></dd>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/PaginatedAndSortedRequest.html#getFilter--">getFilter</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/PaginatedAndSortedRequest.html" title="class in org.cloudfoundry.uaa">PaginatedAndSortedRequest</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -287,7 +292,7 @@ extends <a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html" title="
 <div class="block">The sort order</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html#getSortOrder--">getSortOrder</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html" title="class in org.cloudfoundry.uaa">PaginatedRequest</a></code></dd>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/PaginatedAndSortedRequest.html#getSortOrder--">getSortOrder</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/PaginatedAndSortedRequest.html" title="class in org.cloudfoundry.uaa">PaginatedAndSortedRequest</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -301,7 +306,7 @@ extends <a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html" title="
 <div class="block">The start index</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html#getStartIndex--">getStartIndex</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html" title="class in org.cloudfoundry.uaa">PaginatedRequest</a></code></dd>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/PaginatedAndSortedRequest.html#getStartIndex--">getStartIndex</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/PaginatedAndSortedRequest.html" title="class in org.cloudfoundry.uaa">PaginatedAndSortedRequest</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -328,7 +333,7 @@ extends <a href="../../../../org/cloudfoundry/uaa/PaginatedRequest.html" title="
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>count</code>, <code>filter</code>, <code>sortBy</code>, <code>sortOrder</code>, <code>startIndex</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>sortBy</code>, <code>count</code>, <code>filter</code>, <code>sortOrder</code>, <code>startIndex</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>

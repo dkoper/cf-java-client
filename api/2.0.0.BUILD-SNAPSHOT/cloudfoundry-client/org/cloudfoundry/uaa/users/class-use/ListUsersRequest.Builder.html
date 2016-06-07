@@ -110,13 +110,13 @@
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/uaa/users/ListUsersRequest.Builder.html" title="class in org.cloudfoundry.uaa.users">ListUsersRequest.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">ListUsersRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/uaa/users/ListUsersRequest.Builder.html#count-java.lang.Integer-">count</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;count)</code>
-<div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/uaa/PaginatedRequest.html#getCount--"><code>count</code></a> attribute.</div>
+<div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/uaa/PaginatedAndSortedRequest.html#getCount--"><code>count</code></a> attribute.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/uaa/users/ListUsersRequest.Builder.html" title="class in org.cloudfoundry.uaa.users">ListUsersRequest.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">ListUsersRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/uaa/users/ListUsersRequest.Builder.html#filter-java.lang.String-">filter</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filter)</code>
-<div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/uaa/PaginatedRequest.html#getFilter--"><code>filter</code></a> attribute.</div>
+<div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/uaa/PaginatedAndSortedRequest.html#getFilter--"><code>filter</code></a> attribute.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -127,26 +127,32 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/uaa/users/ListUsersRequest.Builder.html" title="class in org.cloudfoundry.uaa.users">ListUsersRequest.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ListUsersRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/uaa/users/ListUsersRequest.Builder.html#from-org.cloudfoundry.uaa.PaginatedRequest-">from</a></span>(<a href="../../../../../org/cloudfoundry/uaa/PaginatedRequest.html" title="class in org.cloudfoundry.uaa">PaginatedRequest</a>&nbsp;instance)</code>
-<div class="block">Fill a builder with attribute values from the provided <code>org.cloudfoundry.uaa.PaginatedRequest</code> instance.</div>
+<td class="colLast"><span class="typeNameLabel">ListUsersRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/uaa/users/ListUsersRequest.Builder.html#from-org.cloudfoundry.uaa.PaginatedAndSortedByRequest-">from</a></span>(<a href="../../../../../org/cloudfoundry/uaa/PaginatedAndSortedByRequest.html" title="class in org.cloudfoundry.uaa">PaginatedAndSortedByRequest</a>&nbsp;instance)</code>
+<div class="block">Fill a builder with attribute values from the provided <code>org.cloudfoundry.uaa.PaginatedAndSortedByRequest</code> instance.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/uaa/users/ListUsersRequest.Builder.html" title="class in org.cloudfoundry.uaa.users">ListUsersRequest.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ListUsersRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/uaa/users/ListUsersRequest.Builder.html#sortBy-java.lang.String-">sortBy</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sortBy)</code>
-<div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/uaa/PaginatedRequest.html#getSortBy--"><code>sortBy</code></a> attribute.</div>
+<td class="colLast"><span class="typeNameLabel">ListUsersRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/uaa/users/ListUsersRequest.Builder.html#from-org.cloudfoundry.uaa.PaginatedAndSortedRequest-">from</a></span>(<a href="../../../../../org/cloudfoundry/uaa/PaginatedAndSortedRequest.html" title="class in org.cloudfoundry.uaa">PaginatedAndSortedRequest</a>&nbsp;instance)</code>
+<div class="block">Fill a builder with attribute values from the provided <code>org.cloudfoundry.uaa.PaginatedAndSortedRequest</code> instance.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/uaa/users/ListUsersRequest.Builder.html" title="class in org.cloudfoundry.uaa.users">ListUsersRequest.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ListUsersRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/uaa/users/ListUsersRequest.Builder.html#sortOrder-org.cloudfoundry.uaa.SortOrder-">sortOrder</a></span>(<a href="../../../../../org/cloudfoundry/uaa/SortOrder.html" title="enum in org.cloudfoundry.uaa">SortOrder</a>&nbsp;sortOrder)</code>
-<div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/uaa/PaginatedRequest.html#getSortOrder--"><code>sortOrder</code></a> attribute.</div>
+<td class="colLast"><span class="typeNameLabel">ListUsersRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/uaa/users/ListUsersRequest.Builder.html#sortBy-java.lang.String-">sortBy</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sortBy)</code>
+<div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/uaa/PaginatedAndSortedByRequest.html#getSortBy--"><code>sortBy</code></a> attribute.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/uaa/users/ListUsersRequest.Builder.html" title="class in org.cloudfoundry.uaa.users">ListUsersRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ListUsersRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/uaa/users/ListUsersRequest.Builder.html#sortOrder-org.cloudfoundry.uaa.SortOrder-">sortOrder</a></span>(<a href="../../../../../org/cloudfoundry/uaa/SortOrder.html" title="enum in org.cloudfoundry.uaa">SortOrder</a>&nbsp;sortOrder)</code>
+<div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/uaa/PaginatedAndSortedRequest.html#getSortOrder--"><code>sortOrder</code></a> attribute.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/uaa/users/ListUsersRequest.Builder.html" title="class in org.cloudfoundry.uaa.users">ListUsersRequest.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">ListUsersRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/uaa/users/ListUsersRequest.Builder.html#startIndex-java.lang.Integer-">startIndex</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;startIndex)</code>
-<div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/uaa/PaginatedRequest.html#getStartIndex--"><code>startIndex</code></a> attribute.</div>
+<div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/uaa/PaginatedAndSortedRequest.html#getStartIndex--"><code>startIndex</code></a> attribute.</div>
 </td>
 </tr>
 </tbody>

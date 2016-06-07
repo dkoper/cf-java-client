@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/cloudfoundry/uaa/users/User.Builder.html" title="class in org.cloudfoundry.uaa.users"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../org/cloudfoundry/uaa/users/Userid.Builder.html" title="class in org.cloudfoundry.uaa.users"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../org/cloudfoundry/uaa/users/VerifyUserRequest.html" title="class in org.cloudfoundry.uaa.users"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -151,12 +151,18 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/LookupUseridsResponse.html" title="class in org.cloudfoundry.uaa.users">LookupUseridsResponse</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/Users.html#lookup-org.cloudfoundry.uaa.users.LookupUseridsRequest-">lookup</a></span>(<a href="../../../../org/cloudfoundry/uaa/users/LookupUseridsRequest.html" title="class in org.cloudfoundry.uaa.users">LookupUseridsRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#lookup-user-ids-usernames">Lookup User IDs/Usernames</a> request</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/UpdateUserResponse.html" title="class in org.cloudfoundry.uaa.users">UpdateUserResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/Users.html#update-org.cloudfoundry.uaa.users.UpdateUserRequest-">update</a></span>(<a href="../../../../org/cloudfoundry/uaa/users/UpdateUserRequest.html" title="class in org.cloudfoundry.uaa.users">UpdateUserRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#update49">Update User</a> request</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/VerifyUserResponse.html" title="class in org.cloudfoundry.uaa.users">VerifyUserResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/Users.html#verify-org.cloudfoundry.uaa.users.VerifyUserRequest-">verify</a></span>(<a href="../../../../org/cloudfoundry/uaa/users/VerifyUserRequest.html" title="class in org.cloudfoundry.uaa.users">VerifyUserRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#verify-user">Verify User</a> request</div>
@@ -257,6 +263,22 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
+<a name="lookup-org.cloudfoundry.uaa.users.LookupUseridsRequest-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lookup</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/LookupUseridsResponse.html" title="class in org.cloudfoundry.uaa.users">LookupUseridsResponse</a>&gt;&nbsp;lookup(<a href="../../../../org/cloudfoundry/uaa/users/LookupUseridsRequest.html" title="class in org.cloudfoundry.uaa.users">LookupUseridsRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#lookup-user-ids-usernames">Lookup User IDs/Usernames</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - the lookup userid and usernames request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the response from the lookup userid and usernames request</dd>
+</dl>
+</li>
+</ul>
 <a name="update-org.cloudfoundry.uaa.users.UpdateUserRequest-">
 <!--   -->
 </a>
@@ -317,7 +339,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/cloudfoundry/uaa/users/User.Builder.html" title="class in org.cloudfoundry.uaa.users"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../org/cloudfoundry/uaa/users/Userid.Builder.html" title="class in org.cloudfoundry.uaa.users"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../org/cloudfoundry/uaa/users/VerifyUserRequest.html" title="class in org.cloudfoundry.uaa.users"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
