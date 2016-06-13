@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -145,26 +145,44 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.Builder.html" title="class in org.cloudfoundry.client.v2.securitygroups">RuleEntity.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.Builder.html#code-java.lang.Integer-">code</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;code)</code>
+<div class="block">Initializes the value for the <code>code</code> attribute.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.Builder.html" title="class in org.cloudfoundry.client.v2.securitygroups">RuleEntity.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.Builder.html#destination-java.lang.String-">destination</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;destination)</code>
 <div class="block">Initializes the value for the <code>destination</code> attribute.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.Builder.html" title="class in org.cloudfoundry.client.v2.securitygroups">RuleEntity.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.Builder.html#from-org.cloudfoundry.client.v2.securitygroups.RuleEntity-">from</a></span>(<a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.html" title="class in org.cloudfoundry.client.v2.securitygroups">RuleEntity</a>&nbsp;instance)</code>
 <div class="block">Fill a builder with attribute values from the provided <code>RuleEntity</code> instance.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.Builder.html" title="class in org.cloudfoundry.client.v2.securitygroups">RuleEntity.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.Builder.html#log-java.lang.Boolean-">log</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;log)</code>
+<div class="block">Initializes the value for the <code>log</code> attribute.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.Builder.html" title="class in org.cloudfoundry.client.v2.securitygroups">RuleEntity.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.Builder.html#ports-java.lang.String-">ports</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ports)</code>
 <div class="block">Initializes the value for the <code>ports</code> attribute.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.Builder.html" title="class in org.cloudfoundry.client.v2.securitygroups">RuleEntity.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.Builder.html#protocol-java.lang.String-">protocol</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;protocol)</code>
 <div class="block">Initializes the value for the <code>protocol</code> attribute.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.Builder.html" title="class in org.cloudfoundry.client.v2.securitygroups">RuleEntity.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.Builder.html#type-java.lang.Integer-">type</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;type)</code>
+<div class="block">Initializes the value for the <code>type</code> attribute.</div>
 </td>
 </tr>
 </table>
@@ -250,6 +268,54 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>protocol</code> - The value for protocol</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for use in a chained invocation</dd>
+</dl>
+</li>
+</ul>
+<a name="type-java.lang.Integer-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>type</h4>
+<pre>public final&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.Builder.html" title="class in org.cloudfoundry.client.v2.securitygroups">RuleEntity.Builder</a>&nbsp;type(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;type)</pre>
+<div class="block">Initializes the value for the <code>type</code> attribute.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - The value for type (can be <code>null</code>)</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for use in a chained invocation</dd>
+</dl>
+</li>
+</ul>
+<a name="code-java.lang.Integer-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>code</h4>
+<pre>public final&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.Builder.html" title="class in org.cloudfoundry.client.v2.securitygroups">RuleEntity.Builder</a>&nbsp;code(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;code)</pre>
+<div class="block">Initializes the value for the <code>code</code> attribute.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>code</code> - The value for code (can be <code>null</code>)</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for use in a chained invocation</dd>
+</dl>
+</li>
+</ul>
+<a name="log-java.lang.Boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>log</h4>
+<pre>public final&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/securitygroups/RuleEntity.Builder.html" title="class in org.cloudfoundry.client.v2.securitygroups">RuleEntity.Builder</a>&nbsp;log(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;log)</pre>
+<div class="block">Initializes the value for the <code>log</code> attribute.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>log</code> - The value for log (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
