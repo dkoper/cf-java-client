@@ -459,7 +459,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Initializes the value for the <code>enableSsh</code> attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>enableSsh</code> - The value for enableSsh</dd>
+<dd><code>enableSsh</code> - The value for enableSsh (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
@@ -475,7 +475,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Initializes the value for the <code>packageState</code> attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>packageState</code> - The value for packageState</dd>
+<dd><code>packageState</code> - The value for packageState (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
@@ -491,7 +491,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Initializes the value for the <code>packageUpdatedAt</code> attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>packageUpdatedAt</code> - The value for packageUpdatedAt</dd>
+<dd><code>packageUpdatedAt</code> - The value for packageUpdatedAt (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
@@ -571,7 +571,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Initializes the value for the <code>version</code> attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>version</code> - The value for version</dd>
+<dd><code>version</code> - The value for version (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
@@ -655,7 +655,7 @@ public final&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/application
 <div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getDetectedStartCommand--"><code>detectedStartCommand</code></a> attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>detectedStartCommand</code> - The value for detectedStartCommand</dd>
+<dd><code>detectedStartCommand</code> - The value for detectedStartCommand (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
@@ -671,7 +671,7 @@ public final&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/application
 <div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getDiego--"><code>diego</code></a> attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>diego</code> - The value for diego</dd>
+<dd><code>diego</code> - The value for diego (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
@@ -687,7 +687,7 @@ public final&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/application
 <div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getDiskQuota--"><code>diskQuota</code></a> attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>diskQuota</code> - The value for diskQuota</dd>
+<dd><code>diskQuota</code> - The value for diskQuota (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
@@ -816,7 +816,7 @@ public final&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/application
 <li class="blockList">
 <h4>environmentJsons</h4>
 <pre>public final&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/applications/RestageApplicationEntity.Builder.html" title="class in org.cloudfoundry.client.v2.applications">RestageApplicationEntity.Builder</a>&nbsp;environmentJsons(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;environmentJsons)</pre>
-<div class="block">Sets or replaces all mappings from the specified map as entries for the <a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getEnvironmentJsons--"><code>environmentJsons</code></a> map. Nulls are not permitted</div>
+<div class="block">Sets or replaces all mappings from the specified map as entries for the <a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getEnvironmentJsons--"><code>environmentJsons</code></a> map. Nulls are not permitted as keys or values, but parameter itself can be null</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>environmentJsons</code> - The entries that will be added to the environmentJsons map</dd>
@@ -867,7 +867,7 @@ public final&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/application
 <div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getHealthCheckType--"><code>healthCheckType</code></a> attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>healthCheckType</code> - The value for healthCheckType</dd>
+<dd><code>healthCheckType</code> - The value for healthCheckType (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
@@ -883,7 +883,7 @@ public final&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/application
 <div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getInstances--"><code>instances</code></a> attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>instances</code> - The value for instances</dd>
+<dd><code>instances</code> - The value for instances (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
@@ -899,7 +899,7 @@ public final&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/application
 <div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getMemory--"><code>memory</code></a> attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>memory</code> - The value for memory</dd>
+<dd><code>memory</code> - The value for memory (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
@@ -915,7 +915,7 @@ public final&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/application
 <div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getName--"><code>name</code></a> attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>name</code> - The value for name</dd>
+<dd><code>name</code> - The value for name (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
@@ -933,7 +933,7 @@ public final&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/application
 <div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getProduction--"><code>production</code></a> attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>production</code> - The value for production</dd>
+<dd><code>production</code> - The value for production (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
@@ -949,7 +949,7 @@ public final&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/application
 <div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getSpaceId--"><code>spaceId</code></a> attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>spaceId</code> - The value for spaceId</dd>
+<dd><code>spaceId</code> - The value for spaceId (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
@@ -965,7 +965,7 @@ public final&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/application
 <div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getStackId--"><code>stackId</code></a> attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>stackId</code> - The value for stackId</dd>
+<dd><code>stackId</code> - The value for stackId (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
@@ -1029,7 +1029,7 @@ public final&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/application
 <div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/client/v2/applications/AbstractApplicationEntity.html#getState--"><code>state</code></a> attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>state</code> - The value for state</dd>
+<dd><code>state</code> - The value for state (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>

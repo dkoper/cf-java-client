@@ -355,7 +355,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>credentials</h4>
 <pre>public final&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/userprovidedserviceinstances/UserProvidedServiceInstanceEntity.Builder.html" title="class in org.cloudfoundry.client.v2.userprovidedserviceinstances">UserProvidedServiceInstanceEntity.Builder</a>&nbsp;credentials(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;credentials)</pre>
-<div class="block">Sets or replaces all mappings from the specified map as entries for the <a href="../../../../../org/cloudfoundry/client/v2/serviceinstances/BaseServiceInstanceEntity.html#getCredentials--"><code>credentials</code></a> map. Nulls are not permitted</div>
+<div class="block">Sets or replaces all mappings from the specified map as entries for the <a href="../../../../../org/cloudfoundry/client/v2/serviceinstances/BaseServiceInstanceEntity.html#getCredentials--"><code>credentials</code></a> map. Nulls are not permitted as keys or values, but parameter itself can be null</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>credentials</code> - The entries that will be added to the credentials map</dd>
@@ -390,7 +390,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/client/v2/serviceinstances/BaseServiceInstanceEntity.html#getName--"><code>name</code></a> attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>name</code> - The value for name</dd>
+<dd><code>name</code> - The value for name (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
@@ -470,7 +470,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Initializes the value for the <a href="../../../../../org/cloudfoundry/client/v2/serviceinstances/BaseServiceInstanceEntity.html#getType--"><code>type</code></a> attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>type</code> - The value for type</dd>
+<dd><code>type</code> - The value for type (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
