@@ -110,18 +110,34 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public abstract class <span class="typeNameLabel">TestObjects</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
-<div class="block"><code>TestObjects</code> provides a utility which calls setters of an object of <code>*Builder</code> type and returns the resulting builder object.
+<div class="block"><code>TestObjects</code> provides a generic utility which transforms a builder object of type <code>T</code>, by calling its configuration methods with default values.
  <p>
- The exported static methods are <a href="../../../../org/cloudfoundry/util/test/TestObjects.html#fill-T-"><code>&lt;T&gt;fill(T,String)</code></a> The <code>T</code> argument is a builder object, and the <code>String</code> is a <i>modifier</i> which is used to augment the <code>String</code> values set. <code>fill(b)</code> is equivalent to <code>fill(b,"")</code> and <code>fillPage(b)</code> is equivalent to <code>fillPage(b,"")</code>.
+ A <i>builder object</i> of type <b>T</b> is an object with a <code>build()</code> method returning a <i>built object</i> whose type has a <code>builder</code> of type <b>T</b>.
  <p>
- <code>TestObjects</code> is designed to populate builder objects with test values. Object setters are called with standard values based upon the parameter type and the name of the setter method. Setters
- which take collections are ignored.
- <ul> <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> types are set to <code>"test-"+modifier+settername</code>, where <code>modifier</code> is supplied on the call <code>fill(b,modifier)</code> or <code>fillPage(b,modifier)</code>.</li>
- <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang"><code>Boolean</code></a> types are set to <code>true</code>.</li> <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang"><code>Integer</code></a> or <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang"><code>Long</code></a> types are set to <code>1</code>.</li> <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang"><code>Float</code></a> or <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang"><code>Double</code></a> types are set to <code>1.0</code>.</li>
- <li>Types with names ending in <code>Entity</code> or <code>Metadata</code><sup>1</sup> are recursively filled, using <a href="../../../../org/cloudfoundry/util/test/TestObjects.html#fill-T-"><code>fill(builder-of-type, modifier)</code></a>, if their builder types can be found.</li>
+ A <i>built object</i> of type <b>B</b> is an object with a <code>builder()</code> method returning a <i>builder object</i> which builds type <b>B</b>.
+ <p>
+ The exported static methods are <a href="../../../../org/cloudfoundry/util/test/TestObjects.html#fill-T-"><code>T fill(T, String)</code></a> and <a href="../../../../org/cloudfoundry/util/test/TestObjects.html#fill-T-"><code>T fill(T)</code></a>. The <code>T</code> argument must be an object of builder type (which is returned as result), 
+ and the <code>String</code> is a <i>modifier</i> which is used to augment the <code>String</code> values set.  The modifier must not be <code>null</code>.
+ <p>
+ <code>fill(b)</code> is equivalent to <code>fill(b, "")</code>.
+ <p>
+ <code>TestObjects</code> populates builder objects with test values. Builder setter methods are called with standard values based upon the parameter type and the name of the setter method.
+ <ul> 
+      <li><code>enum</code> types are set to the first enumerated constant value.</li> 
+      <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang"><code>Boolean</code></a> types are set to <code>true</code>.</li> 
+      <li><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util"><code>Date</code></a> types are set to <code>new Date(0)</code>.</li> 
+      <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang"><code>Double</code></a> types are set to <code>1.0</code>.</li> 
+      <li><a href="http://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time"><code>Duration</code></a> types are set to a duration of 15 seconds.</li> 
+      <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang"><code>Integer</code></a> or <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang"><code>Long</code></a> types are set to <code>1</code>.</li> 
+      <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang"><code>Iterable</code></a> types are set to empty.</li> 
+      <li><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> types are set to empty.</li> 
+      <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> types are set to <code>"test-"+modifier+settername</code>.</li> 
+      <li>Types of <i>built objects</i> are set to a value built from a (recursively) <code>fill()</code>ed builder instance.</li> 
  </ul>
  <p>
- <sup>1</sup>These special cases make the <code>TestObjects</code> class specific to v2 CloudFoundry REST api interfaces.</div>
+ Only public, chainable, single-parameter setter methods which have a corresponding getter (on the type built) are configured.
+ <p>
+ Non-builder objects, or builder objects that build <code>*Request</code> types, are rejected (by assertion failure).</div>
 </li>
 </ul>
 </div>
