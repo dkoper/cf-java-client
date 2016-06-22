@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/cloudfoundry/uaa/groups/Group.Builder.html" title="class in org.cloudfoundry.uaa.groups"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/cloudfoundry/uaa/groups/ListGroupsRequest.html" title="class in org.cloudfoundry.uaa.groups"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/cloudfoundry/uaa/groups/ListExternalGroupMappingsRequest.html" title="class in org.cloudfoundry.uaa.groups"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/cloudfoundry/uaa/groups/Groups.html" target="_top">Frames</a></li>
@@ -123,19 +123,19 @@ var activeTableTab = "activeTableTab";
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/CreateGroupResponse.html" title="class in org.cloudfoundry.uaa.groups">CreateGroupResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/Groups.html#create-org.cloudfoundry.uaa.groups.CreateGroupRequest-">create</a></span>(<a href="../../../../org/cloudfoundry/uaa/groups/CreateGroupRequest.html" title="class in org.cloudfoundry.uaa.groups">CreateGroupRequest</a>&nbsp;request)</code>
-<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#create57">Create Group</a> request</div>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#create58">Create Group</a> request</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/DeleteGroupResponse.html" title="class in org.cloudfoundry.uaa.groups">DeleteGroupResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/Groups.html#delete-org.cloudfoundry.uaa.groups.DeleteGroupRequest-">delete</a></span>(<a href="../../../../org/cloudfoundry/uaa/groups/DeleteGroupRequest.html" title="class in org.cloudfoundry.uaa.groups">DeleteGroupRequest</a>&nbsp;request)</code>
-<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#delete60">Delete a Group</a> request</div>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#delete61">Delete a Group</a> request</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/GetGroupResponse.html" title="class in org.cloudfoundry.uaa.groups">GetGroupResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/Groups.html#get-org.cloudfoundry.uaa.groups.GetGroupRequest-">get</a></span>(<a href="../../../../org/cloudfoundry/uaa/groups/GetGroupRequest.html" title="class in org.cloudfoundry.uaa.groups">GetGroupRequest</a>&nbsp;request)</code>
-<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#retrieve58">Retrieve a Group</a> request</div>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#retrieve59">Retrieve a Group</a> request</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -145,9 +145,33 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/ListExternalGroupMappingsResponse.html" title="class in org.cloudfoundry.uaa.groups">ListExternalGroupMappingsResponse</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/Groups.html#listExternalGroupMappings-org.cloudfoundry.uaa.groups.ListExternalGroupMappingsRequest-">listExternalGroupMappings</a></span>(<a href="../../../../org/cloudfoundry/uaa/groups/ListExternalGroupMappingsRequest.html" title="class in org.cloudfoundry.uaa.groups">ListExternalGroupMappingsRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#list72">List External Group Mappings</a> request</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/MapExternalGroupResponse.html" title="class in org.cloudfoundry.uaa.groups">MapExternalGroupResponse</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/Groups.html#mapExternalGroup-org.cloudfoundry.uaa.groups.MapExternalGroupRequest-">mapExternalGroup</a></span>(<a href="../../../../org/cloudfoundry/uaa/groups/MapExternalGroupRequest.html" title="class in org.cloudfoundry.uaa.groups">MapExternalGroupRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#map">Map External Group</a> request</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/UnmapExternalGroupByGroupDisplayNameResponse.html" title="class in org.cloudfoundry.uaa.groups">UnmapExternalGroupByGroupDisplayNameResponse</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/Groups.html#unmapExternalGroupByGroupDisplayName-org.cloudfoundry.uaa.groups.UnmapExternalGroupByGroupDisplayNameRequest-">unmapExternalGroupByGroupDisplayName</a></span>(<a href="../../../../org/cloudfoundry/uaa/groups/UnmapExternalGroupByGroupDisplayNameRequest.html" title="class in org.cloudfoundry.uaa.groups">UnmapExternalGroupByGroupDisplayNameRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#by-group-display-name">Unmap External Group By Group Display Name</a> request</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/UnmapExternalGroupByGroupIdResponse.html" title="class in org.cloudfoundry.uaa.groups">UnmapExternalGroupByGroupIdResponse</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/Groups.html#unmapExternalGroupByGroupId-org.cloudfoundry.uaa.groups.UnmapExternalGroupByGroupIdRequest-">unmapExternalGroupByGroupId</a></span>(<a href="../../../../org/cloudfoundry/uaa/groups/UnmapExternalGroupByGroupIdRequest.html" title="class in org.cloudfoundry.uaa.groups">UnmapExternalGroupByGroupIdRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#by-group-id">Unmap External Group By Group Id</a> request</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/UpdateGroupResponse.html" title="class in org.cloudfoundry.uaa.groups">UpdateGroupResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/Groups.html#update-org.cloudfoundry.uaa.groups.UpdateGroupRequest-">update</a></span>(<a href="../../../../org/cloudfoundry/uaa/groups/UpdateGroupRequest.html" title="class in org.cloudfoundry.uaa.groups">UpdateGroupRequest</a>&nbsp;request)</code>
-<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#update59">Update Group</a> request</div>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#update60">Update Group</a> request</div>
 </td>
 </tr>
 </table>
@@ -172,7 +196,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>create</h4>
 <pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/CreateGroupResponse.html" title="class in org.cloudfoundry.uaa.groups">CreateGroupResponse</a>&gt;&nbsp;create(<a href="../../../../org/cloudfoundry/uaa/groups/CreateGroupRequest.html" title="class in org.cloudfoundry.uaa.groups">CreateGroupRequest</a>&nbsp;request)</pre>
-<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#create57">Create Group</a> request</div>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#create58">Create Group</a> request</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>request</code> - the Create Group request</dd>
@@ -188,7 +212,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>delete</h4>
 <pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/DeleteGroupResponse.html" title="class in org.cloudfoundry.uaa.groups">DeleteGroupResponse</a>&gt;&nbsp;delete(<a href="../../../../org/cloudfoundry/uaa/groups/DeleteGroupRequest.html" title="class in org.cloudfoundry.uaa.groups">DeleteGroupRequest</a>&nbsp;request)</pre>
-<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#delete60">Delete a Group</a> request</div>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#delete61">Delete a Group</a> request</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>request</code> - the Delete Group request</dd>
@@ -204,7 +228,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>get</h4>
 <pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/GetGroupResponse.html" title="class in org.cloudfoundry.uaa.groups">GetGroupResponse</a>&gt;&nbsp;get(<a href="../../../../org/cloudfoundry/uaa/groups/GetGroupRequest.html" title="class in org.cloudfoundry.uaa.groups">GetGroupRequest</a>&nbsp;request)</pre>
-<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#retrieve58">Retrieve a Group</a> request</div>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#retrieve59">Retrieve a Group</a> request</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>request</code> - the Get Group request</dd>
@@ -229,6 +253,70 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
+<a name="listExternalGroupMappings-org.cloudfoundry.uaa.groups.ListExternalGroupMappingsRequest-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>listExternalGroupMappings</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/ListExternalGroupMappingsResponse.html" title="class in org.cloudfoundry.uaa.groups">ListExternalGroupMappingsResponse</a>&gt;&nbsp;listExternalGroupMappings(<a href="../../../../org/cloudfoundry/uaa/groups/ListExternalGroupMappingsRequest.html" title="class in org.cloudfoundry.uaa.groups">ListExternalGroupMappingsRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#list72">List External Group Mappings</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - the List External Group Mappings request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the response from the List External Group Mappings request</dd>
+</dl>
+</li>
+</ul>
+<a name="mapExternalGroup-org.cloudfoundry.uaa.groups.MapExternalGroupRequest-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mapExternalGroup</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/MapExternalGroupResponse.html" title="class in org.cloudfoundry.uaa.groups">MapExternalGroupResponse</a>&gt;&nbsp;mapExternalGroup(<a href="../../../../org/cloudfoundry/uaa/groups/MapExternalGroupRequest.html" title="class in org.cloudfoundry.uaa.groups">MapExternalGroupRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#map">Map External Group</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - the Map External Group request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the response from the Map External Group request</dd>
+</dl>
+</li>
+</ul>
+<a name="unmapExternalGroupByGroupDisplayName-org.cloudfoundry.uaa.groups.UnmapExternalGroupByGroupDisplayNameRequest-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unmapExternalGroupByGroupDisplayName</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/UnmapExternalGroupByGroupDisplayNameResponse.html" title="class in org.cloudfoundry.uaa.groups">UnmapExternalGroupByGroupDisplayNameResponse</a>&gt;&nbsp;unmapExternalGroupByGroupDisplayName(<a href="../../../../org/cloudfoundry/uaa/groups/UnmapExternalGroupByGroupDisplayNameRequest.html" title="class in org.cloudfoundry.uaa.groups">UnmapExternalGroupByGroupDisplayNameRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#by-group-display-name">Unmap External Group By Group Display Name</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - the Unmap External Group By Group Display Name request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the response from the Unmap External Group By Group Display Name request</dd>
+</dl>
+</li>
+</ul>
+<a name="unmapExternalGroupByGroupId-org.cloudfoundry.uaa.groups.UnmapExternalGroupByGroupIdRequest-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unmapExternalGroupByGroupId</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/UnmapExternalGroupByGroupIdResponse.html" title="class in org.cloudfoundry.uaa.groups">UnmapExternalGroupByGroupIdResponse</a>&gt;&nbsp;unmapExternalGroupByGroupId(<a href="../../../../org/cloudfoundry/uaa/groups/UnmapExternalGroupByGroupIdRequest.html" title="class in org.cloudfoundry.uaa.groups">UnmapExternalGroupByGroupIdRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#by-group-id">Unmap External Group By Group Id</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - the Unmap External Group By Group Id request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the response from the Unmap External Group By Group Id request</dd>
+</dl>
+</li>
+</ul>
 <a name="update-org.cloudfoundry.uaa.groups.UpdateGroupRequest-">
 <!--   -->
 </a>
@@ -236,7 +324,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>update</h4>
 <pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/UpdateGroupResponse.html" title="class in org.cloudfoundry.uaa.groups">UpdateGroupResponse</a>&gt;&nbsp;update(<a href="../../../../org/cloudfoundry/uaa/groups/UpdateGroupRequest.html" title="class in org.cloudfoundry.uaa.groups">UpdateGroupRequest</a>&nbsp;request)</pre>
-<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#update59">Update Group</a> request</div>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#update60">Update Group</a> request</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>request</code> - the Update Group request</dd>
@@ -274,7 +362,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/cloudfoundry/uaa/groups/Group.Builder.html" title="class in org.cloudfoundry.uaa.groups"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/cloudfoundry/uaa/groups/ListGroupsRequest.html" title="class in org.cloudfoundry.uaa.groups"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/cloudfoundry/uaa/groups/ListExternalGroupMappingsRequest.html" title="class in org.cloudfoundry.uaa.groups"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/cloudfoundry/uaa/groups/Groups.html" target="_top">Frames</a></li>
