@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6};
+var methods = {"i0":6,"i1":6,"i2":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -122,14 +122,20 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/authorizations/Authorizations.html#authorizeByAuthorizationCodeGrantApi-org.cloudfoundry.uaa.authorizations.AuthorizeByAuthorizationCodeGrantApiRequest-">authorizeByAuthorizationCodeGrantApi</a></span>(<a href="../../../../org/cloudfoundry/uaa/authorizations/AuthorizeByAuthorizationCodeGrantApiRequest.html" title="class in org.cloudfoundry.uaa.authorizations">AuthorizeByAuthorizationCodeGrantApiRequest</a>&nbsp;request)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/authorizations/Authorizations.html#authorizationCodeGrantApi-org.cloudfoundry.uaa.authorizations.AuthorizeByAuthorizationCodeGrantApiRequest-">authorizationCodeGrantApi</a></span>(<a href="../../../../org/cloudfoundry/uaa/authorizations/AuthorizeByAuthorizationCodeGrantApiRequest.html" title="class in org.cloudfoundry.uaa.authorizations">AuthorizeByAuthorizationCodeGrantApiRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#api-flow">Authorize By Authorization Code Grant (API)</a> request</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/authorizations/Authorizations.html#authorizeByAuthorizationCodeGrantBrowser-org.cloudfoundry.uaa.authorizations.AuthorizeByAuthorizationCodeGrantBrowserRequest-">authorizeByAuthorizationCodeGrantBrowser</a></span>(<a href="../../../../org/cloudfoundry/uaa/authorizations/AuthorizeByAuthorizationCodeGrantBrowserRequest.html" title="class in org.cloudfoundry.uaa.authorizations">AuthorizeByAuthorizationCodeGrantBrowserRequest</a>&nbsp;request)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/authorizations/Authorizations.html#authorizationCodeGrantBrowser-org.cloudfoundry.uaa.authorizations.AuthorizeByAuthorizationCodeGrantBrowserRequest-">authorizationCodeGrantBrowser</a></span>(<a href="../../../../org/cloudfoundry/uaa/authorizations/AuthorizeByAuthorizationCodeGrantBrowserRequest.html" title="class in org.cloudfoundry.uaa.authorizations">AuthorizeByAuthorizationCodeGrantBrowserRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#browser-flow">Authorize By Authorization Code Grant (Browser)</a> request</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/authorizations/Authorizations.html#implicitGrantBrowser-org.cloudfoundry.uaa.authorizations.AuthorizeByImplicitGrantBrowserRequest-">implicitGrantBrowser</a></span>(<a href="../../../../org/cloudfoundry/uaa/authorizations/AuthorizeByImplicitGrantBrowserRequest.html" title="class in org.cloudfoundry.uaa.authorizations">AuthorizeByImplicitGrantBrowserRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#browser-flow6">Authorize By Implicit Grant (Browser)</a> request</div>
 </td>
 </tr>
 </table>
@@ -147,13 +153,13 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="authorizeByAuthorizationCodeGrantApi-org.cloudfoundry.uaa.authorizations.AuthorizeByAuthorizationCodeGrantApiRequest-">
+<a name="authorizationCodeGrantApi-org.cloudfoundry.uaa.authorizations.AuthorizeByAuthorizationCodeGrantApiRequest-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>authorizeByAuthorizationCodeGrantApi</h4>
-<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;authorizeByAuthorizationCodeGrantApi(<a href="../../../../org/cloudfoundry/uaa/authorizations/AuthorizeByAuthorizationCodeGrantApiRequest.html" title="class in org.cloudfoundry.uaa.authorizations">AuthorizeByAuthorizationCodeGrantApiRequest</a>&nbsp;request)</pre>
+<h4>authorizationCodeGrantApi</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;authorizationCodeGrantApi(<a href="../../../../org/cloudfoundry/uaa/authorizations/AuthorizeByAuthorizationCodeGrantApiRequest.html" title="class in org.cloudfoundry.uaa.authorizations">AuthorizeByAuthorizationCodeGrantApiRequest</a>&nbsp;request)</pre>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#api-flow">Authorize By Authorization Code Grant (API)</a> request</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -163,19 +169,35 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="authorizeByAuthorizationCodeGrantBrowser-org.cloudfoundry.uaa.authorizations.AuthorizeByAuthorizationCodeGrantBrowserRequest-">
+<a name="authorizationCodeGrantBrowser-org.cloudfoundry.uaa.authorizations.AuthorizeByAuthorizationCodeGrantBrowserRequest-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
-<h4>authorizeByAuthorizationCodeGrantBrowser</h4>
-<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;authorizeByAuthorizationCodeGrantBrowser(<a href="../../../../org/cloudfoundry/uaa/authorizations/AuthorizeByAuthorizationCodeGrantBrowserRequest.html" title="class in org.cloudfoundry.uaa.authorizations">AuthorizeByAuthorizationCodeGrantBrowserRequest</a>&nbsp;request)</pre>
+<h4>authorizationCodeGrantBrowser</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;authorizationCodeGrantBrowser(<a href="../../../../org/cloudfoundry/uaa/authorizations/AuthorizeByAuthorizationCodeGrantBrowserRequest.html" title="class in org.cloudfoundry.uaa.authorizations">AuthorizeByAuthorizationCodeGrantBrowserRequest</a>&nbsp;request)</pre>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#browser-flow">Authorize By Authorization Code Grant (Browser)</a> request</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>request</code> - Authorize By Authorization Code Grant (Browser) request</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the authorization code</dd>
+<dd>the authentication redirect URI</dd>
+</dl>
+</li>
+</ul>
+<a name="implicitGrantBrowser-org.cloudfoundry.uaa.authorizations.AuthorizeByImplicitGrantBrowserRequest-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>implicitGrantBrowser</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;implicitGrantBrowser(<a href="../../../../org/cloudfoundry/uaa/authorizations/AuthorizeByImplicitGrantBrowserRequest.html" title="class in org.cloudfoundry.uaa.authorizations">AuthorizeByImplicitGrantBrowserRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#browser-flow6">Authorize By Implicit Grant (Browser)</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - Authorize By Implicit Grant (Browser) request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the authentication redirect URI</dd>
 </dl>
 </li>
 </ul>
