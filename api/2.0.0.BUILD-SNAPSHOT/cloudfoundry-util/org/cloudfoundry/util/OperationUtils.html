@@ -190,7 +190,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Produces a Mono transformer that preserves the type of the source <code>Mono&lt;IN&gt;</code>.
 
  <p> The Mono produced expects a single element from the source, passes this to the function (as in <code>.then</code>) and requests an element from the resulting <code>Mono&lt;OUT&gt;</code>. When successful,
- the result (if any) is discarded and input value is signalled. </p>
+ the result (if any) is discarded and the input value is signalled. </p>
 
  <p> <b>Summary:</b> does a <code>.then</code> on the new Mono but keeps the input to pass on unchanged. </p>
 
