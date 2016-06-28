@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -138,6 +138,24 @@ var activeTableTab = "activeTableTab";
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#browser-flow6">Authorize By Implicit Grant (Browser)</a> request</div>
 </td>
 </tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/authorizations/Authorizations.html#openIdWithAuthorizationCodeGrant-org.cloudfoundry.uaa.authorizations.AuthorizeByOpenIdWithAuthorizationCodeGrantRequest-">openIdWithAuthorizationCodeGrant</a></span>(<a href="../../../../org/cloudfoundry/uaa/authorizations/AuthorizeByOpenIdWithAuthorizationCodeGrantRequest.html" title="class in org.cloudfoundry.uaa.authorizations">AuthorizeByOpenIdWithAuthorizationCodeGrantRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#with-authorization-code-grant">Authorize By Open ID with Authorization Code Grant</a> request</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/authorizations/Authorizations.html#openIdWithIdToken-org.cloudfoundry.uaa.authorizations.AuthorizeByOpenIdWithIdTokenRequest-">openIdWithIdToken</a></span>(<a href="../../../../org/cloudfoundry/uaa/authorizations/AuthorizeByOpenIdWithIdTokenRequest.html" title="class in org.cloudfoundry.uaa.authorizations">AuthorizeByOpenIdWithIdTokenRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#id-token">Authorize By Open ID with an ID Token</a> request</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/authorizations/Authorizations.html#openIdWithImplicitGrant-org.cloudfoundry.uaa.authorizations.AuthorizeByOpenIdWithImplicitGrantRequest-">openIdWithImplicitGrant</a></span>(<a href="../../../../org/cloudfoundry/uaa/authorizations/AuthorizeByOpenIdWithImplicitGrantRequest.html" title="class in org.cloudfoundry.uaa.authorizations">AuthorizeByOpenIdWithImplicitGrantRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#with-implicit-grant">Authorize By Open ID with Implicit Grant</a> request</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -188,7 +206,7 @@ var activeTableTab = "activeTableTab";
 <a name="implicitGrantBrowser-org.cloudfoundry.uaa.authorizations.AuthorizeByImplicitGrantBrowserRequest-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>implicitGrantBrowser</h4>
 <pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;implicitGrantBrowser(<a href="../../../../org/cloudfoundry/uaa/authorizations/AuthorizeByImplicitGrantBrowserRequest.html" title="class in org.cloudfoundry.uaa.authorizations">AuthorizeByImplicitGrantBrowserRequest</a>&nbsp;request)</pre>
@@ -198,6 +216,54 @@ var activeTableTab = "activeTableTab";
 <dd><code>request</code> - Authorize By Implicit Grant (Browser) request</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the authentication redirect URI</dd>
+</dl>
+</li>
+</ul>
+<a name="openIdWithAuthorizationCodeGrant-org.cloudfoundry.uaa.authorizations.AuthorizeByOpenIdWithAuthorizationCodeGrantRequest-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>openIdWithAuthorizationCodeGrant</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;openIdWithAuthorizationCodeGrant(<a href="../../../../org/cloudfoundry/uaa/authorizations/AuthorizeByOpenIdWithAuthorizationCodeGrantRequest.html" title="class in org.cloudfoundry.uaa.authorizations">AuthorizeByOpenIdWithAuthorizationCodeGrantRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#with-authorization-code-grant">Authorize By Open ID with Authorization Code Grant</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - Authorize By Open ID with an Authorization Code Grant request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the authentication location URI, including Access Token</dd>
+</dl>
+</li>
+</ul>
+<a name="openIdWithIdToken-org.cloudfoundry.uaa.authorizations.AuthorizeByOpenIdWithIdTokenRequest-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>openIdWithIdToken</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;openIdWithIdToken(<a href="../../../../org/cloudfoundry/uaa/authorizations/AuthorizeByOpenIdWithIdTokenRequest.html" title="class in org.cloudfoundry.uaa.authorizations">AuthorizeByOpenIdWithIdTokenRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#id-token">Authorize By Open ID with an ID Token</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - Authorize By Open ID with an ID Token request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the authentication location URI, including Access Token</dd>
+</dl>
+</li>
+</ul>
+<a name="openIdWithImplicitGrant-org.cloudfoundry.uaa.authorizations.AuthorizeByOpenIdWithImplicitGrantRequest-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>openIdWithImplicitGrant</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;openIdWithImplicitGrant(<a href="../../../../org/cloudfoundry/uaa/authorizations/AuthorizeByOpenIdWithImplicitGrantRequest.html" title="class in org.cloudfoundry.uaa.authorizations">AuthorizeByOpenIdWithImplicitGrantRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#with-implicit-grant">Authorize By Open ID with Implicit Grant</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - Authorize By Open ID with Implicit Grant request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the authentication location URI, including Access Token</dd>
 </dl>
 </li>
 </ul>
