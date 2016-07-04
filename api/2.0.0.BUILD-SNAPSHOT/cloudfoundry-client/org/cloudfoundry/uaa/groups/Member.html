@@ -168,26 +168,26 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/Member.html#getIdentityProviderOriginKey--">getIdentityProviderOriginKey</a></span>()</code>
-<div class="block">The alias of the identity provider that authenticated this user.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/Member.html#getMemberId--">getMemberId</a></span>()</code>
+<div class="block">Globally unique identifier of the member, either a user ID or another group ID</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/Member.html#getOrigin--">getOrigin</a></span>()</code>
+<div class="block">The alias of the identity provider that authenticated this user.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/groups/MemberType.html" title="enum in org.cloudfoundry.uaa.groups">MemberType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/Member.html#getType--">getType</a></span>()</code>
 <div class="block">The member type</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/Member.html#getValue--">getValue</a></span>()</code>
-<div class="block">Globally unique identifier of the member, either a user ID or another group ID</div>
-</td>
-</tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/Member.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>identityProviderOriginKey</code>, <code>type</code>, <code>value</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>origin</code>, <code>memberId</code>, <code>type</code>.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -218,14 +218,24 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getIdentityProviderOriginKey--">
+<a name="getOrigin--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getIdentityProviderOriginKey</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getIdentityProviderOriginKey()</pre>
+<h4>getOrigin</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getOrigin()</pre>
 <div class="block">The alias of the identity provider that authenticated this user. "uaa" is an internal UAA user.</div>
+</li>
+</ul>
+<a name="getMemberId--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMemberId</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getMemberId()</pre>
+<div class="block">Globally unique identifier of the member, either a user ID or another group ID</div>
 </li>
 </ul>
 <a name="getType--">
@@ -236,16 +246,6 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>getType</h4>
 <pre>public&nbsp;<a href="../../../../org/cloudfoundry/uaa/groups/MemberType.html" title="enum in org.cloudfoundry.uaa.groups">MemberType</a>&nbsp;getType()</pre>
 <div class="block">The member type</div>
-</li>
-</ul>
-<a name="getValue--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getValue</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getValue()</pre>
-<div class="block">Globally unique identifier of the member, either a user ID or another group ID</div>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">
@@ -271,7 +271,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>identityProviderOriginKey</code>, <code>type</code>, <code>value</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>origin</code>, <code>memberId</code>, <code>type</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
