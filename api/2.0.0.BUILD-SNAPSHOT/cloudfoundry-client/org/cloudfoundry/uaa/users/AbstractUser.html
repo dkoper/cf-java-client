@@ -118,7 +118,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../org/cloudfoundry/uaa/users/CreateUserResponse.html" title="class in org.cloudfoundry.uaa.users">CreateUserResponse</a>, <a href="../../../../org/cloudfoundry/uaa/users/DeleteUserResponse.html" title="class in org.cloudfoundry.uaa.users">DeleteUserResponse</a>, <a href="../../../../org/cloudfoundry/uaa/users/UpdateUserResponse.html" title="class in org.cloudfoundry.uaa.users">UpdateUserResponse</a>, <a href="../../../../org/cloudfoundry/uaa/users/User.html" title="class in org.cloudfoundry.uaa.users">User</a></dd>
+<dd><a href="../../../../org/cloudfoundry/uaa/users/CreateUserResponse.html" title="class in org.cloudfoundry.uaa.users">CreateUserResponse</a>, <a href="../../../../org/cloudfoundry/uaa/users/DeleteUserResponse.html" title="class in org.cloudfoundry.uaa.users">DeleteUserResponse</a>, <a href="../../../../org/cloudfoundry/uaa/groups/MemberUser.html" title="class in org.cloudfoundry.uaa.groups">MemberUser</a>, <a href="../../../../org/cloudfoundry/uaa/users/UpdateUserResponse.html" title="class in org.cloudfoundry.uaa.users">UpdateUserResponse</a>, <a href="../../../../org/cloudfoundry/uaa/users/User.html" title="class in org.cloudfoundry.uaa.users">User</a></dd>
 </dl>
 <hr>
 <br>
@@ -162,7 +162,7 @@ extends <a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/Approval.html" title="class in org.cloudfoundry.uaa.users">Approval</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html#getApproval--">getApproval</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html#getApprovals--">getApprovals</a></span>()</code>
 <div class="block">The approvals for the user</div>
 </td>
 </tr>
@@ -174,7 +174,7 @@ extends <a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/Group.html" title="class in org.cloudfoundry.uaa.users">Group</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html#getGroup--">getGroup</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html#getGroups--">getGroups</a></span>()</code>
 <div class="block">The groups for the user</div>
 </td>
 </tr>
@@ -231,13 +231,13 @@ extends <a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getApproval--">
+<a name="getApprovals--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getApproval</h4>
-<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/Approval.html" title="class in org.cloudfoundry.uaa.users">Approval</a>&gt;&nbsp;getApproval()</pre>
+<h4>getApprovals</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/Approval.html" title="class in org.cloudfoundry.uaa.users">Approval</a>&gt;&nbsp;getApprovals()</pre>
 <div class="block">The approvals for the user</div>
 </li>
 </ul>
@@ -251,13 +251,13 @@ extends <a href="../../../../org/cloudfoundry/uaa/users/AbstractUserSummary.html
 <div class="block">The external id</div>
 </li>
 </ul>
-<a name="getGroup--">
+<a name="getGroups--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getGroup</h4>
-<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/Group.html" title="class in org.cloudfoundry.uaa.users">Group</a>&gt;&nbsp;getGroup()</pre>
+<h4>getGroups</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/Group.html" title="class in org.cloudfoundry.uaa.users">Group</a>&gt;&nbsp;getGroups()</pre>
 <div class="block">The groups for the user</div>
 </li>
 </ul>

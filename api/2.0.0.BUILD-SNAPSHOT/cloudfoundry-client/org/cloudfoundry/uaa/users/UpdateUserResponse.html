@@ -189,7 +189,7 @@ extends <a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html" title
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/Approval.html" title="class in org.cloudfoundry.uaa.users">Approval</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/UpdateUserResponse.html#getApproval--">getApproval</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/UpdateUserResponse.html#getApprovals--">getApprovals</a></span>()</code>
 <div class="block">The approvals for the user</div>
 </td>
 </tr>
@@ -207,7 +207,7 @@ extends <a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html" title
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/Group.html" title="class in org.cloudfoundry.uaa.users">Group</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/UpdateUserResponse.html#getGroup--">getGroup</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/UpdateUserResponse.html#getGroups--">getGroups</a></span>()</code>
 <div class="block">The groups for the user</div>
 </td>
 </tr>
@@ -268,7 +268,7 @@ extends <a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html" title
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/users/UpdateUserResponse.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>approval</code>, <code>externalId</code>, <code>group</code>, <code>active</code>, <code>email</code>, <code>meta</code>, <code>name</code>, <code>passwordLastModified</code>, <code>schemas</code>, <code>verified</code>, <code>zoneId</code>, <code>id</code>, <code>origin</code>, <code>userName</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>approvals</code>, <code>externalId</code>, <code>groups</code>, <code>active</code>, <code>email</code>, <code>meta</code>, <code>name</code>, <code>passwordLastModified</code>, <code>schemas</code>, <code>verified</code>, <code>zoneId</code>, <code>id</code>, <code>origin</code>, <code>userName</code>.</div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
@@ -299,17 +299,17 @@ extends <a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html" title
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getApproval--">
+<a name="getApprovals--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getApproval</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/Approval.html" title="class in org.cloudfoundry.uaa.users">Approval</a>&gt;&nbsp;getApproval()</pre>
+<h4>getApprovals</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/Approval.html" title="class in org.cloudfoundry.uaa.users">Approval</a>&gt;&nbsp;getApprovals()</pre>
 <div class="block">The approvals for the user</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html#getApproval--">getApproval</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html" title="class in org.cloudfoundry.uaa.users">AbstractUser</a></code></dd>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html#getApprovals--">getApprovals</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html" title="class in org.cloudfoundry.uaa.users">AbstractUser</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -327,17 +327,17 @@ extends <a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html" title
 </dl>
 </li>
 </ul>
-<a name="getGroup--">
+<a name="getGroups--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getGroup</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/Group.html" title="class in org.cloudfoundry.uaa.users">Group</a>&gt;&nbsp;getGroup()</pre>
+<h4>getGroups</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/cloudfoundry/uaa/users/Group.html" title="class in org.cloudfoundry.uaa.users">Group</a>&gt;&nbsp;getGroups()</pre>
 <div class="block">The groups for the user</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html#getGroup--">getGroup</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html" title="class in org.cloudfoundry.uaa.users">AbstractUser</a></code></dd>
+<dd><code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html#getGroups--">getGroups</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html" title="class in org.cloudfoundry.uaa.users">AbstractUser</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -518,7 +518,7 @@ extends <a href="../../../../org/cloudfoundry/uaa/users/AbstractUser.html" title
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>approval</code>, <code>externalId</code>, <code>group</code>, <code>active</code>, <code>email</code>, <code>meta</code>, <code>name</code>, <code>passwordLastModified</code>, <code>schemas</code>, <code>verified</code>, <code>zoneId</code>, <code>id</code>, <code>origin</code>, <code>userName</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>approvals</code>, <code>externalId</code>, <code>groups</code>, <code>active</code>, <code>email</code>, <code>meta</code>, <code>name</code>, <code>passwordLastModified</code>, <code>schemas</code>, <code>verified</code>, <code>zoneId</code>, <code>id</code>, <code>origin</code>, <code>userName</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
