@@ -107,19 +107,10 @@
 <div class="block">Builds a new <a href="../../../../org/cloudfoundry/doppler/ContainerMetric.html" title="class in org.cloudfoundry.doppler"><code>ContainerMetric</code></a>.</div>
 </td>
 </tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../org/cloudfoundry/doppler/package-summary.html">org.cloudfoundry.doppler</a> that return types with arguments of type <a href="../../../../org/cloudfoundry/doppler/ContainerMetric.html" title="class in org.cloudfoundry.doppler">ContainerMetric</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../../org/cloudfoundry/doppler/ContainerMetric.html" title="class in org.cloudfoundry.doppler">ContainerMetric</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">DopplerClient.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/doppler/DopplerClient.html#containerMetrics-org.cloudfoundry.doppler.ContainerMetricsRequest-">containerMetrics</a></span>(<a href="../../../../org/cloudfoundry/doppler/ContainerMetricsRequest.html" title="class in org.cloudfoundry.doppler">ContainerMetricsRequest</a>&nbsp;request)</code>
-<div class="block">Makes the <a href="https://github.com/cloudfoundry/loggregator/tree/develop/src/trafficcontroller#endpoints">Container Metrics</a> request</div>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/doppler/ContainerMetric.html" title="class in org.cloudfoundry.doppler">ContainerMetric</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Envelope.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/doppler/Envelope.html#getContainerMetric--">getContainerMetric</a></span>()</code>
+<div class="block">The enclosed <a href="../../../../org/cloudfoundry/doppler/ContainerMetric.html" title="class in org.cloudfoundry.doppler"><code>ContainerMetric</code></a></div>
 </td>
 </tr>
 </tbody>
@@ -132,6 +123,12 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/doppler/Envelope.Builder.html" title="class in org.cloudfoundry.doppler">Envelope.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Envelope.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/doppler/Envelope.Builder.html#containerMetric-org.cloudfoundry.doppler.ContainerMetric-">containerMetric</a></span>(<a href="../../../../org/cloudfoundry/doppler/ContainerMetric.html" title="class in org.cloudfoundry.doppler">ContainerMetric</a>&nbsp;containerMetric)</code>
+<div class="block">Initializes the value for the <code>containerMetric</code> attribute.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/doppler/ContainerMetric.Builder.html" title="class in org.cloudfoundry.doppler">ContainerMetric.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">ContainerMetric.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/doppler/ContainerMetric.Builder.html#from-org.cloudfoundry.doppler.ContainerMetric-">from</a></span>(<a href="../../../../org/cloudfoundry/doppler/ContainerMetric.html" title="class in org.cloudfoundry.doppler">ContainerMetric</a>&nbsp;instance)</code>
 <div class="block">Fill a builder with attribute values from the provided <code>ContainerMetric</code> instance.</div>

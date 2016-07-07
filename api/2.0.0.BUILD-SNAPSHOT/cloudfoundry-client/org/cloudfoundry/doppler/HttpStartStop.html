@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var methods = {"i0":9,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -106,10 +106,6 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../org/cloudfoundry/doppler/Event.html" title="interface in org.cloudfoundry.doppler">Event</a></dd>
-</dl>
 <hr>
 <br>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>={"Immutables.generator","_HttpStartStop"})
@@ -187,78 +183,84 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#getForwarded--">getForwarded</a></span>()</code>
+<div class="block">The http forwarded-for [x-forwarded-for] header from the request</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#getInstanceId--">getInstanceId</a></span>()</code>
 <div class="block">The ID of the application instance</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#getInstanceIndex--">getInstanceIndex</a></span>()</code>
 <div class="block">The index of the application instance</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/Method.html" title="enum in org.cloudfoundry.doppler">Method</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#getMethod--">getMethod</a></span>()</code>
 <div class="block">The method of the request</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/PeerType.html" title="enum in org.cloudfoundry.doppler">PeerType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#getPeerType--">getPeerType</a></span>()</code>
 <div class="block">The role of the emitting process in the request cycle</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#getRemoteAddress--">getRemoteAddress</a></span>()</code>
 <div class="block">The remote address of the request.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#getRequestId--">getRequestId</a></span>()</code>
 <div class="block">The ID for tracking lifecycle of request.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#getStartTimestamp--">getStartTimestamp</a></span>()</code>
 <div class="block">The UNIX timestamp (in nanoseconds) when the request was sent (by a client) or received (by a server)</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#getStatusCode--">getStatusCode</a></span>()</code>
 <div class="block">The status code returned with the response to the request</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#getStopTimestamp--">getStopTimestamp</a></span>()</code>
 <div class="block">The UNIX timestamp (in nanoseconds) when the request was received</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#getUri--">getUri</a></span>()</code>
 <div class="block">The uri of the request</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#getUserAgent--">getUserAgent</a></span>()</code>
 <div class="block">The contents of the UserAgent header on the request</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>applicationId</code>, <code>contentLength</code>, <code>instanceId</code>, <code>instanceIndex</code>, <code>method</code>, <code>peerType</code>, <code>remoteAddress</code>, <code>requestId</code>, <code>startTimestamp</code>, <code>statusCode</code>, <code>stopTimestamp</code>, <code>uri</code>, <code>userAgent</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>applicationId</code>, <code>contentLength</code>, <code>forwarded</code>, <code>instanceId</code>, <code>instanceIndex</code>, <code>method</code>, <code>peerType</code>, <code>remoteAddress</code>, <code>requestId</code>, <code>startTimestamp</code>, <code>statusCode</code>, <code>stopTimestamp</code>, <code>uri</code>, <code>userAgent</code>.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#toString--">toString</a></span>()</code>
 <div class="block">Prints the immutable value <code>HttpStartStop</code> with attribute values.</div>
@@ -304,6 +306,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>getContentLength</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;getContentLength()</pre>
 <div class="block">The length of the response in bytes</div>
+</li>
+</ul>
+<a name="getForwarded--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getForwarded</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getForwarded()</pre>
+<div class="block">The http forwarded-for [x-forwarded-for] header from the request</div>
 </li>
 </ul>
 <a name="getInstanceId--">
@@ -439,7 +451,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>applicationId</code>, <code>contentLength</code>, <code>instanceId</code>, <code>instanceIndex</code>, <code>method</code>, <code>peerType</code>, <code>remoteAddress</code>, <code>requestId</code>, <code>startTimestamp</code>, <code>statusCode</code>, <code>stopTimestamp</code>, <code>uri</code>, <code>userAgent</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>applicationId</code>, <code>contentLength</code>, <code>forwarded</code>, <code>instanceId</code>, <code>instanceIndex</code>, <code>method</code>, <code>peerType</code>, <code>remoteAddress</code>, <code>requestId</code>, <code>startTimestamp</code>, <code>statusCode</code>, <code>stopTimestamp</code>, <code>uri</code>, <code>userAgent</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>

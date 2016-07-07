@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/cloudfoundry/doppler/CounterEvent.Builder.html" title="class in org.cloudfoundry.doppler"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/cloudfoundry/doppler/Error.html" title="class in org.cloudfoundry.doppler"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/cloudfoundry/doppler/Envelope.html" title="class in org.cloudfoundry.doppler"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/cloudfoundry/doppler/DopplerClient.html" target="_top">Frames</a></li>
@@ -121,25 +121,25 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../org/cloudfoundry/doppler/ContainerMetric.html" title="class in org.cloudfoundry.doppler">ContainerMetric</a>&gt;</code></td>
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../org/cloudfoundry/doppler/Envelope.html" title="class in org.cloudfoundry.doppler">Envelope</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/DopplerClient.html#containerMetrics-org.cloudfoundry.doppler.ContainerMetricsRequest-">containerMetrics</a></span>(<a href="../../../org/cloudfoundry/doppler/ContainerMetricsRequest.html" title="class in org.cloudfoundry.doppler">ContainerMetricsRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="https://github.com/cloudfoundry/loggregator/tree/develop/src/trafficcontroller#endpoints">Container Metrics</a> request</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../org/cloudfoundry/doppler/Event.html" title="interface in org.cloudfoundry.doppler">Event</a>&gt;</code></td>
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../org/cloudfoundry/doppler/Envelope.html" title="class in org.cloudfoundry.doppler">Envelope</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/DopplerClient.html#firehose-org.cloudfoundry.doppler.FirehoseRequest-">firehose</a></span>(<a href="../../../org/cloudfoundry/doppler/FirehoseRequest.html" title="class in org.cloudfoundry.doppler">FirehoseRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="https://github.com/cloudfoundry/loggregator/tree/develop/src/trafficcontroller#endpoints">Firehose</a> request</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../org/cloudfoundry/doppler/LogMessage.html" title="class in org.cloudfoundry.doppler">LogMessage</a>&gt;</code></td>
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../org/cloudfoundry/doppler/Envelope.html" title="class in org.cloudfoundry.doppler">Envelope</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/DopplerClient.html#recentLogs-org.cloudfoundry.doppler.RecentLogsRequest-">recentLogs</a></span>(<a href="../../../org/cloudfoundry/doppler/RecentLogsRequest.html" title="class in org.cloudfoundry.doppler">RecentLogsRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="https://github.com/cloudfoundry/loggregator/tree/develop/src/trafficcontroller#endpoints">Recent Logs</a> request</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../org/cloudfoundry/doppler/Event.html" title="interface in org.cloudfoundry.doppler">Event</a>&gt;</code></td>
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../org/cloudfoundry/doppler/Envelope.html" title="class in org.cloudfoundry.doppler">Envelope</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/DopplerClient.html#stream-org.cloudfoundry.doppler.StreamRequest-">stream</a></span>(<a href="../../../org/cloudfoundry/doppler/StreamRequest.html" title="class in org.cloudfoundry.doppler">StreamRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="https://github.com/cloudfoundry/loggregator/tree/develop/src/trafficcontroller#endpoints">Stream</a> request</div>
 </td>
@@ -165,7 +165,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>containerMetrics</h4>
-<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../org/cloudfoundry/doppler/ContainerMetric.html" title="class in org.cloudfoundry.doppler">ContainerMetric</a>&gt;&nbsp;containerMetrics(<a href="../../../org/cloudfoundry/doppler/ContainerMetricsRequest.html" title="class in org.cloudfoundry.doppler">ContainerMetricsRequest</a>&nbsp;request)</pre>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../org/cloudfoundry/doppler/Envelope.html" title="class in org.cloudfoundry.doppler">Envelope</a>&gt;&nbsp;containerMetrics(<a href="../../../org/cloudfoundry/doppler/ContainerMetricsRequest.html" title="class in org.cloudfoundry.doppler">ContainerMetricsRequest</a>&nbsp;request)</pre>
 <div class="block">Makes the <a href="https://github.com/cloudfoundry/loggregator/tree/develop/src/trafficcontroller#endpoints">Container Metrics</a> request</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -181,7 +181,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>firehose</h4>
-<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../org/cloudfoundry/doppler/Event.html" title="interface in org.cloudfoundry.doppler">Event</a>&gt;&nbsp;firehose(<a href="../../../org/cloudfoundry/doppler/FirehoseRequest.html" title="class in org.cloudfoundry.doppler">FirehoseRequest</a>&nbsp;request)</pre>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../org/cloudfoundry/doppler/Envelope.html" title="class in org.cloudfoundry.doppler">Envelope</a>&gt;&nbsp;firehose(<a href="../../../org/cloudfoundry/doppler/FirehoseRequest.html" title="class in org.cloudfoundry.doppler">FirehoseRequest</a>&nbsp;request)</pre>
 <div class="block">Makes the <a href="https://github.com/cloudfoundry/loggregator/tree/develop/src/trafficcontroller#endpoints">Firehose</a> request</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -197,7 +197,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>recentLogs</h4>
-<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../org/cloudfoundry/doppler/LogMessage.html" title="class in org.cloudfoundry.doppler">LogMessage</a>&gt;&nbsp;recentLogs(<a href="../../../org/cloudfoundry/doppler/RecentLogsRequest.html" title="class in org.cloudfoundry.doppler">RecentLogsRequest</a>&nbsp;request)</pre>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../org/cloudfoundry/doppler/Envelope.html" title="class in org.cloudfoundry.doppler">Envelope</a>&gt;&nbsp;recentLogs(<a href="../../../org/cloudfoundry/doppler/RecentLogsRequest.html" title="class in org.cloudfoundry.doppler">RecentLogsRequest</a>&nbsp;request)</pre>
 <div class="block">Makes the <a href="https://github.com/cloudfoundry/loggregator/tree/develop/src/trafficcontroller#endpoints">Recent Logs</a> request</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -213,7 +213,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockListLast">
 <li class="blockList">
 <h4>stream</h4>
-<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../org/cloudfoundry/doppler/Event.html" title="interface in org.cloudfoundry.doppler">Event</a>&gt;&nbsp;stream(<a href="../../../org/cloudfoundry/doppler/StreamRequest.html" title="class in org.cloudfoundry.doppler">StreamRequest</a>&nbsp;request)</pre>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../org/cloudfoundry/doppler/Envelope.html" title="class in org.cloudfoundry.doppler">Envelope</a>&gt;&nbsp;stream(<a href="../../../org/cloudfoundry/doppler/StreamRequest.html" title="class in org.cloudfoundry.doppler">StreamRequest</a>&nbsp;request)</pre>
 <div class="block">Makes the <a href="https://github.com/cloudfoundry/loggregator/tree/develop/src/trafficcontroller#endpoints">Stream</a> request</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -252,7 +252,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/cloudfoundry/doppler/CounterEvent.Builder.html" title="class in org.cloudfoundry.doppler"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/cloudfoundry/doppler/Error.html" title="class in org.cloudfoundry.doppler"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/cloudfoundry/doppler/Envelope.html" title="class in org.cloudfoundry.doppler"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/cloudfoundry/doppler/DopplerClient.html" target="_top">Frames</a></li>

@@ -107,19 +107,10 @@
 <div class="block">Builds a new <a href="../../../../org/cloudfoundry/doppler/LogMessage.html" title="class in org.cloudfoundry.doppler"><code>LogMessage</code></a>.</div>
 </td>
 </tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../org/cloudfoundry/doppler/package-summary.html">org.cloudfoundry.doppler</a> that return types with arguments of type <a href="../../../../org/cloudfoundry/doppler/LogMessage.html" title="class in org.cloudfoundry.doppler">LogMessage</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../../org/cloudfoundry/doppler/LogMessage.html" title="class in org.cloudfoundry.doppler">LogMessage</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">DopplerClient.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/doppler/DopplerClient.html#recentLogs-org.cloudfoundry.doppler.RecentLogsRequest-">recentLogs</a></span>(<a href="../../../../org/cloudfoundry/doppler/RecentLogsRequest.html" title="class in org.cloudfoundry.doppler">RecentLogsRequest</a>&nbsp;request)</code>
-<div class="block">Makes the <a href="https://github.com/cloudfoundry/loggregator/tree/develop/src/trafficcontroller#endpoints">Recent Logs</a> request</div>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/doppler/LogMessage.html" title="class in org.cloudfoundry.doppler">LogMessage</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Envelope.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/doppler/Envelope.html#getLogMessage--">getLogMessage</a></span>()</code>
+<div class="block">The enclosed <a href="../../../../org/cloudfoundry/doppler/LogMessage.html" title="class in org.cloudfoundry.doppler"><code>LogMessage</code></a></div>
 </td>
 </tr>
 </tbody>
@@ -135,6 +126,12 @@
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/doppler/LogMessage.Builder.html" title="class in org.cloudfoundry.doppler">LogMessage.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">LogMessage.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/doppler/LogMessage.Builder.html#from-org.cloudfoundry.doppler.LogMessage-">from</a></span>(<a href="../../../../org/cloudfoundry/doppler/LogMessage.html" title="class in org.cloudfoundry.doppler">LogMessage</a>&nbsp;instance)</code>
 <div class="block">Fill a builder with attribute values from the provided <code>LogMessage</code> instance.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/doppler/Envelope.Builder.html" title="class in org.cloudfoundry.doppler">Envelope.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Envelope.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/doppler/Envelope.Builder.html#logMessage-org.cloudfoundry.doppler.LogMessage-">logMessage</a></span>(<a href="../../../../org/cloudfoundry/doppler/LogMessage.html" title="class in org.cloudfoundry.doppler">LogMessage</a>&nbsp;logMessage)</code>
+<div class="block">Initializes the value for the <code>logMessage</code> attribute.</div>
 </td>
 </tr>
 </tbody>
