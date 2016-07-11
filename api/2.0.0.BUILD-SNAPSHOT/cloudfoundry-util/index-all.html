@@ -117,11 +117,11 @@
 </a>
 <h2 class="title">B</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/util/StringMap.Builder.html#build--">build()</a></span> - Method in class org.cloudfoundry.util.<a href="org/cloudfoundry/util/StringMap.Builder.html" title="class in org.cloudfoundry.util">StringMap.Builder</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/util/FluentMap.Builder.html#build--">build()</a></span> - Method in class org.cloudfoundry.util.<a href="org/cloudfoundry/util/FluentMap.Builder.html" title="class in org.cloudfoundry.util">FluentMap.Builder</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/util/StringMap.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.util.<a href="org/cloudfoundry/util/StringMap.html" title="class in org.cloudfoundry.util">StringMap</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/util/FluentMap.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.util.<a href="org/cloudfoundry/util/FluentMap.html" title="class in org.cloudfoundry.util">FluentMap</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/util/StringMap.Builder.html#Builder--">Builder()</a></span> - Constructor for class org.cloudfoundry.util.<a href="org/cloudfoundry/util/StringMap.Builder.html" title="class in org.cloudfoundry.util">StringMap.Builder</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/util/FluentMap.Builder.html#Builder--">Builder()</a></span> - Constructor for class org.cloudfoundry.util.<a href="org/cloudfoundry/util/FluentMap.Builder.html" title="class in org.cloudfoundry.util">FluentMap.Builder</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a name="I:C">
@@ -187,9 +187,9 @@
 </a>
 <h2 class="title">E</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/util/StringMap.Builder.html#entries-java.util.Map-">entries(Map&lt;String, Object&gt;)</a></span> - Method in class org.cloudfoundry.util.<a href="org/cloudfoundry/util/StringMap.Builder.html" title="class in org.cloudfoundry.util">StringMap.Builder</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/util/FluentMap.Builder.html#entries-java.util.Map-">entries(Map&lt;K, V&gt;)</a></span> - Method in class org.cloudfoundry.util.<a href="org/cloudfoundry/util/FluentMap.Builder.html" title="class in org.cloudfoundry.util">FluentMap.Builder</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/util/StringMap.Builder.html#entry-java.lang.String-java.lang.Object-">entry(String, Object)</a></span> - Method in class org.cloudfoundry.util.<a href="org/cloudfoundry/util/StringMap.Builder.html" title="class in org.cloudfoundry.util">StringMap.Builder</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/util/FluentMap.Builder.html#entry-K-V-">entry(K, V)</a></span> - Method in class org.cloudfoundry.util.<a href="org/cloudfoundry/util/FluentMap.Builder.html" title="class in org.cloudfoundry.util">FluentMap.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/cloudfoundry/util/ExceptionUtils.html" title="class in org.cloudfoundry.util"><span class="typeNameLink">ExceptionUtils</span></a> - Class in <a href="org/cloudfoundry/util/package-summary.html">org.cloudfoundry.util</a></dt>
 <dd>
@@ -225,6 +225,14 @@
 <dd>
 <div class="block">Implements an fixed delay for use with <a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true#repeatWhenEmpty-java.util.function.Function-" title="class or interface in reactor.core.publisher"><code>Mono.repeatWhenEmpty(Function)</code></a></div>
 </dd>
+<dt><a href="org/cloudfoundry/util/FluentMap.html" title="class in org.cloudfoundry.util"><span class="typeNameLink">FluentMap</span></a> - Class in <a href="org/cloudfoundry/util/package-summary.html">org.cloudfoundry.util</a></dt>
+<dd>
+<div class="block">Utility for building maps for Json responses</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/util/FluentMap.html#FluentMap--">FluentMap()</a></span> - Constructor for class org.cloudfoundry.util.<a href="org/cloudfoundry/util/FluentMap.html" title="class in org.cloudfoundry.util">FluentMap</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/util/FluentMap.Builder.html" title="class in org.cloudfoundry.util"><span class="typeNameLink">FluentMap.Builder</span></a>&lt;<a href="org/cloudfoundry/util/FluentMap.Builder.html" title="type parameter in FluentMap.Builder">K</a>,<a href="org/cloudfoundry/util/FluentMap.Builder.html" title="type parameter in FluentMap.Builder">V</a>&gt; - Class in <a href="org/cloudfoundry/util/package-summary.html">org.cloudfoundry.util</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/util/DateUtils.html#formatToIso8601-java.util.Date-">formatToIso8601(Date)</a></span> - Static method in class org.cloudfoundry.util.<a href="org/cloudfoundry/util/DateUtils.html" title="class in org.cloudfoundry.util">DateUtils</a></dt>
 <dd>
 <div class="block">Formats a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util"><code>Date</code></a> into a String in <code>ISO8601</code> format</div>
@@ -389,11 +397,15 @@
 </a>
 <h2 class="title">R</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/util/PaginationUtils.html#requestPages-java.util.function.Function-">requestPages(Function&lt;Integer, Mono&lt;U&gt;&gt;)</a></span> - Static method in class org.cloudfoundry.util.<a href="org/cloudfoundry/util/PaginationUtils.html" title="class in org.cloudfoundry.util">PaginationUtils</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/util/PaginationUtils.html#requestClientV2Resources-java.util.function.Function-">requestClientV2Resources(Function&lt;Integer, Mono&lt;U&gt;&gt;)</a></span> - Static method in class org.cloudfoundry.util.<a href="org/cloudfoundry/util/PaginationUtils.html" title="class in org.cloudfoundry.util">PaginationUtils</a></dt>
 <dd>
-<div class="block">Generate the stream of responses starting from page 1 of an initial paginated response.</div>
+<div class="block">Generate the stream of resources accumulated from a series of responses obtained from the page supplier.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/util/PaginationUtils.html#requestResources-java.util.function.Function-">requestResources(Function&lt;Integer, Mono&lt;U&gt;&gt;)</a></span> - Static method in class org.cloudfoundry.util.<a href="org/cloudfoundry/util/PaginationUtils.html" title="class in org.cloudfoundry.util">PaginationUtils</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/util/PaginationUtils.html#requestClientV3Resources-java.util.function.Function-">requestClientV3Resources(Function&lt;Integer, Mono&lt;U&gt;&gt;)</a></span> - Static method in class org.cloudfoundry.util.<a href="org/cloudfoundry/util/PaginationUtils.html" title="class in org.cloudfoundry.util">PaginationUtils</a></dt>
+<dd>
+<div class="block">Generate the stream of resources accumulated from a series of responses obtained from the page supplier.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/util/PaginationUtils.html#requestUaaResources-java.util.function.Function-">requestUaaResources(Function&lt;Integer, Mono&lt;U&gt;&gt;)</a></span> - Static method in class org.cloudfoundry.util.<a href="org/cloudfoundry/util/PaginationUtils.html" title="class in org.cloudfoundry.util">PaginationUtils</a></dt>
 <dd>
 <div class="block">Generate the stream of resources accumulated from a series of responses obtained from the page supplier.</div>
 </dd>
@@ -417,14 +429,6 @@
 <dd>
 <div class="block">A predicate that return <code>true</code> if the exception is a <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/CloudFoundryException.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2"><code>CloudFoundryException</code></a> and its code matches</div>
 </dd>
-<dt><a href="org/cloudfoundry/util/StringMap.html" title="class in org.cloudfoundry.util"><span class="typeNameLink">StringMap</span></a> - Class in <a href="org/cloudfoundry/util/package-summary.html">org.cloudfoundry.util</a></dt>
-<dd>
-<div class="block">Utility for building maps for Json responses</div>
-</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/util/StringMap.html#StringMap--">StringMap()</a></span> - Constructor for class org.cloudfoundry.util.<a href="org/cloudfoundry/util/StringMap.html" title="class in org.cloudfoundry.util">StringMap</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/cloudfoundry/util/StringMap.Builder.html" title="class in org.cloudfoundry.util"><span class="typeNameLink">StringMap.Builder</span></a> - Class in <a href="org/cloudfoundry/util/package-summary.html">org.cloudfoundry.util</a></dt>
-<dd>&nbsp;</dd>
 </dl>
 <a name="I:T">
 <!--   -->

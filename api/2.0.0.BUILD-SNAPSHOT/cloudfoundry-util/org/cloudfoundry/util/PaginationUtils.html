@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9};
+var methods = {"i0":9,"i1":9,"i2":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -130,14 +130,20 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static &lt;U extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2">PaginatedResponse</a>&lt;?&gt;&gt;<br><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;U&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/util/PaginationUtils.html#requestPages-java.util.function.Function-">requestPages</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>,<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;U&gt;&gt;&nbsp;pageSupplier)</code>
-<div class="block">Generate the stream of responses starting from page 1 of an initial paginated response.</div>
+<td class="colFirst"><code>static &lt;T extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/Resource.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2">Resource</a>&lt;?&gt;,U extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2">PaginatedResponse</a>&lt;T&gt;&gt;<br><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;T&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/util/PaginationUtils.html#requestClientV2Resources-java.util.function.Function-">requestClientV2Resources</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>,<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;U&gt;&gt;&nbsp;pageSupplier)</code>
+<div class="block">Generate the stream of resources accumulated from a series of responses obtained from the page supplier.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>static &lt;R extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/Resource.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2">Resource</a>&lt;?&gt;,U extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2">PaginatedResponse</a>&lt;R&gt;&gt;<br><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;R&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/util/PaginationUtils.html#requestResources-java.util.function.Function-">requestResources</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>,<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;U&gt;&gt;&nbsp;pageSupplier)</code>
+<td class="colFirst"><code>static &lt;T,U extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v3/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v3">PaginatedResponse</a>&lt;T&gt;&gt;<br><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;T&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/util/PaginationUtils.html#requestClientV3Resources-java.util.function.Function-">requestClientV3Resources</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>,<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;U&gt;&gt;&nbsp;pageSupplier)</code>
+<div class="block">Generate the stream of resources accumulated from a series of responses obtained from the page supplier.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static &lt;T,U extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/uaa/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.uaa">PaginatedResponse</a>&lt;T&gt;&gt;<br><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;T&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/util/PaginationUtils.html#requestUaaResources-java.util.function.Function-">requestUaaResources</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>,<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;U&gt;&gt;&nbsp;pageSupplier)</code>
 <div class="block">Generate the stream of resources accumulated from a series of responses obtained from the page supplier.</div>
 </td>
 </tr>
@@ -163,40 +169,60 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="requestPages-java.util.function.Function-">
+<a name="requestClientV2Resources-java.util.function.Function-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>requestPages</h4>
-<pre>public static&nbsp;&lt;U extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2">PaginatedResponse</a>&lt;?&gt;&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;U&gt;&nbsp;requestPages(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>,<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;U&gt;&gt;&nbsp;pageSupplier)</pre>
-<div class="block">Generate the stream of responses starting from page 1 of an initial paginated response.</div>
+<h4>requestClientV2Resources</h4>
+<pre>public static&nbsp;&lt;T extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/Resource.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2">Resource</a>&lt;?&gt;,U extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2">PaginatedResponse</a>&lt;T&gt;&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;T&gt;&nbsp;requestClientV2Resources(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>,<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;U&gt;&gt;&nbsp;pageSupplier)</pre>
+<div class="block">Generate the stream of resources accumulated from a series of responses obtained from the page supplier.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the type of resource in the list on each <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2"><code>PaginatedResponse</code></a>.</dd>
 <dd><code>U</code> - the type of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2"><code>PaginatedResponse</code></a>.</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>pageSupplier</code> - a function from integers to <a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher"><code>Mono</code></a>s of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2"><code>PaginatedResponse</code></a>s.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a stream of <code>U</code> objects.</dd>
+<dd>a stream of <code>T</code> objects.</dd>
 </dl>
 </li>
 </ul>
-<a name="requestResources-java.util.function.Function-">
+<a name="requestClientV3Resources-java.util.function.Function-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>requestClientV3Resources</h4>
+<pre>public static&nbsp;&lt;T,U extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v3/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v3">PaginatedResponse</a>&lt;T&gt;&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;T&gt;&nbsp;requestClientV3Resources(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>,<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;U&gt;&gt;&nbsp;pageSupplier)</pre>
+<div class="block">Generate the stream of resources accumulated from a series of responses obtained from the page supplier.</div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the type of resource in the list on each <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v3/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v3"><code>PaginatedResponse</code></a>.</dd>
+<dd><code>U</code> - the type of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v3/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v3"><code>PaginatedResponse</code></a>.</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>pageSupplier</code> - a function from integers to <a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher"><code>Mono</code></a>s of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v3/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v3"><code>PaginatedResponse</code></a>s.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a stream of <code>T</code> objects.</dd>
+</dl>
+</li>
+</ul>
+<a name="requestUaaResources-java.util.function.Function-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>requestResources</h4>
-<pre>public static&nbsp;&lt;R extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/Resource.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2">Resource</a>&lt;?&gt;,U extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2">PaginatedResponse</a>&lt;R&gt;&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;R&gt;&nbsp;requestResources(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>,<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;U&gt;&gt;&nbsp;pageSupplier)</pre>
+<h4>requestUaaResources</h4>
+<pre>public static&nbsp;&lt;T,U extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/uaa/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.uaa">PaginatedResponse</a>&lt;T&gt;&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;T&gt;&nbsp;requestUaaResources(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>,<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;U&gt;&gt;&nbsp;pageSupplier)</pre>
 <div class="block">Generate the stream of resources accumulated from a series of responses obtained from the page supplier.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>R</code> - the type of resource in the list on each <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2"><code>PaginatedResponse</code></a>.</dd>
-<dd><code>U</code> - the type of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2"><code>PaginatedResponse</code></a>.</dd>
+<dd><code>T</code> - the type of resource in the list on each <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/uaa/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.uaa"><code>PaginatedResponse</code></a>.</dd>
+<dd><code>U</code> - the type of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/uaa/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.uaa"><code>PaginatedResponse</code></a>.</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>pageSupplier</code> - a function from integers to <a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher"><code>Mono</code></a>s of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2"><code>PaginatedResponse</code></a>s.</dd>
+<dd><code>pageSupplier</code> - a function from integers to <a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher"><code>Mono</code></a>s of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/uaa/PaginatedResponse.html?is-external=true" title="class or interface in org.cloudfoundry.uaa"><code>PaginatedResponse</code></a>s.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a stream of <code>R</code> objects.</dd>
+<dd>a stream of <code>T</code> objects.</dd>
 </dl>
 </li>
 </ul>
