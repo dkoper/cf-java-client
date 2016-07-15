@@ -40,6 +40,7 @@ org.cloudfoundry.client.v3.tasks
 org.cloudfoundry.doppler
 org.cloudfoundry.uaa
 org.cloudfoundry.uaa.authorizations
+org.cloudfoundry.uaa.clients
 org.cloudfoundry.uaa.groups
 org.cloudfoundry.uaa.identityproviders
 org.cloudfoundry.uaa.identityzones
