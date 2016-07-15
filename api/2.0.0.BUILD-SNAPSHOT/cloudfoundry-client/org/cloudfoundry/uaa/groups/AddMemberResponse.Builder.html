@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -145,8 +145,8 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html" title="class in org.cloudfoundry.uaa.groups">AddMemberResponse.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html#from-org.cloudfoundry.uaa.groups.AbstractMemberSummary-">from</a></span>(org.cloudfoundry.uaa.groups.AbstractMemberSummary&nbsp;instance)</code>
-<div class="block">Fill a builder with attribute values from the provided <code>org.cloudfoundry.uaa.groups.AbstractMemberSummary</code> instance.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html#from-org.cloudfoundry.uaa.groups.AbstractMember-">from</a></span>(org.cloudfoundry.uaa.groups.AbstractMember&nbsp;instance)</code>
+<div class="block">Fill a builder with attribute values from the provided <code>org.cloudfoundry.uaa.groups.AbstractMember</code> instance.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -163,14 +163,26 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html" title="class in org.cloudfoundry.uaa.groups">AddMemberResponse.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html#origin-java.lang.String-">origin</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;origin)</code>
-<div class="block">Initializes the value for the <code>origin</code> attribute.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html#origin-java.util.Optional-">origin</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;origin)</code>
+<div class="block">Initializes the optional value <code>origin</code> to origin.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html" title="class in org.cloudfoundry.uaa.groups">AddMemberResponse.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html#origin-java.lang.String-">origin</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;origin)</code>
+<div class="block">Initializes the optional value <code>origin</code> to origin.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html" title="class in org.cloudfoundry.uaa.groups">AddMemberResponse.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html#type-org.cloudfoundry.uaa.groups.MemberType-">type</a></span>(<a href="../../../../org/cloudfoundry/uaa/groups/MemberType.html" title="enum in org.cloudfoundry.uaa.groups">MemberType</a>&nbsp;type)</code>
-<div class="block">Initializes the value for the <code>type</code> attribute.</div>
+<div class="block">Initializes the optional value <code>type</code> to type.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html" title="class in org.cloudfoundry.uaa.groups">AddMemberResponse.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html#type-java.util.Optional-">type</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/MemberType.html" title="enum in org.cloudfoundry.uaa.groups">MemberType</a>&gt;&nbsp;type)</code>
+<div class="block">Initializes the optional value <code>type</code> to type.</div>
 </td>
 </tr>
 </table>
@@ -195,14 +207,14 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="from-org.cloudfoundry.uaa.groups.AbstractMemberSummary-">
+<a name="from-org.cloudfoundry.uaa.groups.AbstractMember-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>from</h4>
-<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html" title="class in org.cloudfoundry.uaa.groups">AddMemberResponse.Builder</a>&nbsp;from(org.cloudfoundry.uaa.groups.AbstractMemberSummary&nbsp;instance)</pre>
-<div class="block">Fill a builder with attribute values from the provided <code>org.cloudfoundry.uaa.groups.AbstractMemberSummary</code> instance.</div>
+<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html" title="class in org.cloudfoundry.uaa.groups">AddMemberResponse.Builder</a>&nbsp;from(org.cloudfoundry.uaa.groups.AbstractMember&nbsp;instance)</pre>
+<div class="block">Fill a builder with attribute values from the provided <code>org.cloudfoundry.uaa.groups.AbstractMember</code> instance.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>instance</code> - The instance from which to copy values</dd>
@@ -227,22 +239,6 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a name="origin-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>origin</h4>
-<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html" title="class in org.cloudfoundry.uaa.groups">AddMemberResponse.Builder</a>&nbsp;origin(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;origin)</pre>
-<div class="block">Initializes the value for the <code>origin</code> attribute.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>origin</code> - The value for origin (can be <code>null</code>)</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>this</code> builder for use in a chained invocation</dd>
-</dl>
-</li>
-</ul>
 <a name="memberId-java.lang.String-">
 <!--   -->
 </a>
@@ -259,6 +255,38 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
+<a name="origin-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>origin</h4>
+<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html" title="class in org.cloudfoundry.uaa.groups">AddMemberResponse.Builder</a>&nbsp;origin(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;origin)</pre>
+<div class="block">Initializes the optional value <code>origin</code> to origin.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>origin</code> - The value for origin</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for chained invocation</dd>
+</dl>
+</li>
+</ul>
+<a name="origin-java.util.Optional-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>origin</h4>
+<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html" title="class in org.cloudfoundry.uaa.groups">AddMemberResponse.Builder</a>&nbsp;origin(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;origin)</pre>
+<div class="block">Initializes the optional value <code>origin</code> to origin.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>origin</code> - The value for origin</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for use in a chained invocation</dd>
+</dl>
+</li>
+</ul>
 <a name="type-org.cloudfoundry.uaa.groups.MemberType-">
 <!--   -->
 </a>
@@ -266,10 +294,26 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>type</h4>
 <pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html" title="class in org.cloudfoundry.uaa.groups">AddMemberResponse.Builder</a>&nbsp;type(<a href="../../../../org/cloudfoundry/uaa/groups/MemberType.html" title="enum in org.cloudfoundry.uaa.groups">MemberType</a>&nbsp;type)</pre>
-<div class="block">Initializes the value for the <code>type</code> attribute.</div>
+<div class="block">Initializes the optional value <code>type</code> to type.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>type</code> - The value for type (can be <code>null</code>)</dd>
+<dd><code>type</code> - The value for type</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for chained invocation</dd>
+</dl>
+</li>
+</ul>
+<a name="type-java.util.Optional-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>type</h4>
+<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/groups/AddMemberResponse.Builder.html" title="class in org.cloudfoundry.uaa.groups">AddMemberResponse.Builder</a>&nbsp;type(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../../org/cloudfoundry/uaa/groups/MemberType.html" title="enum in org.cloudfoundry.uaa.groups">MemberType</a>&gt;&nbsp;type)</pre>
+<div class="block">Initializes the optional value <code>type</code> to type.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - The value for type</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>

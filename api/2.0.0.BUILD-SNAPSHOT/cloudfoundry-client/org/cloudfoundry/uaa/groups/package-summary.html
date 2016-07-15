@@ -84,7 +84,7 @@
 <tr class="altColor">
 <td class="colFirst"><a href="../../../../org/cloudfoundry/uaa/groups/Entity.html" title="interface in org.cloudfoundry.uaa.groups">Entity</a></td>
 <td class="colLast">
-<div class="block">An interface that indicates that a UAA entity may be a member</div>
+<div class="block">An Entity for <a href="../../../../org/cloudfoundry/uaa/groups/Member.html" title="class in org.cloudfoundry.uaa.groups"><code>Member</code></a></div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -213,6 +213,18 @@
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="../../../../org/cloudfoundry/uaa/groups/ExternalGroupResource.html" title="class in org.cloudfoundry.uaa.groups">ExternalGroupResource</a></td>
+<td class="colLast">
+<div class="block">Immutable implementation of <code>_ExternalGroupResource</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../org/cloudfoundry/uaa/groups/ExternalGroupResource.Builder.html" title="class in org.cloudfoundry.uaa.groups">ExternalGroupResource.Builder</a></td>
+<td class="colLast">
+<div class="block">Builds instances of type <a href="../../../../org/cloudfoundry/uaa/groups/ExternalGroupResource.html" title="class in org.cloudfoundry.uaa.groups"><code>ExternalGroupResource</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../org/cloudfoundry/uaa/groups/GetGroupRequest.html" title="class in org.cloudfoundry.uaa.groups">GetGroupRequest</a></td>
 <td class="colLast">
 <div class="block">Immutable implementation of <code>_GetGroupRequest</code>.</div>
@@ -246,6 +258,18 @@
 <td class="colFirst"><a href="../../../../org/cloudfoundry/uaa/groups/Group.Builder.html" title="class in org.cloudfoundry.uaa.groups">Group.Builder</a></td>
 <td class="colLast">
 <div class="block">Builds instances of type <a href="../../../../org/cloudfoundry/uaa/groups/Group.html" title="class in org.cloudfoundry.uaa.groups"><code>Group</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../org/cloudfoundry/uaa/groups/GroupEntity.html" title="class in org.cloudfoundry.uaa.groups">GroupEntity</a></td>
+<td class="colLast">
+<div class="block">Immutable implementation of <code>_GroupEntity</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../org/cloudfoundry/uaa/groups/GroupEntity.Builder.html" title="class in org.cloudfoundry.uaa.groups">GroupEntity.Builder</a></td>
+<td class="colLast">
+<div class="block">Builds instances of type <a href="../../../../org/cloudfoundry/uaa/groups/GroupEntity.html" title="class in org.cloudfoundry.uaa.groups"><code>GroupEntity</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -357,18 +381,6 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../org/cloudfoundry/uaa/groups/MemberGroup.html" title="class in org.cloudfoundry.uaa.groups">MemberGroup</a></td>
-<td class="colLast">
-<div class="block">Immutable implementation of <code>_MemberGroup</code>.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../../../org/cloudfoundry/uaa/groups/MemberGroup.Builder.html" title="class in org.cloudfoundry.uaa.groups">MemberGroup.Builder</a></td>
-<td class="colLast">
-<div class="block">Builds instances of type <a href="../../../../org/cloudfoundry/uaa/groups/MemberGroup.html" title="class in org.cloudfoundry.uaa.groups"><code>MemberGroup</code></a>.</div>
-</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><a href="../../../../org/cloudfoundry/uaa/groups/MemberSummary.html" title="class in org.cloudfoundry.uaa.groups">MemberSummary</a></td>
 <td class="colLast">
 <div class="block">Immutable implementation of <code>_MemberSummary</code>.</div>
@@ -378,18 +390,6 @@
 <td class="colFirst"><a href="../../../../org/cloudfoundry/uaa/groups/MemberSummary.Builder.html" title="class in org.cloudfoundry.uaa.groups">MemberSummary.Builder</a></td>
 <td class="colLast">
 <div class="block">Builds instances of type <a href="../../../../org/cloudfoundry/uaa/groups/MemberSummary.html" title="class in org.cloudfoundry.uaa.groups"><code>MemberSummary</code></a>.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../../../org/cloudfoundry/uaa/groups/MemberUser.html" title="class in org.cloudfoundry.uaa.groups">MemberUser</a></td>
-<td class="colLast">
-<div class="block">Immutable implementation of <code>_MemberUser</code>.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../../../org/cloudfoundry/uaa/groups/MemberUser.Builder.html" title="class in org.cloudfoundry.uaa.groups">MemberUser.Builder</a></td>
-<td class="colLast">
-<div class="block">Builds instances of type <a href="../../../../org/cloudfoundry/uaa/groups/MemberUser.html" title="class in org.cloudfoundry.uaa.groups"><code>MemberUser</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -486,6 +486,18 @@
 <td class="colFirst"><a href="../../../../org/cloudfoundry/uaa/groups/UpdateGroupResponse.Builder.html" title="class in org.cloudfoundry.uaa.groups">UpdateGroupResponse.Builder</a></td>
 <td class="colLast">
 <div class="block">Builds instances of type <a href="../../../../org/cloudfoundry/uaa/groups/UpdateGroupResponse.html" title="class in org.cloudfoundry.uaa.groups"><code>UpdateGroupResponse</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../org/cloudfoundry/uaa/groups/UserEntity.html" title="class in org.cloudfoundry.uaa.groups">UserEntity</a></td>
+<td class="colLast">
+<div class="block">Immutable implementation of <code>_UserEntity</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../org/cloudfoundry/uaa/groups/UserEntity.Builder.html" title="class in org.cloudfoundry.uaa.groups">UserEntity.Builder</a></td>
+<td class="colLast">
+<div class="block">Builds instances of type <a href="../../../../org/cloudfoundry/uaa/groups/UserEntity.html" title="class in org.cloudfoundry.uaa.groups"><code>UserEntity</code></a>.</div>
 </td>
 </tr>
 </tbody>

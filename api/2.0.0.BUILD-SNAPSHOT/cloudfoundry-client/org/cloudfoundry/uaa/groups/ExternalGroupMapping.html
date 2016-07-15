@@ -168,14 +168,14 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/ExternalGroupMapping.html#getExternalGroup--">getExternalGroup</a></span>()</code>
-<div class="block">The identifier for the group in external identity provider that needs to be mapped to internal UAA groups</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/ExternalGroupMapping.html#getDisplayName--">getDisplayName</a></span>()</code>
+<div class="block">The group's displayed name</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/ExternalGroupMapping.html#getGroupDisplayName--">getGroupDisplayName</a></span>()</code>
-<div class="block">The group's displayed name</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/ExternalGroupMapping.html#getExternalGroup--">getExternalGroup</a></span>()</code>
+<div class="block">The identifier for the group in external identity provider that needs to be mapped to internal UAA groups</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -192,7 +192,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/ExternalGroupMapping.html#getOriginKey--">getOriginKey</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/ExternalGroupMapping.html#getOrigin--">getOrigin</a></span>()</code>
 <div class="block">Unique alias of the identity provider</div>
 </td>
 </tr>
@@ -205,7 +205,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/ExternalGroupMapping.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>externalGroup</code>, <code>groupDisplayName</code>, <code>groupId</code>, <code>metadata</code>, <code>originKey</code>, <code>schemas</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>metadata</code>, <code>schemas</code>, <code>displayName</code>, <code>externalGroup</code>, <code>groupId</code>, <code>origin</code>.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -236,6 +236,36 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getMetadata--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMetadata</h4>
+<pre>public&nbsp;<a href="../../../../org/cloudfoundry/uaa/Metadata.html" title="class in org.cloudfoundry.uaa">Metadata</a>&nbsp;getMetadata()</pre>
+<div class="block">The group's metadata</div>
+</li>
+</ul>
+<a name="getSchemas--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSchemas</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getSchemas()</pre>
+<div class="block">The group's schemas</div>
+</li>
+</ul>
+<a name="getDisplayName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDisplayName</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDisplayName()</pre>
+<div class="block">The group's displayed name</div>
+</li>
+</ul>
 <a name="getExternalGroup--">
 <!--   -->
 </a>
@@ -244,16 +274,6 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>getExternalGroup</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getExternalGroup()</pre>
 <div class="block">The identifier for the group in external identity provider that needs to be mapped to internal UAA groups</div>
-</li>
-</ul>
-<a name="getGroupDisplayName--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getGroupDisplayName</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getGroupDisplayName()</pre>
-<div class="block">The group's displayed name</div>
 </li>
 </ul>
 <a name="getGroupId--">
@@ -266,34 +286,14 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">The group unique ID</div>
 </li>
 </ul>
-<a name="getMetadata--">
+<a name="getOrigin--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getMetadata</h4>
-<pre>public&nbsp;<a href="../../../../org/cloudfoundry/uaa/Metadata.html" title="class in org.cloudfoundry.uaa">Metadata</a>&nbsp;getMetadata()</pre>
-<div class="block">The group's metadata</div>
-</li>
-</ul>
-<a name="getOriginKey--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getOriginKey</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getOriginKey()</pre>
+<h4>getOrigin</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getOrigin()</pre>
 <div class="block">Unique alias of the identity provider</div>
-</li>
-</ul>
-<a name="getSchemas--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getSchemas</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getSchemas()</pre>
-<div class="block">The group's schemas</div>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">
@@ -319,7 +319,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>externalGroup</code>, <code>groupDisplayName</code>, <code>groupId</code>, <code>metadata</code>, <code>originKey</code>, <code>schemas</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>metadata</code>, <code>schemas</code>, <code>displayName</code>, <code>externalGroup</code>, <code>groupId</code>, <code>origin</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -151,8 +151,20 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/groups/GetGroupRequest.Builder.html" title="class in org.cloudfoundry.uaa.groups">GetGroupRequest.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/GetGroupRequest.Builder.html#from-org.cloudfoundry.uaa.IdentityZoned-">from</a></span>(<a href="../../../../org/cloudfoundry/uaa/IdentityZoned.html" title="interface in org.cloudfoundry.uaa">IdentityZoned</a>&nbsp;instance)</code>
+<div class="block">Fill a builder with attribute values from the provided <code>org.cloudfoundry.uaa.IdentityZoned</code> instance.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/groups/GetGroupRequest.Builder.html" title="class in org.cloudfoundry.uaa.groups">GetGroupRequest.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/GetGroupRequest.Builder.html#groupId-java.lang.String-">groupId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;groupId)</code>
 <div class="block">Initializes the value for the <code>groupId</code> attribute.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/groups/GetGroupRequest.Builder.html" title="class in org.cloudfoundry.uaa.groups">GetGroupRequest.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/GetGroupRequest.Builder.html#identityZoneId-java.lang.String-">identityZoneId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;identityZoneId)</code>
+<div class="block">Initializes the value for the <a href="../../../../org/cloudfoundry/uaa/IdentityZoned.html#getIdentityZoneId--"><code>identityZoneId</code></a> attribute.</div>
 </td>
 </tr>
 </table>
@@ -177,6 +189,22 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="from-org.cloudfoundry.uaa.IdentityZoned-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>from</h4>
+<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/groups/GetGroupRequest.Builder.html" title="class in org.cloudfoundry.uaa.groups">GetGroupRequest.Builder</a>&nbsp;from(<a href="../../../../org/cloudfoundry/uaa/IdentityZoned.html" title="interface in org.cloudfoundry.uaa">IdentityZoned</a>&nbsp;instance)</pre>
+<div class="block">Fill a builder with attribute values from the provided <code>org.cloudfoundry.uaa.IdentityZoned</code> instance.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - The instance from which to copy values</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for use in a chained invocation</dd>
+</dl>
+</li>
+</ul>
 <a name="from-org.cloudfoundry.uaa.groups.GetGroupRequest-">
 <!--   -->
 </a>
@@ -184,9 +212,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>from</h4>
 <pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/groups/GetGroupRequest.Builder.html" title="class in org.cloudfoundry.uaa.groups">GetGroupRequest.Builder</a>&nbsp;from(<a href="../../../../org/cloudfoundry/uaa/groups/GetGroupRequest.html" title="class in org.cloudfoundry.uaa.groups">GetGroupRequest</a>&nbsp;instance)</pre>
-<div class="block">Fill a builder with attribute values from the provided <code>GetGroupRequest</code> instance.
- Regular attribute values will be replaced with those from the given instance.
- Absent optional values will not replace present values.</div>
+<div class="block">Fill a builder with attribute values from the provided <code>GetGroupRequest</code> instance.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>instance</code> - The instance from which to copy values</dd>
@@ -206,6 +232,22 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>groupId</code> - The value for groupId</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for use in a chained invocation</dd>
+</dl>
+</li>
+</ul>
+<a name="identityZoneId-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>identityZoneId</h4>
+<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/groups/GetGroupRequest.Builder.html" title="class in org.cloudfoundry.uaa.groups">GetGroupRequest.Builder</a>&nbsp;identityZoneId(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;identityZoneId)</pre>
+<div class="block">Initializes the value for the <a href="../../../../org/cloudfoundry/uaa/IdentityZoned.html#getIdentityZoneId--"><code>identityZoneId</code></a> attribute.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>identityZoneId</code> - The value for identityZoneId (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
