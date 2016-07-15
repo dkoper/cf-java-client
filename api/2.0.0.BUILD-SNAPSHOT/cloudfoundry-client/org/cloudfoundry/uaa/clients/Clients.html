@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6};
+var methods = {"i0":6,"i1":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -126,6 +126,12 @@ var activeTableTab = "activeTableTab";
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#retrieve77">Retrieve Client</a> request</div>
 </td>
 </tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/UpdateClientResponse.html" title="class in org.cloudfoundry.uaa.clients">UpdateClientResponse</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#update-org.cloudfoundry.uaa.clients.UpdateClientRequest-">update</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/UpdateClientRequest.html" title="class in org.cloudfoundry.uaa.clients">UpdateClientRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#update78">Update Client</a> request</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -144,11 +150,27 @@ var activeTableTab = "activeTableTab";
 <a name="get-org.cloudfoundry.uaa.clients.GetClientRequest-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
 <pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/GetClientResponse.html" title="class in org.cloudfoundry.uaa.clients">GetClientResponse</a>&gt;&nbsp;get(<a href="../../../../org/cloudfoundry/uaa/clients/GetClientRequest.html" title="class in org.cloudfoundry.uaa.clients">GetClientRequest</a>&nbsp;request)</pre>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#retrieve77">Retrieve Client</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - Retrieve Client request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the Response to the Retrieve Client Request</dd>
+</dl>
+</li>
+</ul>
+<a name="update-org.cloudfoundry.uaa.clients.UpdateClientRequest-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>update</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/UpdateClientResponse.html" title="class in org.cloudfoundry.uaa.clients">UpdateClientResponse</a>&gt;&nbsp;update(<a href="../../../../org/cloudfoundry/uaa/clients/UpdateClientRequest.html" title="class in org.cloudfoundry.uaa.clients">UpdateClientRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#update78">Update Client</a> request</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>request</code> - Retrieve Client request</dd>
