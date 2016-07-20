@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -225,6 +225,30 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#skipSslValidation-java.util.Optional-">skipSslValidation</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;&nbsp;skipSslValidation)</code>
 <div class="block">Initializes the optional value <code>skipSslValidation</code> to skipSslValidation.</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#socketTimeout-java.time.Duration-">socketTimeout</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&nbsp;socketTimeout)</code>
+<div class="block">Initializes the optional value <code>socketTimeout</code> to socketTimeout.</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#socketTimeout-java.util.Optional-">socketTimeout</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&gt;&nbsp;socketTimeout)</code>
+<div class="block">Initializes the optional value <code>socketTimeout</code> to socketTimeout.</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#sslHandshakeTimeout-java.time.Duration-">sslHandshakeTimeout</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&nbsp;sslHandshakeTimeout)</code>
+<div class="block">Initializes the optional value <code>sslHandshakeTimeout</code> to sslHandshakeTimeout.</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#sslHandshakeTimeout-java.util.Optional-">sslHandshakeTimeout</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&gt;&nbsp;sslHandshakeTimeout)</code>
+<div class="block">Initializes the optional value <code>sslHandshakeTimeout</code> to sslHandshakeTimeout.</div>
 </td>
 </tr>
 </table>
@@ -471,6 +495,70 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>skipSslValidation</code> - The value for skipSslValidation</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for use in a chained invocation</dd>
+</dl>
+</li>
+</ul>
+<a name="socketTimeout-java.time.Duration-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>socketTimeout</h4>
+<pre>public final&nbsp;<a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a>&nbsp;socketTimeout(<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&nbsp;socketTimeout)</pre>
+<div class="block">Initializes the optional value <code>socketTimeout</code> to socketTimeout.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>socketTimeout</code> - The value for socketTimeout</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for chained invocation</dd>
+</dl>
+</li>
+</ul>
+<a name="socketTimeout-java.util.Optional-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>socketTimeout</h4>
+<pre>public final&nbsp;<a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a>&nbsp;socketTimeout(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&gt;&nbsp;socketTimeout)</pre>
+<div class="block">Initializes the optional value <code>socketTimeout</code> to socketTimeout.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>socketTimeout</code> - The value for socketTimeout</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for use in a chained invocation</dd>
+</dl>
+</li>
+</ul>
+<a name="sslHandshakeTimeout-java.time.Duration-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sslHandshakeTimeout</h4>
+<pre>public final&nbsp;<a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a>&nbsp;sslHandshakeTimeout(<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&nbsp;sslHandshakeTimeout)</pre>
+<div class="block">Initializes the optional value <code>sslHandshakeTimeout</code> to sslHandshakeTimeout.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sslHandshakeTimeout</code> - The value for sslHandshakeTimeout</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for chained invocation</dd>
+</dl>
+</li>
+</ul>
+<a name="sslHandshakeTimeout-java.util.Optional-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sslHandshakeTimeout</h4>
+<pre>public final&nbsp;<a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a>&nbsp;sslHandshakeTimeout(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&gt;&nbsp;sslHandshakeTimeout)</pre>
+<div class="block">Initializes the optional value <code>sslHandshakeTimeout</code> to sslHandshakeTimeout.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sslHandshakeTimeout</code> - The value for sslHandshakeTimeout</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>

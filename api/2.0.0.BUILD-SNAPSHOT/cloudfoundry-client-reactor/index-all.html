@@ -399,8 +399,16 @@
 <dd>
 <div class="block">Whether to skip SSL certificate validation for all hosts reachable from the API host.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/DefaultConnectionContext.html#getSocketTimeout--">getSocketTimeout()</a></span> - Method in class org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/DefaultConnectionContext.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext</a></dt>
+<dd>
+<div class="block">The <code>SO_TIMEOUT</code> value</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/DefaultConnectionContext.html#getSslCertificateTruster--">getSslCertificateTruster()</a></span> - Method in class org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/DefaultConnectionContext.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/DefaultConnectionContext.html#getSslHandshakeTimeout--">getSslHandshakeTimeout()</a></span> - Method in class org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/DefaultConnectionContext.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext</a></dt>
+<dd>
+<div class="block">The timeout for the SSL handshake negotiation</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/TokenProvider.html#getToken-org.cloudfoundry.reactor.ConnectionContext-">getToken(ConnectionContext)</a></span> - Method in interface org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/TokenProvider.html" title="interface in org.cloudfoundry.reactor">TokenProvider</a></dt>
 <dd>
 <div class="block">Provides an OAuth token to be used by requests</div>
@@ -439,7 +447,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/DefaultConnectionContext.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/DefaultConnectionContext.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext</a></dt>
 <dd>
-<div class="block">Computes a hash code from attributes: <code>httpClient</code>, <code>objectMapper</code>, <code>port</code>, <code>root</code>, <code>apiHost</code>, <code>info</code>, <code>problemHandlers</code>, <code>proxyConfiguration</code>, <code>skipSslValidation</code>, <code>sslCertificateTruster</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>httpClient</code>, <code>objectMapper</code>, <code>port</code>, <code>root</code>, <code>apiHost</code>, <code>info</code>, <code>problemHandlers</code>, <code>proxyConfiguration</code>, <code>skipSslValidation</code>, <code>socketTimeout</code>, <code>sslCertificateTruster</code>, <code>sslHandshakeTimeout</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/doppler/ReactorDopplerClient.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.reactor.doppler.<a href="org/cloudfoundry/reactor/doppler/ReactorDopplerClient.html" title="class in org.cloudfoundry.reactor.doppler">ReactorDopplerClient</a></dt>
 <dd>
@@ -717,10 +725,26 @@
 <dd>
 <div class="block">Initializes the optional value <code>skipSslValidation</code> to skipSslValidation.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#socketTimeout-java.time.Duration-">socketTimeout(Duration)</a></span> - Method in class org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></dt>
+<dd>
+<div class="block">Initializes the optional value <code>socketTimeout</code> to socketTimeout.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#socketTimeout-java.util.Optional-">socketTimeout(Optional&lt;Duration&gt;)</a></span> - Method in class org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></dt>
+<dd>
+<div class="block">Initializes the optional value <code>socketTimeout</code> to socketTimeout.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/client/ReactorCloudFoundryClient.html#spaceQuotaDefinitions--">spaceQuotaDefinitions()</a></span> - Method in class org.cloudfoundry.reactor.client.<a href="org/cloudfoundry/reactor/client/ReactorCloudFoundryClient.html" title="class in org.cloudfoundry.reactor.client">ReactorCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/client/ReactorCloudFoundryClient.html#spaces--">spaces()</a></span> - Method in class org.cloudfoundry.reactor.client.<a href="org/cloudfoundry/reactor/client/ReactorCloudFoundryClient.html" title="class in org.cloudfoundry.reactor.client">ReactorCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#sslHandshakeTimeout-java.time.Duration-">sslHandshakeTimeout(Duration)</a></span> - Method in class org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></dt>
+<dd>
+<div class="block">Initializes the optional value <code>sslHandshakeTimeout</code> to sslHandshakeTimeout.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#sslHandshakeTimeout-java.util.Optional-">sslHandshakeTimeout(Optional&lt;Duration&gt;)</a></span> - Method in class org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></dt>
+<dd>
+<div class="block">Initializes the optional value <code>sslHandshakeTimeout</code> to sslHandshakeTimeout.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/client/ReactorCloudFoundryClient.html#stacks--">stacks()</a></span> - Method in class org.cloudfoundry.reactor.client.<a href="org/cloudfoundry/reactor/client/ReactorCloudFoundryClient.html" title="class in org.cloudfoundry.reactor.client">ReactorCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
 </dl>

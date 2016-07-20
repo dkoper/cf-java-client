@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -227,16 +227,28 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#getSocketTimeout--">getSocketTimeout</a></span>()</code>
+<div class="block">The <code>SO_TIMEOUT</code> value</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/reactor.util.SslCertificateTruster.html?is-external=true" title="class or interface in org.cloudfoundry">org.cloudfoundry.reactor.util.SslCertificateTruster</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#getSslCertificateTruster--">getSslCertificateTruster</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>httpClient</code>, <code>objectMapper</code>, <code>port</code>, <code>root</code>, <code>apiHost</code>, <code>info</code>, <code>problemHandlers</code>, <code>proxyConfiguration</code>, <code>skipSslValidation</code>, <code>sslCertificateTruster</code>.</div>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#getSslHandshakeTimeout--">getSslHandshakeTimeout</a></span>()</code>
+<div class="block">The timeout for the SSL handshake negotiation</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#hashCode--">hashCode</a></span>()</code>
+<div class="block">Computes a hash code from attributes: <code>httpClient</code>, <code>objectMapper</code>, <code>port</code>, <code>root</code>, <code>apiHost</code>, <code>info</code>, <code>problemHandlers</code>, <code>proxyConfiguration</code>, <code>skipSslValidation</code>, <code>socketTimeout</code>, <code>sslCertificateTruster</code>, <code>sslHandshakeTimeout</code>.</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#toString--">toString</a></span>()</code>
 <div class="block">Prints the immutable value <code>DefaultConnectionContext</code> with attribute values.</div>
@@ -381,6 +393,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Whether to skip SSL certificate validation for all hosts reachable from the API host.  Defaults to <code>false</code>.</div>
 </li>
 </ul>
+<a name="getSocketTimeout--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSocketTimeout</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&gt;&nbsp;getSocketTimeout()</pre>
+<div class="block">The <code>SO_TIMEOUT</code> value</div>
+</li>
+</ul>
 <a name="getSslCertificateTruster--">
 <!--   -->
 </a>
@@ -392,6 +414,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The computed-at-construction value of the <code>sslCertificateTruster</code> attribute</dd>
 </dl>
+</li>
+</ul>
+<a name="getSslHandshakeTimeout--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSslHandshakeTimeout</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&gt;&nbsp;getSslHandshakeTimeout()</pre>
+<div class="block">The timeout for the SSL handshake negotiation</div>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">
@@ -417,7 +449,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>httpClient</code>, <code>objectMapper</code>, <code>port</code>, <code>root</code>, <code>apiHost</code>, <code>info</code>, <code>problemHandlers</code>, <code>proxyConfiguration</code>, <code>skipSslValidation</code>, <code>sslCertificateTruster</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>httpClient</code>, <code>objectMapper</code>, <code>port</code>, <code>root</code>, <code>apiHost</code>, <code>info</code>, <code>problemHandlers</code>, <code>proxyConfiguration</code>, <code>skipSslValidation</code>, <code>socketTimeout</code>, <code>sslCertificateTruster</code>, <code>sslHandshakeTimeout</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
