@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -127,12 +127,18 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/DeleteClientResponse.html" title="class in org.cloudfoundry.uaa.clients">DeleteClientResponse</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#delete-org.cloudfoundry.uaa.clients.DeleteClientRequest-">delete</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/DeleteClientRequest.html" title="class in org.cloudfoundry.uaa.clients">DeleteClientRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#delete79">Delete Client</a> request</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/GetClientResponse.html" title="class in org.cloudfoundry.uaa.clients">GetClientResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#get-org.cloudfoundry.uaa.clients.GetClientRequest-">get</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/GetClientRequest.html" title="class in org.cloudfoundry.uaa.clients">GetClientRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#retrieve77">Retrieve Client</a> request</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/UpdateClientResponse.html" title="class in org.cloudfoundry.uaa.clients">UpdateClientResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#update-org.cloudfoundry.uaa.clients.UpdateClientRequest-">update</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/UpdateClientRequest.html" title="class in org.cloudfoundry.uaa.clients">UpdateClientRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#update78">Update Client</a> request</div>
@@ -169,6 +175,22 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
+<a name="delete-org.cloudfoundry.uaa.clients.DeleteClientRequest-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>delete</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/DeleteClientResponse.html" title="class in org.cloudfoundry.uaa.clients">DeleteClientResponse</a>&gt;&nbsp;delete(<a href="../../../../org/cloudfoundry/uaa/clients/DeleteClientRequest.html" title="class in org.cloudfoundry.uaa.clients">DeleteClientRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#delete79">Delete Client</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - Delete Client request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the Response to the Delete Client Request</dd>
+</dl>
+</li>
+</ul>
 <a name="get-org.cloudfoundry.uaa.clients.GetClientRequest-">
 <!--   -->
 </a>
@@ -195,9 +217,9 @@ var activeTableTab = "activeTableTab";
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#update78">Update Client</a> request</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>request</code> - Retrieve Client request</dd>
+<dd><code>request</code> - Update Client request</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the Response to the Retrieve Client Request</dd>
+<dd>the Response to the Update Client Request</dd>
 </dl>
 </li>
 </ul>
