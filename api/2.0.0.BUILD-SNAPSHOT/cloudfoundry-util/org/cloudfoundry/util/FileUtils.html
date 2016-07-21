@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>FluentMap (Cloud Foundry Java Utilities 2.0.0.BUILD-SNAPSHOT API)</title>
+<title>FileUtils (Cloud Foundry Java Utilities 2.0.0.BUILD-SNAPSHOT API)</title>
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -11,13 +11,13 @@
 <script type="text/javascript"><!--
     try {
         if (location.href.indexOf('is-external=true') == -1) {
-            parent.document.title="FluentMap (Cloud Foundry Java Utilities 2.0.0.BUILD-SNAPSHOT API)";
+            parent.document.title="FileUtils (Cloud Foundry Java Utilities 2.0.0.BUILD-SNAPSHOT API)";
         }
     }
     catch(err) {
     }
 //-->
-var methods = {"i0":9};
+var methods = {"i0":9,"i1":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -39,7 +39,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../overview-summary.html">Overview</a></li>
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
-<li><a href="class-use/FluentMap.html">Use</a></li>
+<li><a href="class-use/FileUtils.html">Use</a></li>
 <li><a href="package-tree.html">Tree</a></li>
 <li><a href="../../../deprecated-list.html">Deprecated</a></li>
 <li><a href="../../../index-all.html">Index</a></li>
@@ -48,12 +48,12 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../org/cloudfoundry/util/FileUtils.html" title="class in org.cloudfoundry.util"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/cloudfoundry/util/FluentMap.Builder.html" title="class in org.cloudfoundry.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/cloudfoundry/util/ExceptionUtils.html" title="class in org.cloudfoundry.util"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/cloudfoundry/util/FluentMap.html" title="class in org.cloudfoundry.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
-<li><a href="../../../index.html?org/cloudfoundry/util/FluentMap.html" target="_top">Frames</a></li>
-<li><a href="FluentMap.html" target="_top">No&nbsp;Frames</a></li>
+<li><a href="../../../index.html?org/cloudfoundry/util/FileUtils.html" target="_top">Frames</a></li>
+<li><a href="FileUtils.html" target="_top">No&nbsp;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_top">
 <li><a href="../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
@@ -73,15 +73,15 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -92,14 +92,14 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">org.cloudfoundry.util</div>
-<h2 title="Class FluentMap" class="title">Class FluentMap</h2>
+<h2 title="Class FileUtils" class="title">Class FileUtils</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>org.cloudfoundry.util.FluentMap</li>
+<li>org.cloudfoundry.util.FileUtils</li>
 </ul>
 </li>
 </ul>
@@ -108,51 +108,15 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public final class <span class="typeNameLabel">FluentMap</span>
+<pre>public final class <span class="typeNameLabel">FileUtils</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
-<div class="block">Utility for building maps for Json responses</div>
+<div class="block">Utilities for <a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/FileSystem.html?is-external=true" title="class or interface in java.nio.file"><code>FileSystem</code></a>s</div>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="nested.class.summary">
-<!--   -->
-</a>
-<h3>Nested Class Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
-<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Class and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/util/FluentMap.Builder.html" title="class in org.cloudfoundry.util">FluentMap.Builder</a>&lt;<a href="../../../org/cloudfoundry/util/FluentMap.Builder.html" title="type parameter in FluentMap.Builder">K</a>,<a href="../../../org/cloudfoundry/util/FluentMap.Builder.html" title="type parameter in FluentMap.Builder">V</a>&gt;</span></code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.summary">
-<!--   -->
-</a>
-<h3>Constructor Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
-<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/util/FluentMap.html#FluentMap--">FluentMap</a></span>()</code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -166,8 +130,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static &lt;K,V&gt;&nbsp;<a href="../../../org/cloudfoundry/util/FluentMap.Builder.html" title="class in org.cloudfoundry.util">FluentMap.Builder</a>&lt;K,V&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/util/FluentMap.html#builder--">builder</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/util/FileUtils.html#normalize-java.nio.file.Path-">normalize</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;path)</code>
+<div class="block">Returns a normalized <a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file"><code>Path</code></a>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/util/FileUtils.html#toInputStream-java.nio.file.Path-">toInputStream</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;path)</code>
+<div class="block">Converts a the contents of a <a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file"><code>Path</code></a> to a <a href="http://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io"><code>InputStream</code></a>.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -185,36 +157,44 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.detail">
-<!--   -->
-</a>
-<h3>Constructor Detail</h3>
-<a name="FluentMap--">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>FluentMap</h4>
-<pre>public&nbsp;FluentMap()</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="builder--">
+<a name="normalize-java.nio.file.Path-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>normalize</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;normalize(<a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;path)</pre>
+<div class="block">Returns a normalized <a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file"><code>Path</code></a>.  In the case of directories, it returns the <a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file"><code>Path</code></a> as it was passed in.  In the case of files, it returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file"><code>Path</code></a> representing the root of a
+ filesystem mounted using <a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/FileSystems.html?is-external=true#newFileSystem-java.net.URI-java.util.Map-" title="class or interface in java.nio.file"><code>FileSystems.newFileSystem(java.net.URI, java.util.Map&lt;java.lang.String, ?&gt;)</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>path</code> - the <a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file"><code>Path</code></a> to normalized</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the normalized path</dd>
+</dl>
+</li>
+</ul>
+<a name="toInputStream-java.nio.file.Path-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>builder</h4>
-<pre>public static&nbsp;&lt;K,V&gt;&nbsp;<a href="../../../org/cloudfoundry/util/FluentMap.Builder.html" title="class in org.cloudfoundry.util">FluentMap.Builder</a>&lt;K,V&gt;&nbsp;builder()</pre>
+<h4>toInputStream</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;toInputStream(<a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;path)</pre>
+<div class="block">Converts a the contents of a <a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file"><code>Path</code></a> to a <a href="http://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io"><code>InputStream</code></a>.  If the <a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file"><code>Path</code></a> is a directory, compresses the full contents of the directory into the stream.  If the <a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file"><code>Path</code></a>
+ is a file, the contents of the file are examined using <a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/FileSystems.html?is-external=true#newFileSystem-java.net.URI-java.util.Map-" title="class or interface in java.nio.file"><code>FileSystems.newFileSystem(java.net.URI, java.util.Map&lt;java.lang.String, ?&gt;)</code></a> starting at the root.  This allows both exploded and compressed artifacts to be used interchangeably.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>path</code> - a <a href="http://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file"><code>Path</code></a> representing either a compressed <i>or</i> exploded artifact</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a <a href="http://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io"><code>InputStream</code></a> containing the compressed contents of the <code>path</code></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -236,7 +216,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li><a href="../../../overview-summary.html">Overview</a></li>
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
-<li><a href="class-use/FluentMap.html">Use</a></li>
+<li><a href="class-use/FileUtils.html">Use</a></li>
 <li><a href="package-tree.html">Tree</a></li>
 <li><a href="../../../deprecated-list.html">Deprecated</a></li>
 <li><a href="../../../index-all.html">Index</a></li>
@@ -245,12 +225,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../org/cloudfoundry/util/FileUtils.html" title="class in org.cloudfoundry.util"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/cloudfoundry/util/FluentMap.Builder.html" title="class in org.cloudfoundry.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/cloudfoundry/util/ExceptionUtils.html" title="class in org.cloudfoundry.util"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/cloudfoundry/util/FluentMap.html" title="class in org.cloudfoundry.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
-<li><a href="../../../index.html?org/cloudfoundry/util/FluentMap.html" target="_top">Frames</a></li>
-<li><a href="FluentMap.html" target="_top">No&nbsp;Frames</a></li>
+<li><a href="../../../index.html?org/cloudfoundry/util/FileUtils.html" target="_top">Frames</a></li>
+<li><a href="FileUtils.html" target="_top">No&nbsp;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_bottom">
 <li><a href="../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
@@ -270,15 +250,15 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
