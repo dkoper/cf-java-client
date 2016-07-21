@@ -86,10 +86,14 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#org.cloudfoundry.uaa.groups">org.cloudfoundry.uaa.groups</a></td>
+<td class="colFirst"><a href="#org.cloudfoundry.uaa.clients">org.cloudfoundry.uaa.clients</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.cloudfoundry.uaa.groups">org.cloudfoundry.uaa.groups</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.cloudfoundry.uaa.users">org.cloudfoundry.uaa.users</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -131,6 +135,41 @@ the order they are declared.</div>
 </tbody>
 </table>
 </li>
+<li class="blockList"><a name="org.cloudfoundry.uaa.clients">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/cloudfoundry/uaa/SortOrder.html" title="enum in org.cloudfoundry.uaa">SortOrder</a> in <a href="../../../../org/cloudfoundry/uaa/clients/package-summary.html">org.cloudfoundry.uaa.clients</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/cloudfoundry/uaa/clients/package-summary.html">org.cloudfoundry.uaa.clients</a> that return <a href="../../../../org/cloudfoundry/uaa/SortOrder.html" title="enum in org.cloudfoundry.uaa">SortOrder</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/SortOrder.html" title="enum in org.cloudfoundry.uaa">SortOrder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ListClientsRequest.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/ListClientsRequest.html#getSortOrder--">getSortOrder</a></span>()</code>
+<div class="block">The sort order</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/cloudfoundry/uaa/clients/package-summary.html">org.cloudfoundry.uaa.clients</a> with parameters of type <a href="../../../../org/cloudfoundry/uaa/SortOrder.html" title="enum in org.cloudfoundry.uaa">SortOrder</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/clients/ListClientsRequest.Builder.html" title="class in org.cloudfoundry.uaa.clients">ListClientsRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ListClientsRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/ListClientsRequest.Builder.html#sortOrder-org.cloudfoundry.uaa.SortOrder-">sortOrder</a></span>(<a href="../../../../org/cloudfoundry/uaa/SortOrder.html" title="enum in org.cloudfoundry.uaa">SortOrder</a>&nbsp;sortOrder)</code>
+<div class="block">Initializes the value for the <a href="../../../../org/cloudfoundry/uaa/PaginatedAndSortedRequest.html#getSortOrder--"><code>sortOrder</code></a> attribute.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.cloudfoundry.uaa.groups">
 <!--   -->
 </a>
@@ -144,13 +183,13 @@ the order they are declared.</div>
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/SortOrder.html" title="enum in org.cloudfoundry.uaa">SortOrder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ListGroupsRequest.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/ListGroupsRequest.html#getSortOrder--">getSortOrder</a></span>()</code>
+<td class="colLast"><span class="typeNameLabel">ListExternalGroupMappingsRequest.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/ListExternalGroupMappingsRequest.html#getSortOrder--">getSortOrder</a></span>()</code>
 <div class="block">The sort order</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/SortOrder.html" title="enum in org.cloudfoundry.uaa">SortOrder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ListExternalGroupMappingsRequest.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/ListExternalGroupMappingsRequest.html#getSortOrder--">getSortOrder</a></span>()</code>
+<td class="colLast"><span class="typeNameLabel">ListGroupsRequest.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/ListGroupsRequest.html#getSortOrder--">getSortOrder</a></span>()</code>
 <div class="block">The sort order</div>
 </td>
 </tr>
@@ -164,14 +203,14 @@ the order they are declared.</div>
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/groups/ListGroupsRequest.Builder.html" title="class in org.cloudfoundry.uaa.groups">ListGroupsRequest.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ListGroupsRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/ListGroupsRequest.Builder.html#sortOrder-org.cloudfoundry.uaa.SortOrder-">sortOrder</a></span>(<a href="../../../../org/cloudfoundry/uaa/SortOrder.html" title="enum in org.cloudfoundry.uaa">SortOrder</a>&nbsp;sortOrder)</code>
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/groups/ListExternalGroupMappingsRequest.Builder.html" title="class in org.cloudfoundry.uaa.groups">ListExternalGroupMappingsRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ListExternalGroupMappingsRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/ListExternalGroupMappingsRequest.Builder.html#sortOrder-org.cloudfoundry.uaa.SortOrder-">sortOrder</a></span>(<a href="../../../../org/cloudfoundry/uaa/SortOrder.html" title="enum in org.cloudfoundry.uaa">SortOrder</a>&nbsp;sortOrder)</code>
 <div class="block">Initializes the value for the <a href="../../../../org/cloudfoundry/uaa/PaginatedAndSortedRequest.html#getSortOrder--"><code>sortOrder</code></a> attribute.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/groups/ListExternalGroupMappingsRequest.Builder.html" title="class in org.cloudfoundry.uaa.groups">ListExternalGroupMappingsRequest.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ListExternalGroupMappingsRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/ListExternalGroupMappingsRequest.Builder.html#sortOrder-org.cloudfoundry.uaa.SortOrder-">sortOrder</a></span>(<a href="../../../../org/cloudfoundry/uaa/SortOrder.html" title="enum in org.cloudfoundry.uaa">SortOrder</a>&nbsp;sortOrder)</code>
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/groups/ListGroupsRequest.Builder.html" title="class in org.cloudfoundry.uaa.groups">ListGroupsRequest.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ListGroupsRequest.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/groups/ListGroupsRequest.Builder.html#sortOrder-org.cloudfoundry.uaa.SortOrder-">sortOrder</a></span>(<a href="../../../../org/cloudfoundry/uaa/SortOrder.html" title="enum in org.cloudfoundry.uaa">SortOrder</a>&nbsp;sortOrder)</code>
 <div class="block">Initializes the value for the <a href="../../../../org/cloudfoundry/uaa/PaginatedAndSortedRequest.html#getSortOrder--"><code>sortOrder</code></a> attribute.</div>
 </td>
 </tr>
