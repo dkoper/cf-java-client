@@ -151,7 +151,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html" title="class in org.cloudfoundry.uaa.clients">Client.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html#addAllAuthorizedGrantTypes-java.lang.Iterable-">addAllAuthorizedGrantTypes</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;elements)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html#addAllAuthorizedGrantTypes-java.lang.Iterable-">addAllAuthorizedGrantTypes</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="../../../../org/cloudfoundry/uaa/tokens/GrantType.html" title="enum in org.cloudfoundry.uaa.tokens">GrantType</a>&gt;&nbsp;elements)</code>
 <div class="block">Adds elements to <code>authorizedGrantTypes</code> list.</div>
 </td>
 </tr>
@@ -223,19 +223,19 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html" title="class in org.cloudfoundry.uaa.clients">Client.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html#authorizedGrantType-java.lang.String...-">authorizedGrantType</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>...&nbsp;elements)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html#authorizedGrantType-org.cloudfoundry.uaa.tokens.GrantType...-">authorizedGrantType</a></span>(<a href="../../../../org/cloudfoundry/uaa/tokens/GrantType.html" title="enum in org.cloudfoundry.uaa.tokens">GrantType</a>...&nbsp;elements)</code>
 <div class="block">Adds elements to <code>authorizedGrantTypes</code> list.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html" title="class in org.cloudfoundry.uaa.clients">Client.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html#authorizedGrantType-java.lang.String-">authorizedGrantType</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;element)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html#authorizedGrantType-org.cloudfoundry.uaa.tokens.GrantType-">authorizedGrantType</a></span>(<a href="../../../../org/cloudfoundry/uaa/tokens/GrantType.html" title="enum in org.cloudfoundry.uaa.tokens">GrantType</a>&nbsp;element)</code>
 <div class="block">Adds one element to <code>authorizedGrantTypes</code> list.</div>
 </td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html" title="class in org.cloudfoundry.uaa.clients">Client.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html#authorizedGrantTypes-java.lang.Iterable-">authorizedGrantTypes</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;elements)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html#authorizedGrantTypes-java.lang.Iterable-">authorizedGrantTypes</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="../../../../org/cloudfoundry/uaa/tokens/GrantType.html" title="enum in org.cloudfoundry.uaa.tokens">GrantType</a>&gt;&nbsp;elements)</code>
 <div class="block">Sets or replaces all elements for <code>authorizedGrantTypes</code> list.</div>
 </td>
 </tr>
@@ -557,13 +557,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a name="authorizedGrantType-java.lang.String-">
+<a name="authorizedGrantType-org.cloudfoundry.uaa.tokens.GrantType-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>authorizedGrantType</h4>
-<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html" title="class in org.cloudfoundry.uaa.clients">Client.Builder</a>&nbsp;authorizedGrantType(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;element)</pre>
+<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html" title="class in org.cloudfoundry.uaa.clients">Client.Builder</a>&nbsp;authorizedGrantType(<a href="../../../../org/cloudfoundry/uaa/tokens/GrantType.html" title="enum in org.cloudfoundry.uaa.tokens">GrantType</a>&nbsp;element)</pre>
 <div class="block">Adds one element to <code>authorizedGrantTypes</code> list.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -573,13 +573,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a name="authorizedGrantType-java.lang.String...-">
+<a name="authorizedGrantType-org.cloudfoundry.uaa.tokens.GrantType...-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>authorizedGrantType</h4>
-<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html" title="class in org.cloudfoundry.uaa.clients">Client.Builder</a>&nbsp;authorizedGrantType(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>...&nbsp;elements)</pre>
+<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html" title="class in org.cloudfoundry.uaa.clients">Client.Builder</a>&nbsp;authorizedGrantType(<a href="../../../../org/cloudfoundry/uaa/tokens/GrantType.html" title="enum in org.cloudfoundry.uaa.tokens">GrantType</a>...&nbsp;elements)</pre>
 <div class="block">Adds elements to <code>authorizedGrantTypes</code> list.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -595,7 +595,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>authorizedGrantTypes</h4>
-<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html" title="class in org.cloudfoundry.uaa.clients">Client.Builder</a>&nbsp;authorizedGrantTypes(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;elements)</pre>
+<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html" title="class in org.cloudfoundry.uaa.clients">Client.Builder</a>&nbsp;authorizedGrantTypes(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="../../../../org/cloudfoundry/uaa/tokens/GrantType.html" title="enum in org.cloudfoundry.uaa.tokens">GrantType</a>&gt;&nbsp;elements)</pre>
 <div class="block">Sets or replaces all elements for <code>authorizedGrantTypes</code> list.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -611,7 +611,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>addAllAuthorizedGrantTypes</h4>
-<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html" title="class in org.cloudfoundry.uaa.clients">Client.Builder</a>&nbsp;addAllAuthorizedGrantTypes(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;elements)</pre>
+<pre>public final&nbsp;<a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html" title="class in org.cloudfoundry.uaa.clients">Client.Builder</a>&nbsp;addAllAuthorizedGrantTypes(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="../../../../org/cloudfoundry/uaa/tokens/GrantType.html" title="enum in org.cloudfoundry.uaa.tokens">GrantType</a>&gt;&nbsp;elements)</pre>
 <div class="block">Adds elements to <code>authorizedGrantTypes</code> list.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
