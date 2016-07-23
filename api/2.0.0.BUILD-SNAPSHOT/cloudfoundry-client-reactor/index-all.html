@@ -95,7 +95,7 @@
 <dd>
 <div class="block">Augments a <code>UriComponentsBuilder</code> with queries based on the methods annotated with <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/QueryParameter.html?is-external=true" title="class or interface in org.cloudfoundry"><code>QueryParameter</code></a></div>
 </dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/BasicAuthorizationBuilder.html#augment-reactor.io.netty.http.HttpClientRequest-java.lang.Object-">augment(HttpClientRequest, Object)</a></span> - Static method in class org.cloudfoundry.reactor.uaa.<a href="org/cloudfoundry/reactor/uaa/BasicAuthorizationBuilder.html" title="class in org.cloudfoundry.reactor.uaa">BasicAuthorizationBuilder</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/BasicAuthorizationBuilder.html#augment-reactor.ipc.netty.http.HttpClientRequest-java.lang.Object-">augment(HttpClientRequest, Object)</a></span> - Static method in class org.cloudfoundry.reactor.uaa.<a href="org/cloudfoundry/reactor/uaa/BasicAuthorizationBuilder.html" title="class in org.cloudfoundry.reactor.uaa">BasicAuthorizationBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.html#authorizations--">authorizations()</a></span> - Method in class org.cloudfoundry.reactor.uaa.<a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.html" title="class in org.cloudfoundry.reactor.uaa">ReactorUaaClient</a></dt>
 <dd>&nbsp;</dd>
@@ -107,7 +107,7 @@
 <dl>
 <dt><a href="org/cloudfoundry/reactor/uaa/BasicAuthorizationBuilder.html" title="class in org.cloudfoundry.reactor.uaa"><span class="typeNameLink">BasicAuthorizationBuilder</span></a> - Class in <a href="org/cloudfoundry/reactor/uaa/package-summary.html">org.cloudfoundry.reactor.uaa</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/client/CloudFoundryExceptionBuilder.html#build-reactor.io.netty.http.HttpException-">build(HttpException)</a></span> - Static method in class org.cloudfoundry.reactor.client.<a href="org/cloudfoundry/reactor/client/CloudFoundryExceptionBuilder.html" title="class in org.cloudfoundry.reactor.client">CloudFoundryExceptionBuilder</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/client/CloudFoundryExceptionBuilder.html#build-reactor.ipc.netty.http.HttpException-">build(HttpException)</a></span> - Static method in class org.cloudfoundry.reactor.client.<a href="org/cloudfoundry/reactor/client/CloudFoundryExceptionBuilder.html" title="class in org.cloudfoundry.reactor.client">CloudFoundryExceptionBuilder</a></dt>
 <dd>
 <div class="block">Build a <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/v2/CloudFoundryException.html?is-external=true" title="class or interface in org.cloudfoundry.client.v2"><code>CloudFoundryException</code></a> from an <code>HttpException</code></div>
 </dd>
@@ -281,13 +281,13 @@
 <dd>
 <div class="block">Fill a builder with attribute values from the provided <code>ProxyConfiguration</code> instance.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/tokenprovider/PasswordGrantTokenProvider.Builder.html#from-org.cloudfoundry.uaa.BasicAuthorized-">from(BasicAuthorized)</a></span> - Method in class org.cloudfoundry.reactor.tokenprovider.<a href="org/cloudfoundry/reactor/tokenprovider/PasswordGrantTokenProvider.Builder.html" title="class in org.cloudfoundry.reactor.tokenprovider">PasswordGrantTokenProvider.Builder</a></dt>
-<dd>
-<div class="block">Fill a builder with attribute values from the provided <code>org.cloudfoundry.uaa.BasicAuthorized</code> instance.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/tokenprovider/PasswordGrantTokenProvider.Builder.html#from-org.cloudfoundry.reactor.tokenprovider.PasswordGrantTokenProvider-">from(PasswordGrantTokenProvider)</a></span> - Method in class org.cloudfoundry.reactor.tokenprovider.<a href="org/cloudfoundry/reactor/tokenprovider/PasswordGrantTokenProvider.Builder.html" title="class in org.cloudfoundry.reactor.tokenprovider">PasswordGrantTokenProvider.Builder</a></dt>
 <dd>
 <div class="block">Fill a builder with attribute values from the provided <code>PasswordGrantTokenProvider</code> instance.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/tokenprovider/PasswordGrantTokenProvider.Builder.html#from-org.cloudfoundry.reactor.tokenprovider.AbstractUaaTokenProvider-">from(AbstractUaaTokenProvider)</a></span> - Method in class org.cloudfoundry.reactor.tokenprovider.<a href="org/cloudfoundry/reactor/tokenprovider/PasswordGrantTokenProvider.Builder.html" title="class in org.cloudfoundry.reactor.tokenprovider">PasswordGrantTokenProvider.Builder</a></dt>
+<dd>
+<div class="block">Fill a builder with attribute values from the provided <code>org.cloudfoundry.reactor.tokenprovider.AbstractUaaTokenProvider</code> instance.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.Builder.html#from-org.cloudfoundry.reactor.uaa.ReactorUaaClient-">from(ReactorUaaClient)</a></span> - Method in class org.cloudfoundry.reactor.uaa.<a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.Builder.html" title="class in org.cloudfoundry.reactor.uaa">ReactorUaaClient.Builder</a></dt>
 <dd>
@@ -459,7 +459,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/tokenprovider/PasswordGrantTokenProvider.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.reactor.tokenprovider.<a href="org/cloudfoundry/reactor/tokenprovider/PasswordGrantTokenProvider.html" title="class in org.cloudfoundry.reactor.tokenprovider">PasswordGrantTokenProvider</a></dt>
 <dd>
-<div class="block">Computes a hash code from attributes: <code>clientId</code>, <code>clientSecret</code>, <code>password</code>, <code>username</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>password</code>, <code>username</code>, <code>clientId</code>, <code>clientSecret</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.reactor.uaa.<a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.html" title="class in org.cloudfoundry.reactor.uaa">ReactorUaaClient</a></dt>
 <dd>
@@ -469,19 +469,19 @@
 <dd>
 <div class="block">Initializes the value for the <code>host</code> attribute.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/client/ReactorCloudFoundryClient.Builder.html#httpClient-reactor.io.netty.http.HttpClient-">httpClient(HttpClient)</a></span> - Method in class org.cloudfoundry.reactor.client.<a href="org/cloudfoundry/reactor/client/ReactorCloudFoundryClient.Builder.html" title="class in org.cloudfoundry.reactor.client">ReactorCloudFoundryClient.Builder</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/client/ReactorCloudFoundryClient.Builder.html#httpClient-reactor.ipc.netty.http.HttpClient-">httpClient(HttpClient)</a></span> - Method in class org.cloudfoundry.reactor.client.<a href="org/cloudfoundry/reactor/client/ReactorCloudFoundryClient.Builder.html" title="class in org.cloudfoundry.reactor.client">ReactorCloudFoundryClient.Builder</a></dt>
 <dd>
 <div class="block">Initializes the value for the <code>httpClient</code> attribute.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#httpClient-reactor.io.netty.http.HttpClient-">httpClient(HttpClient)</a></span> - Method in class org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#httpClient-reactor.ipc.netty.http.HttpClient-">httpClient(HttpClient)</a></span> - Method in class org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></dt>
 <dd>
 <div class="block">Initializes the value for the <code>httpClient</code> attribute.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/doppler/ReactorDopplerClient.Builder.html#httpClient-reactor.io.netty.http.HttpClient-">httpClient(HttpClient)</a></span> - Method in class org.cloudfoundry.reactor.doppler.<a href="org/cloudfoundry/reactor/doppler/ReactorDopplerClient.Builder.html" title="class in org.cloudfoundry.reactor.doppler">ReactorDopplerClient.Builder</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/doppler/ReactorDopplerClient.Builder.html#httpClient-reactor.ipc.netty.http.HttpClient-">httpClient(HttpClient)</a></span> - Method in class org.cloudfoundry.reactor.doppler.<a href="org/cloudfoundry/reactor/doppler/ReactorDopplerClient.Builder.html" title="class in org.cloudfoundry.reactor.doppler">ReactorDopplerClient.Builder</a></dt>
 <dd>
 <div class="block">Initializes the value for the <code>httpClient</code> attribute.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.Builder.html#httpClient-reactor.io.netty.http.HttpClient-">httpClient(HttpClient)</a></span> - Method in class org.cloudfoundry.reactor.uaa.<a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.Builder.html" title="class in org.cloudfoundry.reactor.uaa">ReactorUaaClient.Builder</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.Builder.html#httpClient-reactor.ipc.netty.http.HttpClient-">httpClient(HttpClient)</a></span> - Method in class org.cloudfoundry.reactor.uaa.<a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.Builder.html" title="class in org.cloudfoundry.reactor.uaa">ReactorUaaClient.Builder</a></dt>
 <dd>
 <div class="block">Initializes the value for the <code>httpClient</code> attribute.</div>
 </dd>
