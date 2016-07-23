@@ -13,6 +13,7 @@ org.cloudfoundry.client.v2.jobs
 org.cloudfoundry.client.v2.organizationquotadefinitions
 org.cloudfoundry.client.v2.organizations
 org.cloudfoundry.client.v2.privatedomains
+org.cloudfoundry.client.v2.resourcematch
 org.cloudfoundry.client.v2.routemappings
 org.cloudfoundry.client.v2.routes
 org.cloudfoundry.client.v2.securitygroups
