@@ -180,10 +180,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/identityzones/TokenPolicy.html#getJwtRevokable--">getJwtRevokable</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/identityzones/TokenPolicy.html#getJwtRevocable--">getJwtRevocable</a></span>()</code>
+<div class="block">Whether the JWT token is revocable</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/cloudfoundry/uaa/identityzones/KeyInformation.html" title="class in org.cloudfoundry.uaa.identityzones">KeyInformation</a>&gt;</code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/identityzones/TokenPolicy.html#getKeys--">getKeys</a></span>()</code>
 <div class="block">The keys of the token policy</div>
 </td>
@@ -197,7 +199,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/identityzones/TokenPolicy.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>accessTokenValidity</code>, <code>activeKeyId</code>, <code>jwtRevokable</code>, <code>keys</code>, <code>refreshTokenValidity</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>accessTokenValidity</code>, <code>activeKeyId</code>, <code>jwtRevocable</code>, <code>keys</code>, <code>refreshTokenValidity</code>.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
@@ -248,17 +250,14 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">The ID of the key that is used to sign tokens</div>
 </li>
 </ul>
-<a name="getJwtRevokable--">
+<a name="getJwtRevocable--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getJwtRevokable</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;getJwtRevokable()</pre>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>The value of the <code>jwtRevokable</code> attribute</dd>
-</dl>
+<h4>getJwtRevocable</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;getJwtRevocable()</pre>
+<div class="block">Whether the JWT token is revocable</div>
 </li>
 </ul>
 <a name="getKeys--">
@@ -267,7 +266,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getKeys</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/cloudfoundry/uaa/identityzones/KeyInformation.html" title="class in org.cloudfoundry.uaa.identityzones">KeyInformation</a>&gt;&nbsp;getKeys()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;getKeys()</pre>
 <div class="block">The keys of the token policy</div>
 </li>
 </ul>
@@ -304,7 +303,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>accessTokenValidity</code>, <code>activeKeyId</code>, <code>jwtRevokable</code>, <code>keys</code>, <code>refreshTokenValidity</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>accessTokenValidity</code>, <code>activeKeyId</code>, <code>jwtRevocable</code>, <code>keys</code>, <code>refreshTokenValidity</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
