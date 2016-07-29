@@ -20,7 +20,6 @@ import org.cloudfoundry.client.CloudFoundryClient;
 import org.cloudfoundry.doppler.DopplerClient;
 import org.cloudfoundry.operations.CloudFoundryOperations;
 import org.cloudfoundry.operations.DefaultCloudFoundryOperations;
-import org.cloudfoundry.operations.applications.LogsRequest;
 import org.cloudfoundry.reactor.ConnectionContext;
 import org.cloudfoundry.reactor.DefaultConnectionContext;
 import org.cloudfoundry.reactor.TokenProvider;
@@ -101,13 +100,11 @@ public class ProxyLogStreaming {
 
         private void run() {
             this.cloudFoundryOperations.applications()
-                .logs(LogsRequest.builder()
-                    .name("java-main-application")
-                    .build())
+                .list()
                 .subscribe(System.out::println, t -> {
                     t.printStackTrace();
                     System.exit(1);
-                }, () -> System.exit(0));
+                });
         }
 
     }
