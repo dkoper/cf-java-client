@@ -38,6 +38,8 @@ public interface NameFactory {
 
     String HOST_PREFIX = "test-host-";
 
+    String IDENTITY_PROVIDER_PREFIX = "test-identity-provider-";
+
     String IDENTITY_ZONE_PREFIX = "test-identity-zone-";
 
     String ORGANIZATION_PREFIX = "test-organization-";
@@ -120,7 +122,16 @@ public interface NameFactory {
     }
 
     /**
-     * Creates a identity zone name
+     * Creates an identity provider name
+     *
+     * @return the identity provider name
+     */
+    default String getIdentityProviderName() {
+        return getName(IDENTITY_PROVIDER_PREFIX);
+    }
+
+    /**
+     * Creates an identity zone name
      *
      * @return the identity zone name
      */
@@ -137,7 +148,7 @@ public interface NameFactory {
     String getName(String prefix);
 
     /**
-     * Creates a organization name
+     * Creates an organization name
      *
      * @return the organization name
      */
@@ -209,10 +220,10 @@ public interface NameFactory {
     }
 
     /**
-     * Tests a name to determine if it is a application name
+     * Tests a name to determine if it is an application name
      *
      * @param candidate the candidate name
-     * @return {@code true} if the name is a application name, {@code false} otherwise
+     * @return {@code true} if the name is an application name, {@code false} otherwise
      */
     default boolean isApplicationName(String candidate) {
         return isName(APPLICATION_PREFIX, candidate);
@@ -279,10 +290,20 @@ public interface NameFactory {
     }
 
     /**
-     * Tests a name to determine if it is a identity zone name
+     * Tests a name to determine if it is an identity provider name
      *
      * @param candidate the candidate name
-     * @return {@code true} if the name is a identity zone name, {@code false} otherwise
+     * @return {@code true} if the name is an identity provider name, {@code false} otherwise
+     */
+    default boolean isIdentityProviderName(String candidate) {
+        return isName(IDENTITY_PROVIDER_PREFIX, candidate);
+    }
+
+    /**
+     * Tests a name to determine if it is an identity zone name
+     *
+     * @param candidate the candidate name
+     * @return {@code true} if the name is an identity zone name, {@code false} otherwise
      */
     default boolean isIdentityZoneName(String candidate) {
         return isName(IDENTITY_ZONE_PREFIX, candidate);
@@ -298,10 +319,10 @@ public interface NameFactory {
     boolean isName(String prefix, String candidate);
 
     /**
-     * Tests a name to determine if it is a organization name
+     * Tests a name to determine if it is an organization name
      *
      * @param candidate the candidate name
-     * @return {@code true} if the name is a organization name, {@code false} otherwise
+     * @return {@code true} if the name is an organization name, {@code false} otherwise
      */
     default boolean isOrganizationName(String candidate) {
         return isName(ORGANIZATION_PREFIX, candidate);
