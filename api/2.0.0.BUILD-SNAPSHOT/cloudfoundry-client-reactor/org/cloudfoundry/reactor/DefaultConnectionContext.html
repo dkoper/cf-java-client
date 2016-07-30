@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -187,68 +187,74 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#getInfo--">getInfo</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#getKeepAlive--">getKeepAlive</a></span>()</code>
+<div class="block">The <code>SO_KEEPALIVE</code> value</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>com.fasterxml.jackson.databind.ObjectMapper</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#getObjectMapper--">getObjectMapper</a></span>()</code>
 <div class="block">The <code>ObjectMapper</code> to use</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#getPort--">getPort</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-util/apidocs/org/cloudfoundry/util/test/FailingDeserializationProblemHandler.html?is-external=true" title="class or interface in org.cloudfoundry.util.test">FailingDeserializationProblemHandler</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#getProblemHandlers--">getProblemHandlers</a></span>()</code>
 <div class="block">Jackson deserialization problem handlers.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/cloudfoundry/reactor/ProxyConfiguration.html" title="class in org.cloudfoundry.reactor">ProxyConfiguration</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#getProxyConfiguration--">getProxyConfiguration</a></span>()</code>
 <div class="block">The (optional) proxy configuration</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#getRoot--">getRoot</a></span>()</code>
 <div class="block">The normalized API root</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#getRoot-java.lang.String-">getRoot</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
 <div class="block">The normalized root for a given key</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#getSkipSslValidation--">getSkipSslValidation</a></span>()</code>
 <div class="block">Whether to skip SSL certificate validation for all hosts reachable from the API host.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#getSocketTimeout--">getSocketTimeout</a></span>()</code>
 <div class="block">The <code>SO_TIMEOUT</code> value</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/reactor.util.SslCertificateTruster.html?is-external=true" title="class or interface in org.cloudfoundry">org.cloudfoundry.reactor.util.SslCertificateTruster</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#getSslCertificateTruster--">getSslCertificateTruster</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#getSslHandshakeTimeout--">getSslHandshakeTimeout</a></span>()</code>
 <div class="block">The timeout for the SSL handshake negotiation</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>httpClient</code>, <code>objectMapper</code>, <code>port</code>, <code>root</code>, <code>apiHost</code>, <code>info</code>, <code>problemHandlers</code>, <code>proxyConfiguration</code>, <code>skipSslValidation</code>, <code>socketTimeout</code>, <code>sslCertificateTruster</code>, <code>sslHandshakeTimeout</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>httpClient</code>, <code>objectMapper</code>, <code>port</code>, <code>root</code>, <code>apiHost</code>, <code>info</code>, <code>keepAlive</code>, <code>problemHandlers</code>, <code>proxyConfiguration</code>, <code>skipSslValidation</code>, <code>socketTimeout</code>, <code>sslCertificateTruster</code>, <code>sslHandshakeTimeout</code>.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.html#toString--">toString</a></span>()</code>
 <div class="block">Prints the immutable value <code>DefaultConnectionContext</code> with attribute values.</div>
@@ -363,6 +369,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
+<a name="getKeepAlive--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getKeepAlive</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;&nbsp;getKeepAlive()</pre>
+<div class="block">The <code>SO_KEEPALIVE</code> value</div>
+</li>
+</ul>
 <a name="getProblemHandlers--">
 <!--   -->
 </a>
@@ -449,7 +465,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>httpClient</code>, <code>objectMapper</code>, <code>port</code>, <code>root</code>, <code>apiHost</code>, <code>info</code>, <code>problemHandlers</code>, <code>proxyConfiguration</code>, <code>skipSslValidation</code>, <code>socketTimeout</code>, <code>sslCertificateTruster</code>, <code>sslHandshakeTimeout</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>httpClient</code>, <code>objectMapper</code>, <code>port</code>, <code>root</code>, <code>apiHost</code>, <code>info</code>, <code>keepAlive</code>, <code>problemHandlers</code>, <code>proxyConfiguration</code>, <code>skipSslValidation</code>, <code>socketTimeout</code>, <code>sslCertificateTruster</code>, <code>sslHandshakeTimeout</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>

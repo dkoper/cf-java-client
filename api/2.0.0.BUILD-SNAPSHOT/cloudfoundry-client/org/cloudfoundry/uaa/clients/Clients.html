@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -139,21 +139,33 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/GetMetadataResponse.html" title="class in org.cloudfoundry.uaa.clients">GetMetadataResponse</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#getMetadata-org.cloudfoundry.uaa.clients.GetMetadataRequest-">getMetadata</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/GetMetadataRequest.html" title="class in org.cloudfoundry.uaa.clients">GetMetadataRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#retrieve88">Retrieve Metadata</a> request</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/ListClientsResponse.html" title="class in org.cloudfoundry.uaa.clients">ListClientsResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#list-org.cloudfoundry.uaa.clients.ListClientsRequest-">list</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/ListClientsRequest.html" title="class in org.cloudfoundry.uaa.clients">ListClientsRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#list81">List Clients</a> request</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/ListMetadatasResponse.html" title="class in org.cloudfoundry.uaa.clients">ListMetadatasResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#listMetadatas-org.cloudfoundry.uaa.clients.ListMetadatasRequest-">listMetadatas</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/ListMetadatasRequest.html" title="class in org.cloudfoundry.uaa.clients">ListMetadatasRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#list89">List Metadatas</a> request</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/UpdateClientResponse.html" title="class in org.cloudfoundry.uaa.clients">UpdateClientResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#update-org.cloudfoundry.uaa.clients.UpdateClientRequest-">update</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/UpdateClientRequest.html" title="class in org.cloudfoundry.uaa.clients">UpdateClientRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#update78">Update Client</a> request</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/UpdateMetadataResponse.html" title="class in org.cloudfoundry.uaa.clients">UpdateMetadataResponse</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#updateMetadata-org.cloudfoundry.uaa.clients.UpdateMetadataRequest-">updateMetadata</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/UpdateMetadataRequest.html" title="class in org.cloudfoundry.uaa.clients">UpdateMetadataRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#update90">Update Metadata</a> request</div>
 </td>
 </tr>
 </table>
@@ -213,9 +225,25 @@ var activeTableTab = "activeTableTab";
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#retrieve77">Retrieve Client</a> request</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>request</code> - Retrieve Client request</dd>
+<dd><code>request</code> - Get Client request</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the Response to the Retrieve Client Request</dd>
+<dd>the Response to the Get Client Request</dd>
+</dl>
+</li>
+</ul>
+<a name="getMetadata-org.cloudfoundry.uaa.clients.GetMetadataRequest-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMetadata</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/GetMetadataResponse.html" title="class in org.cloudfoundry.uaa.clients">GetMetadataResponse</a>&gt;&nbsp;getMetadata(<a href="../../../../org/cloudfoundry/uaa/clients/GetMetadataRequest.html" title="class in org.cloudfoundry.uaa.clients">GetMetadataRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#retrieve88">Retrieve Metadata</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - Get Metadata request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the Response to the Get Metadata Request</dd>
 </dl>
 </li>
 </ul>
@@ -254,7 +282,7 @@ var activeTableTab = "activeTableTab";
 <a name="update-org.cloudfoundry.uaa.clients.UpdateClientRequest-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>update</h4>
 <pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/UpdateClientResponse.html" title="class in org.cloudfoundry.uaa.clients">UpdateClientResponse</a>&gt;&nbsp;update(<a href="../../../../org/cloudfoundry/uaa/clients/UpdateClientRequest.html" title="class in org.cloudfoundry.uaa.clients">UpdateClientRequest</a>&nbsp;request)</pre>
@@ -264,6 +292,22 @@ var activeTableTab = "activeTableTab";
 <dd><code>request</code> - Update Client request</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the Response to the Update Client Request</dd>
+</dl>
+</li>
+</ul>
+<a name="updateMetadata-org.cloudfoundry.uaa.clients.UpdateMetadataRequest-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>updateMetadata</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/UpdateMetadataResponse.html" title="class in org.cloudfoundry.uaa.clients">UpdateMetadataResponse</a>&gt;&nbsp;updateMetadata(<a href="../../../../org/cloudfoundry/uaa/clients/UpdateMetadataRequest.html" title="class in org.cloudfoundry.uaa.clients">UpdateMetadataRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#update90">Update Metadata</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - Update Metadata request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the Response to the Update Metadata Request</dd>
 </dl>
 </li>
 </ul>

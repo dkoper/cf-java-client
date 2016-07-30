@@ -68,7 +68,7 @@
 <!--   -->
 </a></div>
 <!-- ========= END OF TOP NAVBAR ========= -->
-<div class="contentContainer"><a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:J">J</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:Q">Q</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a name="I:A">
+<div class="contentContainer"><a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:J">J</a>&nbsp;<a href="#I:K">K</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:Q">Q</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a name="I:A">
 <!--   -->
 </a>
 <h2 class="title">A</h2>
@@ -389,6 +389,10 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/DefaultConnectionContext.html#getInfo--">getInfo()</a></span> - Method in class org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/DefaultConnectionContext.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/DefaultConnectionContext.html#getKeepAlive--">getKeepAlive()</a></span> - Method in class org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/DefaultConnectionContext.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext</a></dt>
+<dd>
+<div class="block">The <code>SO_KEEPALIVE</code> value</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/client/ReactorCloudFoundryClient.html#getObjectMapper--">getObjectMapper()</a></span> - Method in class org.cloudfoundry.reactor.client.<a href="org/cloudfoundry/reactor/client/ReactorCloudFoundryClient.html" title="class in org.cloudfoundry.reactor.client">ReactorCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/ConnectionContext.html#getObjectMapper--">getObjectMapper()</a></span> - Method in interface org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/ConnectionContext.html" title="interface in org.cloudfoundry.reactor">ConnectionContext</a></dt>
@@ -491,7 +495,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/DefaultConnectionContext.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/DefaultConnectionContext.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext</a></dt>
 <dd>
-<div class="block">Computes a hash code from attributes: <code>httpClient</code>, <code>objectMapper</code>, <code>port</code>, <code>root</code>, <code>apiHost</code>, <code>info</code>, <code>problemHandlers</code>, <code>proxyConfiguration</code>, <code>skipSslValidation</code>, <code>socketTimeout</code>, <code>sslCertificateTruster</code>, <code>sslHandshakeTimeout</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>httpClient</code>, <code>objectMapper</code>, <code>port</code>, <code>root</code>, <code>apiHost</code>, <code>info</code>, <code>keepAlive</code>, <code>problemHandlers</code>, <code>proxyConfiguration</code>, <code>skipSslValidation</code>, <code>socketTimeout</code>, <code>sslCertificateTruster</code>, <code>sslHandshakeTimeout</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/doppler/ReactorDopplerClient.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.reactor.doppler.<a href="org/cloudfoundry/reactor/doppler/ReactorDopplerClient.html" title="class in org.cloudfoundry.reactor.doppler">ReactorDopplerClient</a></dt>
 <dd>
@@ -555,6 +559,20 @@
 <dl>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/client/ReactorCloudFoundryClient.html#jobs--">jobs()</a></span> - Method in class org.cloudfoundry.reactor.client.<a href="org/cloudfoundry/reactor/client/ReactorCloudFoundryClient.html" title="class in org.cloudfoundry.reactor.client">ReactorCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
+</dl>
+<a name="I:K">
+<!--   -->
+</a>
+<h2 class="title">K</h2>
+<dl>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#keepAlive-boolean-">keepAlive(boolean)</a></span> - Method in class org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></dt>
+<dd>
+<div class="block">Initializes the optional value <code>keepAlive</code> to keepAlive.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#keepAlive-java.util.Optional-">keepAlive(Optional&lt;Boolean&gt;)</a></span> - Method in class org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></dt>
+<dd>
+<div class="block">Initializes the optional value <code>keepAlive</code> to keepAlive.</div>
+</dd>
 </dl>
 <a name="I:M">
 <!--   -->
@@ -880,7 +898,7 @@
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.html#users--">users()</a></span> - Method in class org.cloudfoundry.reactor.uaa.<a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.html" title="class in org.cloudfoundry.reactor.uaa">ReactorUaaClient</a></dt>
 <dd>&nbsp;</dd>
 </dl>
-<a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:J">J</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:Q">Q</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;</div>
+<a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:J">J</a>&nbsp;<a href="#I:K">K</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:Q">Q</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;</div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
 <div class="bottomNav"><a name="navbar.bottom">
 <!--   -->

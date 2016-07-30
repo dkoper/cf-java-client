@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -127,6 +127,18 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/shareddomains/DeleteSharedDomainResponse.html" title="class in org.cloudfoundry.client.v2.shareddomains">DeleteSharedDomainResponse</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/shareddomains/SharedDomains.html#delete-org.cloudfoundry.client.v2.shareddomains.DeleteSharedDomainRequest-">delete</a></span>(<a href="../../../../../org/cloudfoundry/client/v2/shareddomains/DeleteSharedDomainRequest.html" title="class in org.cloudfoundry.client.v2.shareddomains">DeleteSharedDomainRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://apidocs.cloudfoundry.org/latest-release/shared_domains/delete_a_particular_shared_domain.html">Delete a Shared Domain</a> request</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/shareddomains/GetSharedDomainResponse.html" title="class in org.cloudfoundry.client.v2.shareddomains">GetSharedDomainResponse</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/shareddomains/SharedDomains.html#get-org.cloudfoundry.client.v2.shareddomains.GetSharedDomainRequest-">get</a></span>(<a href="../../../../../org/cloudfoundry/client/v2/shareddomains/GetSharedDomainRequest.html" title="class in org.cloudfoundry.client.v2.shareddomains">GetSharedDomainRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="https://apidocs.cloudfoundry.org/latest-release/shared_domains/retrieve_a_particular_shared_domain.html">Get a Shared Domain</a> request</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/shareddomains/ListSharedDomainsResponse.html" title="class in org.cloudfoundry.client.v2.shareddomains">ListSharedDomainsResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/shareddomains/SharedDomains.html#list-org.cloudfoundry.client.v2.shareddomains.ListSharedDomainsRequest-">list</a></span>(<a href="../../../../../org/cloudfoundry/client/v2/shareddomains/ListSharedDomainsRequest.html" title="class in org.cloudfoundry.client.v2.shareddomains">ListSharedDomainsRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://apidocs.cloudfoundry.org/latest-release/shared_domains/list_all_shared_domains.html">List all Shared Domains</a> request</div>
@@ -160,6 +172,38 @@ var activeTableTab = "activeTableTab";
 <dd><code>request</code> - the Create a Shared Domain request</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the response from the Create a Shared Domain request</dd>
+</dl>
+</li>
+</ul>
+<a name="delete-org.cloudfoundry.client.v2.shareddomains.DeleteSharedDomainRequest-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>delete</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/shareddomains/DeleteSharedDomainResponse.html" title="class in org.cloudfoundry.client.v2.shareddomains">DeleteSharedDomainResponse</a>&gt;&nbsp;delete(<a href="../../../../../org/cloudfoundry/client/v2/shareddomains/DeleteSharedDomainRequest.html" title="class in org.cloudfoundry.client.v2.shareddomains">DeleteSharedDomainRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://apidocs.cloudfoundry.org/latest-release/shared_domains/delete_a_particular_shared_domain.html">Delete a Shared Domain</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - the Delete a Shared Domain request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the response from the Delete a Shared Domain request</dd>
+</dl>
+</li>
+</ul>
+<a name="get-org.cloudfoundry.client.v2.shareddomains.GetSharedDomainRequest-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/shareddomains/GetSharedDomainResponse.html" title="class in org.cloudfoundry.client.v2.shareddomains">GetSharedDomainResponse</a>&gt;&nbsp;get(<a href="../../../../../org/cloudfoundry/client/v2/shareddomains/GetSharedDomainRequest.html" title="class in org.cloudfoundry.client.v2.shareddomains">GetSharedDomainRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="https://apidocs.cloudfoundry.org/latest-release/shared_domains/retrieve_a_particular_shared_domain.html">Get a Shared Domain</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - the Get a Shared Domain request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the response from the Get a Shared Domain request</dd>
 </dl>
 </li>
 </ul>
