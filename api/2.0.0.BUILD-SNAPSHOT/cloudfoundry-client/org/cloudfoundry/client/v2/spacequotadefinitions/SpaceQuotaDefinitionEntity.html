@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -174,65 +174,83 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spacequotadefinitions/SpaceQuotaDefinitionEntity.html#getApplicationTaskLimit--">getApplicationTaskLimit</a></span>()</code>
+<div class="block">The number of tasks that can be run per app.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spacequotadefinitions/SpaceQuotaDefinitionEntity.html#getInstanceMemoryLimit--">getInstanceMemoryLimit</a></span>()</code>
 <div class="block">The instance memory limit</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spacequotadefinitions/SpaceQuotaDefinitionEntity.html#getMemoryLimit--">getMemoryLimit</a></span>()</code>
 <div class="block">The memory limit</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spacequotadefinitions/SpaceQuotaDefinitionEntity.html#getName--">getName</a></span>()</code>
 <div class="block">The name</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spacequotadefinitions/SpaceQuotaDefinitionEntity.html#getNonBasicServicesAllowed--">getNonBasicServicesAllowed</a></span>()</code>
 <div class="block">The non basic services allowed</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spacequotadefinitions/SpaceQuotaDefinitionEntity.html#getOrganizationId--">getOrganizationId</a></span>()</code>
 <div class="block">The organization id</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spacequotadefinitions/SpaceQuotaDefinitionEntity.html#getOrganizationUrl--">getOrganizationUrl</a></span>()</code>
 <div class="block">The organization url</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spacequotadefinitions/SpaceQuotaDefinitionEntity.html#getSpacesUrl--">getSpacesUrl</a></span>()</code>
 <div class="block">The spaces url</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spacequotadefinitions/SpaceQuotaDefinitionEntity.html#getTotalReservedRoutePorts--">getTotalReservedRoutePorts</a></span>()</code>
+<div class="block">How many routes a space can have that use a reserved port.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spacequotadefinitions/SpaceQuotaDefinitionEntity.html#getTotalRoutes--">getTotalRoutes</a></span>()</code>
 <div class="block">The total routes</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spacequotadefinitions/SpaceQuotaDefinitionEntity.html#getTotalServiceKeys--">getTotalServiceKeys</a></span>()</code>
+<div class="block">How many service keys an organization can have.</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spacequotadefinitions/SpaceQuotaDefinitionEntity.html#getTotalServices--">getTotalServices</a></span>()</code>
 <div class="block">The total services</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spacequotadefinitions/SpaceQuotaDefinitionEntity.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>applicationInstanceLimit</code>, <code>instanceMemoryLimit</code>, <code>memoryLimit</code>, <code>name</code>, <code>nonBasicServicesAllowed</code>, <code>organizationId</code>, <code>organizationUrl</code>, <code>spacesUrl</code>, <code>totalRoutes</code>, <code>totalServices</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>applicationInstanceLimit</code>, <code>applicationTaskLimit</code>, <code>instanceMemoryLimit</code>, <code>memoryLimit</code>, <code>name</code>, <code>nonBasicServicesAllowed</code>, <code>organizationId</code>, <code>organizationUrl</code>, <code>spacesUrl</code>, <code>totalReservedRoutePorts</code>, <code>totalRoutes</code>, <code>totalServiceKeys</code>, <code>totalServices</code>.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/spacequotadefinitions/SpaceQuotaDefinitionEntity.html#toString--">toString</a></span>()</code>
 <div class="block">Prints the immutable value <code>SpaceQuotaDefinitionEntity</code> with attribute values.</div>
@@ -268,6 +286,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>getApplicationInstanceLimit</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getApplicationInstanceLimit()</pre>
 <div class="block">The application instance limit</div>
+</li>
+</ul>
+<a name="getApplicationTaskLimit--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getApplicationTaskLimit</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getApplicationTaskLimit()</pre>
+<div class="block">The number of tasks that can be run per app. (-1 represents an unlimited amount)</div>
 </li>
 </ul>
 <a name="getInstanceMemoryLimit--">
@@ -340,6 +368,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">The spaces url</div>
 </li>
 </ul>
+<a name="getTotalReservedRoutePorts--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTotalReservedRoutePorts</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getTotalReservedRoutePorts()</pre>
+<div class="block">How many routes a space can have that use a reserved port. These routes count toward total_routes. (-1 represents an unlimited amount; subject to org quota)</div>
+</li>
+</ul>
 <a name="getTotalRoutes--">
 <!--   -->
 </a>
@@ -348,6 +386,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>getTotalRoutes</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getTotalRoutes()</pre>
 <div class="block">The total routes</div>
+</li>
+</ul>
+<a name="getTotalServiceKeys--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTotalServiceKeys</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getTotalServiceKeys()</pre>
+<div class="block">How many service keys an organization can have. (-1 represents an unlimited amount)</div>
 </li>
 </ul>
 <a name="getTotalServices--">
@@ -383,7 +431,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>applicationInstanceLimit</code>, <code>instanceMemoryLimit</code>, <code>memoryLimit</code>, <code>name</code>, <code>nonBasicServicesAllowed</code>, <code>organizationId</code>, <code>organizationUrl</code>, <code>spacesUrl</code>, <code>totalRoutes</code>, <code>totalServices</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>applicationInstanceLimit</code>, <code>applicationTaskLimit</code>, <code>instanceMemoryLimit</code>, <code>memoryLimit</code>, <code>name</code>, <code>nonBasicServicesAllowed</code>, <code>organizationId</code>, <code>organizationUrl</code>, <code>spacesUrl</code>, <code>totalReservedRoutePorts</code>, <code>totalRoutes</code>, <code>totalServiceKeys</code>, <code>totalServices</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
