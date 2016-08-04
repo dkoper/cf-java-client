@@ -152,26 +152,26 @@ implements org.reactivestreams.Subscriber&lt;T&gt;</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="class in org.cloudfoundry.util.test">TestSubscriber</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html#assertCount-java.lang.Integer-">assertCount</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;expected)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html#expectCount-java.lang.Integer-">expectCount</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;expected)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="class in org.cloudfoundry.util.test">TestSubscriber</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html#assertEquals-T-">assertEquals</a></span>(<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&nbsp;expected)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html#expectEquals-T-">expectEquals</a></span>(<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&nbsp;expected)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="class in org.cloudfoundry.util.test">TestSubscriber</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html#assertError-java.lang.Class-java.lang.String-java.lang.Object...-">assertError</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;expected,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html#expectError-java.lang.Class-java.lang.String-java.lang.Object...-">expectError</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;expected,
            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format,
            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="class in org.cloudfoundry.util.test">TestSubscriber</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html#assertErrorMatch-java.lang.Class-java.lang.String-">assertErrorMatch</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;expected,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html#expectErrorMatch-java.lang.Class-java.lang.String-">expectErrorMatch</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;expected,
                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;patternString)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="class in org.cloudfoundry.util.test">TestSubscriber</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html#assertThat-java.util.function.Consumer-">assertThat</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function">Consumer</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;&nbsp;expectation)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html#expectThat-java.util.function.Consumer-">expectThat</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function">Consumer</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;&nbsp;expectation)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -240,54 +240,54 @@ implements org.reactivestreams.Subscriber&lt;T&gt;</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="assertCount-java.lang.Integer-">
+<a name="expectCount-java.lang.Integer-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>assertCount</h4>
-<pre>public&nbsp;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="class in org.cloudfoundry.util.test">TestSubscriber</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;&nbsp;assertCount(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;expected)</pre>
+<h4>expectCount</h4>
+<pre>public&nbsp;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="class in org.cloudfoundry.util.test">TestSubscriber</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;&nbsp;expectCount(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;expected)</pre>
 </li>
 </ul>
-<a name="assertEquals-java.lang.Object-">
+<a name="expectEquals-java.lang.Object-">
 <!--   -->
-</a><a name="assertEquals-T-">
+</a><a name="expectEquals-T-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>assertEquals</h4>
-<pre>public&nbsp;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="class in org.cloudfoundry.util.test">TestSubscriber</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;&nbsp;assertEquals(<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&nbsp;expected)</pre>
+<h4>expectEquals</h4>
+<pre>public&nbsp;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="class in org.cloudfoundry.util.test">TestSubscriber</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;&nbsp;expectEquals(<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&nbsp;expected)</pre>
 </li>
 </ul>
-<a name="assertError-java.lang.Class-java.lang.String-java.lang.Object...-">
+<a name="expectError-java.lang.Class-java.lang.String-java.lang.Object...-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>assertError</h4>
-<pre>public&nbsp;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="class in org.cloudfoundry.util.test">TestSubscriber</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;&nbsp;assertError(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;expected,
+<h4>expectError</h4>
+<pre>public&nbsp;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="class in org.cloudfoundry.util.test">TestSubscriber</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;&nbsp;expectError(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;expected,
                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format,
                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
 </li>
 </ul>
-<a name="assertErrorMatch-java.lang.Class-java.lang.String-">
+<a name="expectErrorMatch-java.lang.Class-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>assertErrorMatch</h4>
-<pre>public&nbsp;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="class in org.cloudfoundry.util.test">TestSubscriber</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;&nbsp;assertErrorMatch(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;expected,
+<h4>expectErrorMatch</h4>
+<pre>public&nbsp;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="class in org.cloudfoundry.util.test">TestSubscriber</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;&nbsp;expectErrorMatch(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;expected,
                                           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;patternString)</pre>
 </li>
 </ul>
-<a name="assertThat-java.util.function.Consumer-">
+<a name="expectThat-java.util.function.Consumer-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>assertThat</h4>
-<pre>public&nbsp;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="class in org.cloudfoundry.util.test">TestSubscriber</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;&nbsp;assertThat(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function">Consumer</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;&nbsp;expectation)</pre>
+<h4>expectThat</h4>
+<pre>public&nbsp;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="class in org.cloudfoundry.util.test">TestSubscriber</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;&nbsp;expectThat(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function">Consumer</a>&lt;<a href="../../../../org/cloudfoundry/util/test/TestSubscriber.html" title="type parameter in TestSubscriber">T</a>&gt;&nbsp;expectation)</pre>
 </li>
 </ul>
 <a name="onComplete--">
